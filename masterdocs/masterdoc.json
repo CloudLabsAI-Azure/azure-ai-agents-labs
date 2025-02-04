@@ -6,6 +6,10 @@
             {
                 "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/azure-ai-agents-labs/refs/heads/stage/gettingstarted.md",
                 "Order": 1
+            },
+            {
+                "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/azure-ai-agents-labs/refs/heads/stage/gettingstarted.md",
+                "Order": 2
             }
         ]
     }
