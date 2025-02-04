@@ -1,0 +1,12 @@
+[
+    {
+        "Name": "Azure-AI-Agents",
+        "Language": "English",
+        "Files": [
+            {
+                "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/azure-ai-agents-labs/refs/heads/stage/gettingstarted.md",
+                "Order": 1
+            }
+        ]
+    }
+]
