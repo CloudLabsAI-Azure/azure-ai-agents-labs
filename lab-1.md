@@ -32,21 +32,21 @@ In this task, you will create and configure an AI Project within Azure AI Foundr
 
 1. After signin to the portal, click on **Create project**
 
-   [!](./media/lab1-1.png)
+   ![](./media/lab1-1.png)
 
 1. On a **Create a Project** window, provide a suitable name under **Project name (1)** and select **Customize (2)**
 
-   [!](./media/lab1-2.png)
+   ![](./media/lab1-2.png)
 
 1. Under a **Create a hub (1)**, select **Create new AI Search (2)** to create a AI search service and provide any suitable name (3) and click on **Next (4)**. 
 
-   [!](./media/lab1-3.png)
+   ![](./media/lab1-3.png)
 
 1. Click on **Next (5)**
 
 1. Under **Review and finish (1)**, verify all the details and click on **Create (2)**
 
-   [!](./media/lab1-4.png)
+   ![](./media/lab1-4.png)
 
    >**Note**: Wait for few minutes until the necessary resources provisioned.
 
@@ -56,35 +56,35 @@ In this task, you will deploy a large language model (LLM) and an embedding mode
 
 1. In your AI Foundry project, navigate to the **My assets (1)** section, then select **Models + endpoints (2)**. Click **Deploy model (3)**, and choose **Deploy base model (4)** to proceed.
 
-   [!](./media/lab1-5.png)
+   ![](./media/lab1-5.png)
 
 1. On a **Select a model** window, select **gpt-4o (1)** and select **Confirm (2)**
 
-   [!](./media/lab1-6.png)
+   ![](./media/lab1-6.png)
 
 1. On **Deploy model gpt-4o** window, select **Deploy** to deploy the model
 
-   [!](./media/lab1-7.png)
+   ![](./media/lab1-7.png)
 
 1. In your AI Foundry project, navigate to the **My assets (1)** section, then select **Models + endpoints (2)**. Click **Deploy model (3)**, and choose **Deploy base model (4)** to proceed.
 
-   [!](./media/lab1-5.png)
+   ![](./media/lab1-5.png)
 
 1. On a **Select a model** window, select **text-embedding-ada-002 (1)** and select **Confirm (2)**
 
-   [!](./media/lab1-8.png)
+   ![](./media/lab1-8.png)
 
 1. On **Deploy model text-embedding-ada-002** window, select **Deploy** to deploy the model
 
-   [!](./media/lab1-9.png)
+   ![](./media/lab1-9.png)
 
 1. Navigate to **Azure Portal** and search and select **Azure Open AI** resource
 
-   [!](./media/lab1-10.png)
+   ![](./media/lab1-10.png)
 
 1. On the **Azure AI services | Azure OpenAI** page, select **+ Create** to create azure open ai resource.
 
-   [!](./media/lab1-11.png)
+   ![](./media/lab1-11.png)
 
 1. On **Create Azure OpenAI** page, provide the following settings and click on **Next (6)**
 
@@ -96,27 +96,27 @@ In this task, you will deploy a large language model (LLM) and an embedding mode
    | Name | Provide any name (4) |
    | Pricing tier | Standard S0 (5) |
 
-   [!](./media/lab1-13.png)
+   ![](./media/lab1-13.png)
 
 1. Click on **Next** twice and under **Review + submit** page, click on **Create**
  
-   [!](./media/lab1-12.png)
+   ![](./media/lab1-12.png)
 
 1. Wait until the deployment got succeeded and select **Go to resource**
 
 1. On the **Open ai** resource page, select **Go to Azure AI Foundry portal**
 
-   [!](./media/lab1-14.png)
+   ![](./media/lab1-14.png)
 
 1. In your AI Foundry project, navigate to the **Shared resources** section, then select **Deployments**. Click **Deploy model**, and choose **Deploy base model** to proceed.
 
 1. On a **Select a model** window, select **text-embedding-ada-002 (1)** and select **Confirm (2)**
 
-   [!](./media/lab1-8.png)
+   ![](./media/lab1-8.png)
 
 1. On **Deploy model text-embedding-ada-002** window, select **Deploy** to deploy the model
 
-   [!](./media/lab1-15.png)
+   ![](./media/lab1-15.png)
 
 1. On your **Lab VM**, launch **Visual Studio Code** and open the **AZURE-AI-AGENTS-LABS** folder located in *C:\Labfiles*.
 
@@ -127,12 +127,12 @@ In this task, you will deploy a large language model (LLM) and an embedding mode
    venv/Scripts/activate
    ```
 
-   [!](./media/lab1-16.png)
+   ![](./media/lab1-16.png)
 
 1. Still in the **AZURE-AI-AGENTS-LABS** project directory, run the below powershell command. This installs all the required packages:
 
    ```powershell
    pip install -r requirements.txt
    ```
-   [!](./media/lab1-17.png)
+   ![](./media/lab1-17.png)
 
