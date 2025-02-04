@@ -66,18 +66,6 @@ In this task, you will deploy a large language model (LLM) and an embedding mode
 
    ![](./media/lab1-7.png)
 
-1. In your AI Foundry project, navigate to the **My assets (1)** section, then select **Models + endpoints (2)**. Click **Deploy model (3)**, and choose **Deploy base model (4)** to proceed.
-
-   ![](./media/lab1-5.png)
-
-1. On a **Select a model** window, select **text-embedding-ada-002 (1)** and select **Confirm (2)**
-
-   ![](./media/lab1-8.png)
-
-1. On **Deploy model text-embedding-ada-002** window, select **Deploy** to deploy the model
-
-   ![](./media/lab1-9.png)
-
 1. Navigate to **Azure Portal** and search and select **Azure Open AI** resource
 
    ![](./media/lab1-10.png)
@@ -109,6 +97,8 @@ In this task, you will deploy a large language model (LLM) and an embedding mode
    ![](./media/lab1-14.png)
 
 1. In your AI Foundry project, navigate to the **Shared resources** section, then select **Deployments**. Click **Deploy model**, and choose **Deploy base model** to proceed.
+
+   >**Note**: The import and vectorize wizard in Azure AI Search, which will be used in subsequent labs, does not yet support text embedding models within your AI Foundry project. Because of this, we need to create an Azure OpenAI service and deploy a text embedding model there. We will use this text embedding model later when we create our vector index.
 
 1. On a **Select a model** window, select **text-embedding-ada-002 (1)** and select **Confirm (2)**
 
