@@ -1,6 +1,6 @@
-# Getting Started with Your AZ-801: Configuring Windows Server Hybrid Advanced Services Workshop
+# Getting Started with Your Azure-AI-Agents Workshop
  
-Welcome to your AZ-801: Configuring Windows Server Hybrid Advanced Services workshop! We've prepared a seamless environment for you to explore and learn about configuring and managing Windows Server on-premises, hybrid, and infrastructure as a service (IaaS) platform workloads. Let's begin by making the most of this experience:
+Welcome to your Azure-AI-Agents workshop! We've prepared a seamless environment for you to explore and learn about configuring and managing Windows Server on-premises, hybrid, and infrastructure as a service (IaaS) platform workloads. Let's begin by making the most of this experience:
  
 ## Accessing Your Lab Environment
  
@@ -54,10 +54,6 @@ For convenience, you can open the lab guide in a separate window by selecting th
    ![Manage Your Virtual Machine](../Media/gext2.png)
 
 3. If you have not extended the duration prior to when the lab is about to end, a pop-up will appear, giving you the option to extend. Click **OK** to proceed.
-
-## Pasting Commands in the PowerShell/CloudShell Environment
-
-Please make sure to use the **CTRL+SHIFT+V** or **CTRL+V** keys when pasting commands inside the PowerShell/CloudShell environment instead of right-clicking
 
 ## Let's Get Started with Azure Portal
  
