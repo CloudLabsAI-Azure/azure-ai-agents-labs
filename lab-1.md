@@ -102,7 +102,7 @@ In this task, you will deploy a large language model (LLM) and an embedding mode
 
 1. On a **Select a model** window, select **text-embedding-ada-002 (1)** and select **Confirm (2)**
 
-   ![](./media/lab1-8.png)
+   ![](./media/lab1-8nn.png)
 
 1. On **Deploy model text-embedding-ada-002** window, select **Deploy** to deploy the model
 
@@ -125,4 +125,27 @@ In this task, you will deploy a large language model (LLM) and an embedding mode
    pip install -r requirements.txt
    ```
    ![](./media/lab1-17.png)
+
+1. Open **Sample.env** file, and provide the necessary environment variables, please get the values from Azure AI foundry project and Azure Open AI service.
+
+   ![](./media/lab1-18.png)
+
+   ![](./media/lab1-19.png)
+
+   ![](./media/lab1-20.png)
+
+1. Save changes to the **Sample.env** file.
+
+1. Still in the **AZURE-AI-AGENTS-LABS** project directory, run the below powershell command. This creates your **.env** file:
+
+   ```powershell
+   cp sample.env .env
+   ```
+1. Open the **lab1.ipynb** file and ensure to select the **venv (Python 3.12.1)** kernel.
+
+1. Run the each cell and observe the output and finally see the output provided from the chat model.
+
+   ![](./media/lab1-21.png)
+
+
 
