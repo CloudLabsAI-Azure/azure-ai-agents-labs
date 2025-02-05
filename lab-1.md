@@ -126,13 +126,34 @@ In this task, you will deploy a large language model (LLM) and an embedding mode
    ```
    ![](./media/lab1-17.png)
 
-1. Open **Sample.env** file, and provide the necessary environment variables, please get the values from Azure AI foundry project and Azure Open AI service.
+1. Still in the **AZURE-AI-AGENTS-LABS** project directory, run the below powershell command. 
+
+   ```powershell
+   python.exe -m pip install --upgrade pip
+   ```
+
+1. Still in the **AZURE-AI-AGENTS-LABS** project directory, run the below powershell command. 
+
+   ```powershell
+   pip install azure-ai-inference
+   ```
+1. Still in the **AZURE-AI-AGENTS-LABS** project directory, run the below command and select the user account to authorize.
+
+   ```
+   az login
+   ```
+1. Open the **Sample.env** file and provide the necessary environment variables. Retrieve the required values from your **Azure AI Foundry project** and **Azure OpenAI service**
 
    ![](./media/lab1-18.png)
 
    ![](./media/lab1-19.png)
 
    ![](./media/lab1-20.png)
+
+   > **Note:**  
+   > - To get the **AIPROJECT_CONNECTION_STRING**, navigate to **Hub project > Overview > Azure AI Services > Project connection string**.  
+   > - For the **chat model**, refer to the **GPT-4o model** under your **Hub project** in Azure AI Foundry.  
+   > - For the **embedding model**, use the **text-embedding model** created under your **Azure OpenAI resource**.
 
 1. Save changes to the **Sample.env** file.
 
@@ -141,7 +162,18 @@ In this task, you will deploy a large language model (LLM) and an embedding mode
    ```powershell
    cp sample.env .env
    ```
-1. Open the **lab1.ipynb** file and ensure to select the **venv (Python 3.12.1)** kernel.
+
+1. Later Open the **lab1.ipynb** file, select the **Select kernel (1)** setting available in the top right corner and select **Install/enable selected extensions (python+jupyter) (2)**
+
+   ![](./media/lab1-22.png)
+
+1. select **Python Environments**
+
+   ![](./media/lab1-23.png)
+
+1. Select **venv (Python 3.12.1)** from the list
+
+   ![](./media/lab1-24.png)
 
 1. Run the each cell and observe the output and finally see the output provided from the chat model.
 
