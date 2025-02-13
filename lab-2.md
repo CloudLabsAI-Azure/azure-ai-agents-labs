@@ -13,6 +13,6 @@ In this lab, you will perform:
 
    ![](./media/lab1-24.png)
 
-1. Run the each cell and observe the output and finally see the output.
+1. Run the each cell and observe the output.
 
    ![](./media/lab2-26.png)

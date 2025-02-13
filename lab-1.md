@@ -34,11 +34,11 @@ In this task, you will create and configure an AI Project within Azure AI Foundr
 
    ![](./media/lab1-1.png)
 
-1. On a **Create a Project** window, provide a suitable name under **Project name (1)** and select **Customize (2)**
+1. On a **Create a Project** window, provide `my-ai-project` for **Project name (1)** and select **Customize (2)**
 
    ![](./media/lab1-2.png)
 
-1. Under a **Create a hub (1)**, select **Create new AI Search (2)** to create a AI search service and provide any suitable name (3) and click on **Next (4)**. 
+1. Under a **Create a hub (1)**, select **Create new AI Search (2)** to create a AI search service and provide `my-aisearch-service` as the name (3) and click on **Next (4)**. 
 
    ![](./media/lab1-3.png)
 
@@ -62,9 +62,11 @@ In this task, you will deploy a large language model (LLM) and an embedding mode
 
    ![](./media/lab1-6.png)
 
-1. On **Deploy model gpt-4o** window, select **Deploy** to deploy the model
+1. On **Deploy model gpt-4o** window, select **Customize**.
 
    ![](./media/lab1-7.png)
+
+1. Change the Tokens per Minute Rate Limit to **200K** and click on deploy.
 
 1. Navigate to **Azure Portal** and search and select **Azure Open AI** resource
 
@@ -79,9 +81,9 @@ In this task, you will deploy a large language model (LLM) and an embedding mode
    | Setting | Value | 
    | --- | --- |
    | Subscription | Leave the default subscription (1) |
-   | Resource group | select the same resource group created while creating hub (2) |
+   | Resource group | select the resource group with prefix **rg-odl_user_<inject key="DeploymentID" enableCopy="false" /></inject>** (2) |
    | Region | Leave the default region (3) |
-   | Name | Provide any name (4) |
+   | Name | my-openai-service<inject key="DeploymentID" enableCopy="false" /></inject> (4) |
    | Pricing tier | Standard S0 (5) |
 
    ![](./media/lab1-13.png)
@@ -100,7 +102,7 @@ In this task, you will deploy a large language model (LLM) and an embedding mode
 
    >**Note**: The import and vectorize wizard in Azure AI Search, which will be used in subsequent labs, does not yet support text embedding models within your AI Foundry project. Because of this, we need to create an Azure OpenAI service and deploy a text embedding model there. We will use this text embedding model later when we create our vector index.
 
-1. On a **Select a model** window, select **text-embedding-ada-002 (1)** and select **Confirm (2)**
+1. On a **Select a model** window, select **text-embedding-3-large (1)** and select **Confirm (2)**
 
    ![](./media/lab1-8nn.png)
 
