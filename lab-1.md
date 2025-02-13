@@ -92,7 +92,7 @@ In this task, you will deploy a large language model (LLM) and an embedding mode
  
    ![](./media/lab1-12.png)
 
-1. Wait until the deployment got succeeded and select **Go to resource**
+1. Wait until the deployment got succeeded and select **Go to resource**, and select **my-openai-service<inject key="DeploymentID" enableCopy="false" /></inject>**.
 
 1. On the **Open ai** resource page, select **Go to Azure AI Foundry portal**
 
@@ -106,10 +106,26 @@ In this task, you will deploy a large language model (LLM) and an embedding mode
 
    ![](./media/lab1-8nn.png)
 
-1. On **Deploy model text-embedding-ada-002** window, select **Deploy** to deploy the model
+1. On **Deploy model text-embedding-3-large** window, select **Deploy** to deploy the model.
 
    ![](./media/lab1-15.png)
 
+## Task 3:  Assign permissions to the Azure AI Search resource
+
+1. Navigate to your Azure AI Search resource and under Settings in the left menu, select Keys.
+1. Under API Access control select Both.
+1. Navigate to Identity under Settings.
+1. Under System-assigned set the Status to On and click on save, and select yes.
+1. Go to the Azure OpenAI resource.
+1. Select Access control.
+1. Select Add, and then select Add role assignment.
+1. Under Job function roles, select Cognitive Services OpenAI User, and then select Next.
+1. Under Members, select Managed identity, and then select Members.
+1. Filter by subscription and resource type (search services), and then select the managed identity of your search service.
+1. Select Review + assign.
+1. Now navigate to the Storage Account for the project.
+1. On the left pane, under Access control, assign the Storage Blob Data Reader role to the search service identity.
+## Task 4: Install dependencies, create a virtual environment, and create an environment variables file
 1. On your **Lab VM**, launch **Visual Studio Code** and open the **AZURE-AI-AGENTS-LABS** folder located in *C:\Labfiles*.
 
 1. Open a new terminal and navigate to the AZURE-AI-AGENTS-LABS project directory. Run the below powershell commands to create and activate your virtual environment:
