@@ -5,12 +5,17 @@
 ## Lab Objectives
 
 In this lab, you will perform:
+1. Navigate to storage acc and open it 
+1. click on containers under data storage
+1. click on +container
+1. enter healthplan as name and click on create
+1. click on upload 
+1. upload the files
 
-1. In your AI Foundry project, navigate to the **My assets (1)** section, then select **Data + indexes (2)**. Click **Indexes (3)**, and choose **+ New Index (4)** to proceed.
+1. Navigate to Azure Ai search service in azure portal.
+1. open the service
+1. click on import and vectorize data
 
-   ![](./media/lab1-5.png)
-
-1. On **Create a vector index** page, select **Upload Files** for **Data source** option.
 1. Click on Upload, then select Upload Files.
 
    ![](./media/lab3-1.png)
