@@ -19,12 +19,13 @@ In this lab, you will perform:
 
 1. Enter the following details and click on next
 
-ai search
+Select Azure AI Search service   AzureAISearch
 
-vector index
+vector index   health-plan
 
-health-plan
+check the box for Add vector search to this resource and click on nect
 
+Click on Create vector index
 
 1. 
 
