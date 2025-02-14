@@ -5,22 +5,39 @@
 ## Lab Objectives
 
 In this lab, you will perform:
-1. Navigate to storage acc and open it 
+1. Navigate to Azure Portal and select the storage account.
 1. click on containers under data storage
-1. click on +container
-1. enter healthplan as name and click on create
-1. click on upload 
-1. upload the files
+1. click on +container and enter `healthplan` as name and click on create.
+1. Open healthplan container by clicking on it, click on upload to upload the files.
+1. Click on browse for files.
+1. Navigate to `C:\LabFiles\azure-ai-agents-labs\data` and select both the PDFs to upload, and click on next.
+1. Click on upload.
 
 1. Navigate to Azure Ai search service in azure portal.
-1. open the service
+1. open the Azure Ai search service
 1. click on import and vectorize data
+1. select azure blob storage
+1. On Configure your Azure Blob Storage , enter the following details and click on next:
+   |Setting|Value|
+   |---|---|
+   |Subscription|leave it default|
+   |Storage account|select the Storage account with prefix **stodluser**|
+   |Blob container|**healthplan**|
 
-1. Click on Upload, then select Upload Files.
+1. On Vectorize your text, enter the following details and click on next:
+   |Setting|Value|
+   |---|---|
+   |Kind|Azure OpenAI|
+   |Subscription|leave it default|
+   |Azure OpenAI service|my-openai-service<inject key="DeploymentID" enableCopy="false" /></inject>|
+   |Model deployment|**text-embedding-3-large**|
+   |Authentication type|**System assigned identity**|
+   |Acknowledgement rectangle|**checked**|
 
-   ![](./media/lab3-1.png)
+1. Click on Next twice.
+1. Enter **health-plan** for  **Objects name prefix** and click on create.
 
-1. Navigate to `C:\LabFiles\azure-ai-agents-labs\data` and select both the PDFs to upload, and click on next.
+>**Note**: The uploading of data to indexes in search service might take 5-10 minutes.
 
 1. Enter the following details and click on next
 

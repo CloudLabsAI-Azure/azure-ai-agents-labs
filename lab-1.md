@@ -112,7 +112,7 @@ In this task, you will deploy a large language model (LLM) and an embedding mode
 ## Task 3:  Assign permissions to the Azure AI Search resource
 
 1. Navigate to your Azure AI Search resource and under Settings in the left menu, select Keys.
-1. Under API Access control select Both.
+1. Under API Access control select Both and select yes.
 1. Navigate to Identity under Settings.
 1. Under System-assigned set the Status to On and click on save, and select yes.
 1. Go to the Azure OpenAI resource.
