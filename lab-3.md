@@ -49,8 +49,7 @@ In this lab, you will perform:
 1. Click on Next twice.
 1. Enter **health-plan** for  **Objects name prefix** and click on create.
    >**Note**: The uploading of data to indexes in search service might take 5-10 minutes.
-
-1. On your **Lab VM**, launch **Visual Studio Code** and open the **AZURE-AI-AGENTS-LABS** folder located in *C:\Labfiles*.
+1. Navigate back to **Visual Studio Code** on your **Lab VM**
 1. Later Open the **lab3.ipynb** file, select the **Select kernel (1)** setting available in the top right corner and select **venv (Python 3.12.1)** from the list.
 
    ![](./media/lab1-24.png)
