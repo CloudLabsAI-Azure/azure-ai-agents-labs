@@ -138,7 +138,7 @@ In this task, you will deploy a large language model (LLM) and an embedding mode
 1. On the left pane, under Access control, assign the Storage Blob Data Reader role to the search service identity.
 
 ## Task 4: Install dependencies, create a virtual environment, and create an environment variables file
-1. On your **Lab VM**, launch **Visual Studio Code** and open the **AZURE-AI-AGENTS-LABS** folder located in *C:\Labfiles*.
+1. On your **Lab VM**, launch **Visual Studio Code** and open the **azure-ai-agents-labs** folder located in *C:\Labfiles*.
 
 1. Open a new terminal and navigate to the AZURE-AI-AGENTS-LABS project directory. Run the below powershell commands to create and activate your virtual environment:
 
@@ -156,18 +156,18 @@ In this task, you will deploy a large language model (LLM) and an embedding mode
    ```
    ![](./media/lab1-17.png)
 
-1. Still in the **AZURE-AI-AGENTS-LABS** project directory, run the below powershell command. 
+1. Still in the **azure-ai-agents-labs** project directory, run the below powershell command. 
 
    ```powershell
    python.exe -m pip install --upgrade pip
    ```
 
-1. Still in the **AZURE-AI-AGENTS-LABS** project directory, run the below powershell command. 
+1. Still in the **azure-ai-agents-labs** project directory, run the below powershell command. 
 
    ```powershell
    pip install azure-ai-inference
    ```
-1. Still in the **AZURE-AI-AGENTS-LABS** project directory, run the below command and select the user account to authorize.
+1. Still in the **azure-ai-agents-labs** project directory, run the below command and select the user account to authorize.
 
    ```
    az login
@@ -187,13 +187,13 @@ In this task, you will deploy a large language model (LLM) and an embedding mode
 
 1. Save changes to the **Sample.env** file.
 
-1. Still in the **AZURE-AI-AGENTS-LABS** project directory, run the below powershell command. This creates your **.env** file:
+1. Still in the **azure-ai-agents-labs** project directory, run the below powershell command. This creates your **.env** file:
 
    ```powershell
    cp sample.env .env
    ```
 
-1. Later Open the **lab1.ipynb** file, select the **Select kernel (1)** setting available in the top right corner and select **Install/enable selected extensions (python+jupyter) (2)**
+1. Later Open the **Lab 1 - Project Setup.ipynb** file, select the **Select kernel (1)** setting available in the top right corner and select **Install/enable selected extensions (python+jupyter) (2)**
 
    ![](./media/lab1-22.png)
 
