@@ -6,8 +6,14 @@
 
 In this lab, you will perform:
 1. Navigate to Azure Portal and select the storage account.
-1. click on containers under data storage
-1. click on +container and enter `healthplan` as name and click on create.
+
+   ![](./media/lab1-34.png)
+1. Click on containers(1) under data storage, then select +container(2).
+
+   ![](./media/lab3-1.png)
+1. On New Container page enter `healthplan`(1) as name and click on create(2).
+
+   ![](./media/lab3-2.png)
 1. Open healthplan container by clicking on it, click on upload to upload the files.
 1. Click on browse for files.
 1. Navigate to `C:\LabFiles\azure-ai-agents-labs\data` and select both the PDFs to upload, and click on next.
