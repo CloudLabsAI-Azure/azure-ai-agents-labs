@@ -18,11 +18,12 @@ In this lab, you will perform:
 1. Click on browse for files.
 1. Navigate to `C:\LabFiles\azure-ai-agents-labs\data` and select both the PDFs to upload, and click on next.
 1. Click on upload.
-
 1. Navigate to Azure Ai search service in azure portal.
-1. open the Azure Ai search service
-1. click on import and vectorize data
-1. select azure blob storage
+1. Open the Azure Ai search service.
+1. Click on import and vectorize data.
+
+   ![](./media/lab3-3.png)
+1. Select azure blob storage.
 1. On Configure your Azure Blob Storage , enter the following details and click on next:
    |Setting|Value|
    |---|---|
