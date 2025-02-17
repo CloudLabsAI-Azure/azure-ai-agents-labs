@@ -1,4 +1,4 @@
-# Lab 2 -
+# Lab 2 - Build a simple AI Agent
 
 ## Lab Overview
 

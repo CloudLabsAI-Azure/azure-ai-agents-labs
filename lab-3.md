@@ -1,4 +1,4 @@
-# Lab 3 -
+# Lab 3 - Build a RAG Agent
 
 ## Lab Overview
 

@@ -1,4 +1,4 @@
-# Lab 4 -
+# Lab 4 - Develop a multi-agent system
 
 ## Lab Overview
 
