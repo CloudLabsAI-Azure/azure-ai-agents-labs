@@ -20,3 +20,22 @@ We'll use the Azure AI Agent Service to create the Search, Report, and Validatio
 1. Run the each cell and observe the output.
 
    ![](./media/lab2-26.png)
+1. **Create a multi-agent system** : When you run the below cell, you will see a chat box pop up at the top of VS Code asking you to input the name of a health plan. If you recall, we uploaded two health plans to the search index. Type one of the following health plans in the box and press enter to begin running the multi-agent system:
+
+    - Northwind Health Standard
+    - Northwind Health Plus
+
+        ![](./media/download1.png)
+    > **Note**: After the successful run of the cell you will recieve the following outcome.
+
+    ```
+    Orchestrator Agent is starting...
+    Calling SearchAgent...
+    SearchAgent completed successfully.
+    Calling ReportAgent...
+    ReportAgent completed successfully.
+    Calling ValidationAgent...
+    ValidationAgent completed successfully.
+    The report for Northwind Plus has been generated. Please check the Northwind Plus Report.md file for the report.
+    Orchestrator Agent is starting...
+    ```
