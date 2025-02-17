@@ -6,7 +6,7 @@ Welcome to your Azure-AI-Agents workshop! We've prepared a seamless environment 
  
 Once you're ready to dive in, your virtual machine and lab guide will be right at your fingertips within your web browser.
  
-  ![Access Your VM and Lab Guide]![](./media/gt-1.png)
+  ![Access Your VM and Lab Guide](./media/gt-1.png)
 
 ### Virtual Machine & Lab Guide
  
@@ -16,7 +16,7 @@ Your virtual machine is your workhorse throughout the workshop. The lab guide is
  
 To get a better understanding of your lab resources and credentials, navigate to the **Environment** tab.
  
-  ![Explore Lab Resources]![](./media/gt-2.png)
+  ![Explore Lab Resources](./media/gt-2.png)
  
 ## Utilizing the Split Window Feature
  
@@ -60,13 +60,13 @@ For convenience, you can open the lab guide in a separate window by selecting th
  
    - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
  
-     ![Enter Your Username]![](./media/gt-5.png)
+     ![Enter Your Username](./media/gt-5.png)
  
 3. Next, provide your password:
  
    - **Password:** <inject key="AzureAdUserPassword"></inject>
  
-      ![Enter Your Password]![](./media/gt-4.png)
+      ![Enter Your Password](./media/gt-4.png)
 
 1. If **Action required** pop-up window appears, click on **Ask later**.
 
@@ -85,6 +85,6 @@ Learner Support Contacts:
 
 Click **Next** from the bottom right corner to embark on your Lab journey!
  
-   ![Start Your Azure Journey]![](./media/gt-6.png)
+   ![Start Your Azure Journey](./media/gt-6.png)
  
 Now you're all set to explore the powerful world of technology. Feel free to reach out if you have any questions along the way. Enjoy your workshop!
