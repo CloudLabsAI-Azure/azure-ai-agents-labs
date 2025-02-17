@@ -1,10 +1,10 @@
 # Lab 3 - Build a RAG Agent
 
-## Lab Overview
-
-## Lab Objectives
+In Lab 3, you will be building an AI Agent that will perform Retrieval Augmented Generaton (RAG) on health plan documents. Azure AI Search will be used as the vector database for storing the embeddings for the health plan documents.
 
 In this lab, you will perform:
+
+## Task 1:
 1. Navigate to Azure Portal and select the storage account.
 
    ![](./media/lab1-34.png)
