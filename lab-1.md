@@ -120,12 +120,18 @@ In this task, you will deploy a large language model (LLM) and an embedding mode
 
    ![](./media/lab1-30.png)
 1. Go to the Azure OpenAI resource.
-1. Select Access control.
-1. Select Add, and then select Add role assignment.
+1. Select Access control(IAM)(1).
+1. Select Add(2), and then select Add role assignment.
+
+   ![](./media/lab1-31.png)
 1. Under Job function roles, select Cognitive Services OpenAI User, and then select Next.
-1. Under Members, select Managed identity, and then select Members.
-1. Filter by subscription and resource type (search services), and then select the managed identity of your search service.
-1. Select Review + assign.
+
+   ![](./media/lab1-32.png)
+1. Under Members, select Managed identity(1), and then select Members.
+1. Filter by subscription and resource type (search services)(2), and then select(3) the managed identity of your search service.
+
+   ![](./media/lab1-33.png)
+1. Select Review + assign twice.
 1. Now navigate to the Storage Account for the project.
 1. On the left pane, under Access control, assign the Storage Blob Data Reader role to the search service identity.
 ## Task 4: Install dependencies, create a virtual environment, and create an environment variables file
