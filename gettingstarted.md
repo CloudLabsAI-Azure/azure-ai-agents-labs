@@ -22,13 +22,13 @@ To get a better understanding of your lab resources and credentials, navigate to
  
 For convenience, you can open the lab guide in a separate window by selecting the **Split Window** button from the Top right corner.
  
-  ![Use the Split Window Feature](../Media/plus.png)
+  ![Use the Split Window Feature](./media/gt-9.png)
  
 ## Managing Your Virtual Machine
  
 1. Feel free to start, stop, or restart your virtual machine as needed from the **Resources** tab. Your experience is in your hands!
  
-   ![Manage Your Virtual Machine](../Media/plus.png)
+   ![Manage Your Virtual Machine](./media/gt-10.png)
 
 
 ## Lab Guide Zoom In/Zoom Out
