@@ -36,8 +36,7 @@ For convenience, you can open the lab guide in a separate window by selecting th
 1. To adjust the zoom level for the environment page, click the **A↕ : 100%** icon located next to the timer in the lab environment.
 
    ![](../Media/zoom.png)
- 
-<!-- ## Lab Duration Extension
+ <!-- ## Lab Duration Extension
 
 1. To extend the duration of the lab, kindly click the **Hourglass** icon in the top right corner of the lab environment. 
 
@@ -50,7 +49,6 @@ For convenience, you can open the lab guide in a separate window by selecting th
    ![Manage Your Virtual Machine](../Media/gext2.png)
 
 3. If you have not extended the duration prior to when the lab is about to end, a pop-up will appear, giving you the option to extend. Click **OK** to proceed. -->
-
 ## Let's Get Started with Azure Portal
  
 1. On your virtual machine, click on the Azure Portal icon as shown below:
