@@ -149,7 +149,7 @@ In this task, you will deploy a large language model (LLM) and an embedding mode
 
    ![](./media/lab1-16.png)
 
-1. Still in the **AZURE-AI-AGENTS-LABS** project directory, run the below powershell command. This installs all the required packages:
+1. Still in the **azure-ai-agents-labs** project directory, run the below powershell command. This installs all the required packages:
 
    ```powershell
    pip install -r requirements.txt
