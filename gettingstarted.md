@@ -6,7 +6,7 @@ Welcome to your Azure-AI-Agents workshop! We've prepared a seamless environment 
  
 Once you're ready to dive in, your virtual machine and lab guide will be right at your fingertips within your web browser.
  
-  ![Access Your VM and Lab Guide](./media/gt-1.png)
+  ![Access Your VM and Lab Guide](./media/gt-7.png)
 
 ### Virtual Machine & Lab Guide
  
