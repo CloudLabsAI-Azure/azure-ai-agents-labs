@@ -51,11 +51,7 @@ For convenience, you can open the lab guide in a separate window by selecting th
 3. If you have not extended the duration prior to when the lab is about to end, a pop-up will appear, giving you the option to extend. Click **OK** to proceed. -->
 ## Let's Get Started with Azure Portal
  
-1. On your virtual machine, click on the Azure Portal icon as shown below:
- 
-   ![Launch Azure Portal](../Media/sc900-image(1).png)
-
- 
+1. On your virtual machine, click on the Azure Portal icon.
 2. You'll see the **Sign into Microsoft Azure** tab. Here, enter your credentials:
  
    - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
@@ -69,9 +65,6 @@ For convenience, you can open the lab guide in a separate window by selecting th
       ![Enter Your Password](./media/gt-4.png)
 
 1. If **Action required** pop-up window appears, click on **Ask later**.
-
-   ![Ask Later](../Media/2test1.png)
-
 1. If a **Welcome to Microsoft Azure** pop-up window appears, simply click **"Cancel"** to skip the tour.
 
 ## Support Contact
