@@ -20,7 +20,7 @@ In this lab, you will perform:
 1. Click on upload.
 1. Navigate to Azure Ai search service in azure portal.
 1. Open the Azure Ai search service.
-1. Click on import and vectorize data.
+1. Click on import and vectorize data(1).
 
    ![](./media/lab3-3.png)
 1. Select azure blob storage.
