@@ -136,6 +136,7 @@ In this task, you will deploy a large language model (LLM) and an embedding mode
 
    ![](./media/lab1-34.png)
 1. On the left pane, under Access control, assign the Storage Blob Data Reader role to the search service identity.
+
 ## Task 4: Install dependencies, create a virtual environment, and create an environment variables file
 1. On your **Lab VM**, launch **Visual Studio Code** and open the **AZURE-AI-AGENTS-LABS** folder located in *C:\Labfiles*.
 
