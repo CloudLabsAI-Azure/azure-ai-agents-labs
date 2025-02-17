@@ -6,7 +6,7 @@ Welcome to your Azure-AI-Agents workshop! We've prepared a seamless environment 
  
 Once you're ready to dive in, your virtual machine and lab guide will be right at your fingertips within your web browser.
  
-  ![Access Your VM and Lab Guide](../Media/labguide.png)
+  ![Access Your VM and Lab Guide]![](./media/gt-1.png)
 
 ### Virtual Machine & Lab Guide
  
@@ -16,7 +16,7 @@ Your virtual machine is your workhorse throughout the workshop. The lab guide is
  
 To get a better understanding of your lab resources and credentials, navigate to the **Environment** tab.
  
-  ![Explore Lab Resources](../Media/env.png)
+  ![Explore Lab Resources]![](./media/gt-2.png)
  
 ## Utilizing the Split Window Feature
  
@@ -28,12 +28,8 @@ For convenience, you can open the lab guide in a separate window by selecting th
  
 1. Feel free to start, stop, or restart your virtual machine as needed from the **Resources** tab. Your experience is in your hands!
  
-   ![Manage Your Virtual Machine](../Media/resources.png)
+   ![Manage Your Virtual Machine](../Media/plus.png)
 
-2. To initiate the required VMs, manually select and launch them directly from the Lab VM's desktop.
-
-      ![](../media/hyperv-vm.png)
-   
 
 ## Lab Guide Zoom In/Zoom Out
  
@@ -41,7 +37,7 @@ For convenience, you can open the lab guide in a separate window by selecting th
 
    ![](../Media/zoom.png)
  
-## Lab Duration Extension
+<!-- ## Lab Duration Extension
 
 1. To extend the duration of the lab, kindly click the **Hourglass** icon in the top right corner of the lab environment. 
 
@@ -53,7 +49,7 @@ For convenience, you can open the lab guide in a separate window by selecting th
  
    ![Manage Your Virtual Machine](../Media/gext2.png)
 
-3. If you have not extended the duration prior to when the lab is about to end, a pop-up will appear, giving you the option to extend. Click **OK** to proceed.
+3. If you have not extended the duration prior to when the lab is about to end, a pop-up will appear, giving you the option to extend. Click **OK** to proceed. -->
 
 ## Let's Get Started with Azure Portal
  
@@ -66,13 +62,13 @@ For convenience, you can open the lab guide in a separate window by selecting th
  
    - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
  
-     ![Enter Your Username](../Media/sc900-image-1.png)
+     ![Enter Your Username]![](./media/gt-5.png)
  
 3. Next, provide your password:
  
    - **Password:** <inject key="AzureAdUserPassword"></inject>
  
-      ![Enter Your Password](../Media/sc900-image-2.png)
+      ![Enter Your Password]![](./media/gt-4.png)
 
 1. If **Action required** pop-up window appears, click on **Ask later**.
 
