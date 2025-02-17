@@ -35,7 +35,7 @@ For convenience, you can open the lab guide in a separate window by selecting th
  
 1. To adjust the zoom level for the environment page, click the **A↕ : 100%** icon located next to the timer in the lab environment.
 
-   ![](../Media/zoom.png)
+   ![](./media/gt-8.png)
  <!-- ## Lab Duration Extension
 
 1. To extend the duration of the lab, kindly click the **Hourglass** icon in the top right corner of the lab environment. 
