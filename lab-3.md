@@ -4,7 +4,7 @@ In Lab 3, you will be building an AI Agent that will perform Retrieval Augmented
 
 In this lab, you will perform:
 
-## Task 1:
+## Task 1: Create the Azure AI Search Index
 1. Navigate to Azure Portal and select the storage account.
 
    ![](./media/lab1-34.png)
@@ -49,6 +49,9 @@ In this lab, you will perform:
 1. Click on Next twice.
 1. Enter **health-plan** for  **Objects name prefix** and click on create.
    >**Note**: The uploading of data to indexes in search service might take 5-10 minutes.
+
+## Task 2: Create the Search Agent
+
 1. Navigate back to **Visual Studio Code** on your **Lab VM**
 1. Later Open the **Lab 3 - Create A RAG Agent.ipynb** file, select the **Select kernel (1)** setting available in the top right corner and select **venv (Python 3.12.1)** from the list.
 

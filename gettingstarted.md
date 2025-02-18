@@ -1,6 +1,10 @@
 # Getting Started with Your Azure-AI-Agents Workshop
  
 Welcome to your Azure-AI-Agents workshop! We've prepared a seamless environment for you to explore and learn about configuring and managing Windows Server on-premises, hybrid, and infrastructure as a service (IaaS) platform workloads. Let's begin by making the most of this experience:
+
+## Architecture Diagram
+
+![Architecture Diagram](./media/standard-agent-setup-resources.png)
  
 ## Accessing Your Lab Environment
  

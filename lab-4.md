@@ -11,7 +11,7 @@ Orchestration is a key part of multi-agentic systems since the agents that we cr
 
 We'll use the Azure AI Agent Service to create the Search, Report, and Validation agents. However, to create the Orchestrator Agent, we'll use Semantic Kernel. The Semantic Kernel library provides out-of-the-box functionality for orchestrating multi-agent systems.
 
-## Task 1:
+## Task 1: Develop a Multi-Agent System
 
 1. Navigate back to **Visual Studio Code** on your **Lab VM**
 1. Later Open the **Lab 4 - Develop A Mult-Agent System.ipynb** file, select the **Select kernel (1)** setting available in the top right corner and select **venv (Python 3.12.1)** from the list.
