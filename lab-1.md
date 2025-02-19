@@ -103,7 +103,7 @@ In this task, you will deploy a large language model (LLM) and an embedding mode
 
 1. On a **Select a model** window, select **text-embedding-3-large (1)** and select **Confirm (2)**
 
-   ![](./media/lab1-8nn.png)
+   ![](./media/lab1-8nn-1.png)
 
 1. On **Deploy model text-embedding-3-large** window, select **Deploy** to deploy the model.
 
@@ -162,11 +162,6 @@ In this task, you will deploy a large language model (LLM) and an embedding mode
    python.exe -m pip install --upgrade pip
    ```
 
-1. Still in the **azure-ai-agents-labs** project directory, run the below powershell command. 
-
-   ```powershell
-   pip install azure-ai-inference
-   ```
 1. Still in the **azure-ai-agents-labs** project directory, run the below command and select the user account to authorize.
 
    ```
