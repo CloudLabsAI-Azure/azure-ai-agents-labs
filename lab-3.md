@@ -1,8 +1,14 @@
 # Lab 3 - Build a RAG Agent
+## Lab scenario
+In this lab, you will build an AI Agent that utilizes Retrieval-Augmented Generation (RAG) to extract and generate responses from health plan documents. By leveraging Azure AI Search as a vector database, the AI Agent will store and retrieve document embeddings, enabling more accurate and context-aware answers. This approach enhances the AI’s ability to process large volumes of data efficiently, providing meaningful insights for decision-making. Through this hands-on exercise, you will gain experience in implementing RAG-based AI solutions and integrating Azure AI Search to improve response quality in document-driven scenarios.
 
-In Lab 3, you will be building an AI Agent that will perform Retrieval Augmented Generaton (RAG) on health plan documents. Azure AI Search will be used as the vector database for storing the embeddings for the health plan documents.
+## Lab objectives
+In this lab, you will complete the following tasks:
 
-In this lab, you will perform:
+- Task 1: Create the Azure AI Search Index
+- Task 2: Create the Search Agent
+
+## Estimated time: 60 minutes
 
 ## Task 1: Create the Azure AI Search Index
 1. Navigate to Azure Portal and select the storage account.
@@ -32,7 +38,7 @@ In this lab, you will perform:
    |Blob container|**healthplan**(3)|
    |Management identity type|**System-assigned**(4)|
 
-      ![](./media/lab3-4.png)
+      ![](./media/lab3-4upd.png)
 
 1. On Vectorize your text, enter the following details and click on Next (7):
    |Setting|Value|
@@ -57,3 +63,13 @@ In this lab, you will perform:
 
    ![](./media/lab1-24.png)
 1. Run the each cell and observe the output.
+
+## Review
+
+In this lab, you have accomplished the following:
+
+- Created the Azure AI Search Index.
+- Created the Search Agent.
+
+
+## You have successfully completed the lab.

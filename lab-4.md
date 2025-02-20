@@ -1,15 +1,24 @@
 # Lab 4 - Develop a multi-agent system
-In Lab 4, you will be creating a multi-agent system consisting of 4 agents working together to generate reports about health plan documents. You will build these 4 AI Agents:
+
+## Lab scenario
+In this lab, you will be creating a multi-agent system consisting of 4 agents working together to generate reports about health plan documents. You will build these 4 AI Agents:
 - **Search Agent** - This agent will search an Azure AI Search index for information about specific health plan policies.
 - **Report Agent** - This agent will generate a detailed report about the health plan policy based on the information returned from the Search Agent.
 - **Validation Agent** - This agent will validate that the generated report meets specified requirements. In our case, making sure that the report contains information about coverage exclusions.
 - **Orchestrator Agent** - This agent will act as an orchestrator that manages the communication between the Search Agent, Report Agent, and Validation Agent.
 
-    ![](./media/download.png)
+    ![](./media/download1upd.png)
 
 Orchestration is a key part of multi-agentic systems since the agents that we create need to be able to communicate with each other in order to accomplish the objective.
 
 We'll use the Azure AI Agent Service to create the Search, Report, and Validation agents. However, to create the Orchestrator Agent, we'll use Semantic Kernel. The Semantic Kernel library provides out-of-the-box functionality for orchestrating multi-agent systems.
+
+## Lab objectives
+In this lab, you will complete the following tasks:
+
+- Task 1: Create the Search, Report, and Validation Agents.
+
+## Estimated time: 30 minutes
 
 ## Task 1: Create the Search, Report, and Validation Agents
 
@@ -39,3 +48,10 @@ We'll use the Azure AI Agent Service to create the Search, Report, and Validatio
     The report for Northwind Plus has been generated. Please check the Northwind Plus Report.md file for the report.
     Orchestrator Agent is starting...
     ```
+
+## Review
+
+In this lab, you have accomplished the following:
+- Created the Search, Report, and Validation Agents.
+
+## You have successfully completed the lab.
