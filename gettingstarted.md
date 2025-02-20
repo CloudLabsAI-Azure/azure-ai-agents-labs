@@ -1,5 +1,7 @@
 # Getting Started with Your Azure-AI-Agents Workshop
- 
+### Overall Estimated Duration: 4 Hours
+### Overview
+
 Welcome to your Azure-AI-Agents workshop! We've prepared a seamless environment for you to explore and learn about configuring and managing Windows Server on-premises, hybrid, and infrastructure as a service (IaaS) platform workloads. Let's begin by making the most of this experience:
 
 ## Architecture Diagram
