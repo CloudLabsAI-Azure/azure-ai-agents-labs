@@ -38,7 +38,7 @@ In this lab, you will complete the following tasks:
    |Blob container|**healthplan**(3)|
    |Management identity type|**System-assigned**(4)|
 
-      ![](./media/lab3-4.png)
+      ![](./media/lab3-4upd.png)
 
 1. On Vectorize your text, enter the following details and click on Next (7):
    |Setting|Value|
