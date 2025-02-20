@@ -7,7 +7,7 @@ In this lab, you will be creating a multi-agent system consisting of 4 agents wo
 - **Validation Agent** - This agent will validate that the generated report meets specified requirements. In our case, making sure that the report contains information about coverage exclusions.
 - **Orchestrator Agent** - This agent will act as an orchestrator that manages the communication between the Search Agent, Report Agent, and Validation Agent.
 
-    ![](./media/download.png)
+    ![](./media/download1upd.png)
 
 Orchestration is a key part of multi-agentic systems since the agents that we create need to be able to communicate with each other in order to accomplish the objective.
 
