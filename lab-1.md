@@ -1,5 +1,5 @@
 # Lab 1 - Setup AI Project and peform Chat Completion from VS Code
-
+## Estimated duration : 180 minutes
 ## Lab scenario
 
 In this hands-on lab, you will set up the necessary environment for building AI Agents. You will begin by configuring an AI Project in Azure AI Foundry, followed by deploying a Large Language Model (LLM) and embedding models. Next, you will establish connectivity from Visual Studio Code to the AI Project. Finally, you will perform a simple chat completion call to validate the setup.
@@ -12,8 +12,6 @@ In this lab, you will perform:
 - Task 2: Deploying an LLM and embedding models
 - Task 3: Establish connectivity from VS Code into the AI Project
 - Task 4: Perform a simple Chat completion call
-
-## Estimated duration : 180 minutes
 
 ## Task 1: Setting up the AI Project in the Azure AI Foundry
 

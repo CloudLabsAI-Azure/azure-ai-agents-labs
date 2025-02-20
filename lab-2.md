@@ -1,5 +1,6 @@
 # Lab 2 - Build a simple AI Agent
 
+## Estimated time: 30 minutes
 ## Lab scenario
 AI Agents are designed to automate tasks and generate insights based on user input. In this lab, you will learn how to build a simple AI Agent that processes data and generates a bar chart comparing different health benefit plans. This AI Agent leverages Azure AI services to analyze and visualize data efficiently.
 
@@ -7,8 +8,6 @@ AI Agents are designed to automate tasks and generate insights based on user inp
 In this lab, you will complete the following tasks:
 
 - Task 1: Create a Simple AI Agent
-
-## Estimated time: 30 minutes
 
 ## Task 1: Create a Simple AI Agent
 1. Navigate back to **Visual Studio Code** on your **Lab VM**
