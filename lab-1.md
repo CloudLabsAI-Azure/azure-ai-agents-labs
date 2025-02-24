@@ -63,7 +63,7 @@ In this task, you will deploy a large language model (LLM) and an embedding mode
    ![](./media/lab1-7.png)
 
 1. Change the **Model version to 2024-08-06**.
-1. Change the Tokens per Minute Rate Limit to **200K** and click on deploy.
+1. Change the Tokens per Minute Rate Limit to **200K** and click on **deploy**.
 
 1. Navigate back to **Azure Portal** and search and select **Azure Open AI** resource
 
