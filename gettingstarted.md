@@ -46,7 +46,7 @@ Welcome to your Azure AI agents lab, Let's begin by making the most of this expe
  
 Once you're ready to dive in, your virtual machine and lab guide will be right at your fingertips within your web browser.
  
-  ![Access Your VM and Lab Guide](./media/gt-7.png)
+  ![Access Your VM and Lab Guide](./media/gt-7-1.png)
 
 ### Virtual Machine & Lab Guide
  

@@ -21,8 +21,7 @@ In this lab, you will complete the following tasks:
 
 ## Task 1: Create the Search, Report, and Validation Agents
 
-1. Navigate back to **Visual Studio Code** on your **Lab VM**
-1. Later Open the **Lab 4 - Develop A Mult-Agent System.ipynb** file, select the **Select kernel (1)** setting available in the top right corner and select **venv (Python 3.12.1)** from the list.
+1. Open the **Lab 4 - Develop A Mult-Agent System.ipynb** file, select the **Select kernel (1)** setting available in the top right corner and select **venv (Python 3.12.1)** from the list.
 
    ![](./media/lab1-24.png)
 1. Run the each cell and observe the output.

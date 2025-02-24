@@ -36,7 +36,7 @@ In this task, you will create and configure an AI Project within Azure AI Foundr
 
    ![](./media/lab1-2.png)
 
-1. Under a **Create a hub (1)**, select **Create new AI Search (2)** to create a AI search service and provide `my-aisearch-service` as the name (3) and click on **Next (4)**. 
+1. Under a **Create a hub (1)**, select **Create new AI Search (2)** to create a AI search service and provide `my-aisearch-service` as the name (3) and click on **Next (4)**, followed by **Next (5)**. 
 
    ![](./media/lab1-3.png)
 
@@ -65,11 +65,11 @@ In this task, you will deploy a large language model (LLM) and an embedding mode
 1. Change the **Model version to 2024-08-06**.
 1. Change the Tokens per Minute Rate Limit to **200K** and click on deploy.
 
-1. Navigate to **Azure Portal** and search and select **Azure Open AI** resource
+1. Navigate back to **Azure Portal** and search and select **Azure Open AI** resource
 
    ![](./media/lab1-10.png)
 
-1. On the **Azure AI services | Azure OpenAI** page, select **+ Create** to create azure open ai resource.
+1. On the **Azure AI services | Azure OpenAI** page, select **+ Create** to create Azure OpenAI resource.
 
    ![](./media/lab1-11.png)
 
@@ -77,9 +77,9 @@ In this task, you will deploy a large language model (LLM) and an embedding mode
 
    | Setting | Value | 
    | --- | --- |
-   | Subscription | Leave the default subscription (1) |
+   | Subscription | leave the default subscription (1) |
    | Resource group | select the resource group with prefix **rg-odl_user_<inject key="DeploymentID" enableCopy="false" /></inject>** (2) |
-   | Region | Leave the default region (3) |
+   | Region | leave the default region (3) |
    | Name | my-openai-service<inject key="DeploymentID" enableCopy="false" /></inject> (4) |
    | Pricing tier | Standard S0 (5) |
 
@@ -109,31 +109,30 @@ In this task, you will deploy a large language model (LLM) and an embedding mode
 
 ## Task 3:  Assign permissions to the Azure AI Search resource
 
-1. Navigate to your Azure AI Search resource and under Settings in the left menu, select Keys(1).
-1. Under API Access control select Both(2) and select yes.
+1. Navigate to your **Azure AI Search** resource and under **Settings** in the left menu, select **Keys(1)**.
+1. Under **API Access control** select **Both(2)** and select **yes**.
 
    ![](./media/lab1-26.png)
-1. Navigate to Identity(1) under Settings.
-1. Under System-assigned set the Status to On(2) and click on save(3), and select yes.
+1. Navigate to **Identity(1)** under **Settings**.
+1. Under System-assigned set the Status to **On(2)** and click on **save(3)**, and select **yes**.
 
    ![](./media/lab1-30.png)
-1. Go to the Azure OpenAI resource.
-1. Select Access control(IAM)(1).
-1. Select Add(2), and then select Add role assignment.
+1. Go to the **Azure OpenAI** resource.
+1. Select **Access control(IAM)(1)** and click on **Add(2)**, and then select **Add role assignment**.
 
    ![](./media/lab1-31.png)
-1. Under Job function roles, select Cognitive Services OpenAI User, and then select Next.
+1. Under **Job function roles**, select **Cognitive Services OpenAI User**, and then select **Next**.
 
    ![](./media/lab1-32.png)
-1. Under Members, select Managed identity(1), and then select Members.
-1. Filter by subscription and resource type (search services)(2), and then select(3) the managed identity of your search service.
+1. Under Members, select **Managed identity(1)**, and then select Members.
+1. Filter by subscription and **resource type (search services)(2)**, and then **select(3)** the managed identity of your search service.
 
    ![](./media/lab1-33.png)
-1. Select Review + assign twice.
-1. Now navigate to the Storage Account(1) for the project.
+1. Select **Review + assign** twice.
+1. Now navigate to the **Storage Account(1)** for the project.
 
    ![](./media/lab1-34.png)
-1. On the left pane, under Access control, assign the Storage Blob Data Reader role to the search service identity.
+1. On the left pane, under **Access control**, assign the **Storage Blob Data Reader** role to the search service identity just like you followed in the previous steps.
 
 ## Task 4: Install dependencies, create a virtual environment, and create an environment variables file
 1. On your **Lab VM**, launch **Visual Studio Code** and open the **azure-ai-agents-labs** folder located in *C:\Labfiles*.
@@ -188,7 +187,7 @@ In this task, you will deploy a large language model (LLM) and an embedding mode
 
    ![](./media/lab1-22.png)
 
-1. select **Python Environments**
+1. Select **Python Environments**
 
    ![](./media/lab1-23.png)
 
