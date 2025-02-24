@@ -83,7 +83,7 @@ In this task, you will deploy a large language model (LLM) and an embedding mode
    | Name | my-openai-service<inject key="DeploymentID" enableCopy="false" /></inject> (4) |
    | Pricing tier | **Standard S0 (5)** |
 
-   ![](./media/lab1-13.png)
+   ![](./media/lab1-13-1.png)
 
 1. Click on **Next** twice and under **Review + submit** page, click on **Create**
  
