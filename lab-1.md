@@ -165,13 +165,11 @@ In this task, you will deploy a large language model (LLM) and an embedding mode
    ```
    az login
    ```
-1. Open the **Sample.env** file and provide the necessary environment variables. Retrieve the required values from your **Azure AI Foundry project** and **Azure OpenAI service**
+1. Open the **Sample.env** file and provide the necessary environment variables. Retrieve the required values from your **Azure AI Foundry project**.
 
    ![](./media/lab1-18.png)
 
    ![](./media/lab1-19.png)
-
-   ![](./media/lab1-20.png)
 
    > **Note:**  
    > - To get the **AIPROJECT_CONNECTION_STRING**, navigate to **Hub project > Overview > Azure AI Services > Project connection string**.  
