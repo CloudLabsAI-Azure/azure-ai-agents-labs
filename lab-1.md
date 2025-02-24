@@ -60,7 +60,7 @@ In this task, you will deploy a large language model (LLM) and an embedding mode
 
 1. On **Deploy model gpt-4o** window, select **Customize**.
 
-   ![](./media/lab1-7.png)
+   ![](./media/lab1-7-1.png)
 
 1. Change the **Model version to 2024-08-06**.
 1. Change the Tokens per Minute Rate Limit to **200K** and click on **deploy**.
@@ -81,7 +81,7 @@ In this task, you will deploy a large language model (LLM) and an embedding mode
    | Resource group | select the resource group with prefix **rg-odl_user_<inject key="DeploymentID" enableCopy="false" /></inject>** (2) |
    | Region | leave the default region (3) |
    | Name | my-openai-service<inject key="DeploymentID" enableCopy="false" /></inject> (4) |
-   | Pricing tier | Standard S0 (5) |
+   | Pricing tier | **Standard S0 (5)** |
 
    ![](./media/lab1-13.png)
 
@@ -123,7 +123,7 @@ In this task, you will deploy a large language model (LLM) and an embedding mode
    ![](./media/lab1-31.png)
 1. Under **Job function roles**, select **Cognitive Services OpenAI User**, and then select **Next**.
 
-   ![](./media/lab1-32.png)
+   ![](./media/lab1-32-1.png)
 1. Under Members, select **Managed identity(1)**, and then select Members.
 1. Filter by subscription and **resource type (search services)(2)**, and then **select(3)** the managed identity of your search service.
 
