@@ -66,10 +66,9 @@ For convenience, you can open the lab guide in a separate window by selecting th
  
 ## Managing Your Virtual Machine
  
-1. Feel free to start, stop, or restart your virtual machine as needed from the **Resources** tab. Your experience is in your hands!
- 
-   ![Manage Your Virtual Machine](./media/gt-10.png)
+Feel free to start, stop, or restart your virtual machine as needed from the **Resources** tab. Your experience is in your hands!
 
+   ![Manage Your Virtual Machine](./media/gt-10.png)
 
 ## Lab Guide Zoom In/Zoom Out
  
