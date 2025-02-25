@@ -170,11 +170,6 @@ In this task, you will deploy a large language model (LLM) and an embedding mode
 
    ![](./media/lab1-19.png)
 
-   > **Note:**  
-   > - To get the **AIPROJECT_CONNECTION_STRING**, navigate to **Hub project > Overview > Azure AI Services > Project connection string**.  
-   > - For the **chat model**, refer to the **GPT-4o model** under your **Hub project** in Azure AI Foundry.  
-   > - For the **embedding model**, use the **text-embedding model** created under your **Azure OpenAI resource**.
-
 1. Save changes to the **Sample.env** file.
 
 1. Still in the **azure-ai-agents-labs** project directory, run the below powershell command. This creates your **.env** file:
