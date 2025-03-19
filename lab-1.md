@@ -22,52 +22,68 @@ In this task, you will create and configure an AI Project within Azure AI Foundr
    ```
     https://ai.azure.com/
    ```
-1. Sign in with the below credentials if required.
+
+1. Click on **Sign in**.
+
+   ![](./media/ag1.png)
+
+1. Sign in with the below credentials, if prompted.
 
    - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
 
    - **Password:** <inject key="AzureAdUserPassword"></inject>
 
-1. After signin to the portal, click on **Create project**
+1. After sign in to the portal, click on **Create project**
 
    ![](./media/lab1-1.png)
 
 1. On a **Create a Project** window, provide `my-ai-project` for **Project name (1)** and select **Customize (2)**
 
-   ![](./media/lab1-2.png)
+   ![](./media/ag2.png)
 
-1. Under a **Create a hub (1)**, select **Create new AI Search (2)** to create a AI search service and provide `my-aisearch-service` as the name (3) and click on **Next (4)**, followed by **Next (5)**. 
+1. Under a **Create a hub**, Leave everthing to deafult. Select **Create new AI Search (1)** to create a AI search service and provide `my-aisearch-service` as the name **(2)** and click on **Next (3)**, followed by **Next (4)**. 
 
-   ![](./media/lab1-3.png)
+   ![](./media/ag-3.png)
 
-1. Under **Review and finish (1)**, verify all the details and click on **Create (2)**
+1. On the **Review and finish** page, verify all the details and click on **Create**
 
-   ![](./media/lab1-4.png)
+   ![](./media/ag4.png)
 
-   >**Note**: Wait for few minutes until the necessary resources provisioned.
+1. Wait for few minutes until the necessary resources provisioned.    
+
+   ![](./media/ag5.png) 
+
+    >**Note**: Click on **Close**, if you recieve any pop up.
 
 ## Task 2: Deploying an LLM and embedding models
 
 In this task, you will deploy a large language model (LLM) and an embedding model within your Azure AI Foundry project. These models will be used for AI-driven applications and vector-based search capabilities in upcoming labs.
 
-1. In your AI Foundry project, navigate to the **My assets (1)** section, then select **Models + endpoints (2)**. Click **Deploy model (3)**, and choose **Deploy base model (4)** to proceed.
+1. In your **AI Foundry project**, navigate to the **My assets (1)** section, then select **Models + endpoints (2)**. Click **Deploy model (3)**, and choose **Deploy base model (4)** to proceed.
 
    ![](./media/lab1-5.png)
 
-1. On a **Select a model** window, select **gpt-4o (1)** and select **Confirm (2)**
+1. On a **Select a model** window, search for **gpt-4o (1)**, select **gpt-4o (2)** and select **Confirm (3)**
 
-   ![](./media/lab1-6.png)
+   ![](./media/ag6.png)
 
 1. On **Deploy model gpt-4o** window, select **Customize**.
 
    ![](./media/lab1-7-1.png)
 
-1. Change the **Model version to 2024-08-06**.
-1. Change the Tokens per Minute Rate Limit to **200K** and click on **deploy**.
+   - Change the **Model version to 2024-08-06 (1)**
+   - Change the Tokens per Minute Rate Limit to **200K (2)**
+   - click on **deploy (3)**
 
-1. Navigate back to **Azure Portal** and search and select **Azure Open AI** resource
+     ![](./media/ag8.png)   
 
-   ![](./media/lab1-10.png)
+1. Click on **Model + Endpoints (1)**, there you can see the deployed **gpt-4o (2)** model.
+
+   ![](./media/ag9.png)
+
+1. Navigate back to **Azure Portal** and search for **Open AI (1)** and select **Azure Open AI (2)** resource.
+
+   ![](./media/ag10.png)
 
 1. On the **Azure AI services | Azure OpenAI** page, select **+ Create** to create Azure OpenAI resource.
 
@@ -77,35 +93,49 @@ In this task, you will deploy a large language model (LLM) and an embedding mode
 
    | Setting | Value | 
    | --- | --- |
-   | Subscription | leave the default subscription (1) |
-   | Resource group | select the resource group with prefix **rg-odl_user_<inject key="DeploymentID" enableCopy="false" /></inject>** (2) |
-   | Region | leave the default region (3) |
-   | Name | my-openai-service<inject key="DeploymentID" enableCopy="false" /></inject> (4) |
+   | Subscription | leave the default subscription **(1)** |
+   | Resource group | select the resource group with prefix **rg-odl_user_<inject key="DeploymentID" enableCopy="false" /></inject>** **(2)** |
+   | Region | leave the default region **(3)** |
+   | Name | **my-openai-service<inject key="DeploymentID" enableCopy="false" /></inject> (4)** |
    | Pricing tier | **Standard S0 (5)** |
 
-   ![](./media/lab1-13-1.png)
+   ![](./media/ag11.png)
 
-1. Click on **Next** twice and under **Review + submit** page, click on **Create**
+1. Click on **Next** twice.
+
+1. On the **Review + submit** page, click on **Create**
  
-   ![](./media/lab1-12.png)
+   ![](./media/ag12.png)
 
-1. Wait until the deployment got succeeded and select **Go to resource**, and select **my-openai-service<inject key="DeploymentID" enableCopy="false" /></inject>**.
+1. Wait until the deployment got succeeded and select **Go to resource**.
 
-1. On the **Open ai** resource page, select **Go to Azure AI Foundry portal**
+   ![](./media/ag13.png)
 
-   ![](./media/lab1-14.png)
+1. Seach for **my-openai-service<inject key="DeploymentID" enableCopy="false" /></inject> (1)** and then select **my-openai-service<inject key="DeploymentID" enableCopy="false" /></inject> (2)**.
 
-1. In your AI Foundry project, navigate to the **Shared resources** section, then select **Deployments**. Click **Deploy model**, and choose **Deploy base model** to proceed.
+   ![](./media/ag14.png)
 
-   >**Note**: The import and vectorize wizard in Azure AI Search, which will be used in subsequent labs, does not yet support text embedding models within your AI Foundry project. Because of this, we need to create an Azure OpenAI service and deploy a text embedding model there. We will use this text embedding model later when we create our vector index.
+1. On the **my-openai-service<inject key="DeploymentID" enableCopy="false" /></inject>** resource page, select **Go to Azure AI Foundry portal**
 
-1. On a **Select a model** window, select **text-embedding-3-large (1)** and select **Confirm (2)**
+   ![](./media/ag15.png)
 
-   ![](./media/lab1-8nn-1.png)
+1. In your AI Foundry project, navigate to the **Shared resources** section, then select **Deployments (1)**. Click **Deploy model (2)**, and choose **Deploy base model (3)** to proceed.
 
-1. On **Deploy model text-embedding-3-large** window, select **Deploy** to deploy the model.
+   ![](./media/ag16.png)
 
-   ![](./media/lab1-15.png)
+    >**Note**: The import and vectorize wizard in Azure AI Search, which will be used in subsequent labs, does not yet support text embedding models within your AI Foundry project. Because of this, we need to create an Azure OpenAI service and deploy a text embedding model there. We will use this text embedding model later when we create our vector index.
+
+1. On a **Select a model** window, search for **text-embedding-3-large (1)**, then select **text-embedding-3-large (2)** and select **Confirm (3)**
+
+   ![](./media/ag17.png)
+
+1. On **Deploy model text-embedding-3-large** window, 
+
+   - Deployment type: Select **Standard (1)**
+   - Tokens per Minutes Rate Limit: **120K (2)**
+   - Select **Deploy (3)** to deploy the model.
+
+     ![](./media/ag18.png)
 
 ## Task 3:  Assign permissions to the Azure AI Search resource
 
