@@ -137,92 +137,214 @@ In this task, you will deploy a large language model (LLM) and an embedding mode
 
      ![](./media/ag18.png)
 
+1. Click on **Deployment (1)**, you can see the deployed **text-embedding-3-large (2)** model.
+
+   ![](./media/ag19.png)
+
 ## Task 3:  Assign permissions to the Azure AI Search resource
 
-1. Navigate to your **Azure AI Search** resource and under **Settings** in the left menu, select **Keys(1)**.
-1. Under **API Access control** select **Both(2)** and select **yes**.
+1. Navigate to **Azure portal**, search for **AI Search (1)** and select **AI Search (2)** resource from the services.
 
-   ![](./media/lab1-26.png)
-1. Navigate to **Identity(1)** under **Settings**.
-1. Under System-assigned set the Status to **On(2)** and click on **save(3)**, and select **yes**.
+   ![](./media/ag20.png)
 
-   ![](./media/lab1-30.png)
-1. Go to the **Azure OpenAI** resource.
-1. Select **Access control(IAM)(1)** and click on **Add(2)**, and then select **Add role assignment**.
+1. Select **my-aisearch-servicexxxxxx**.
 
-   ![](./media/lab1-31.png)
-1. Under **Job function roles**, select **Cognitive Services OpenAI User**, and then select **Next**.
+   ![](./media/ag21.png)
 
-   ![](./media/lab1-32-1.png)
-1. Under Members, select **Managed identity(1)**, and then select Members.
-1. Filter by subscription and **resource type (search services)(2)**, and then **select(3)** the managed identity of your search service.
+    >**Note**: `xxxxxx` denotes some randome numbers, it varies.
 
-   ![](./media/lab1-33.png)
+1. Navigate to **Keys (1)** under **Settings** in the left menu. Under **API Access control** select **Both(2)**.
+
+   ![](./media/ag22.png)
+
+1. Select **Yes** for **Are you sure want to update the API Access Control for this serach service**. 
+
+   ![](./media/ag23.png)
+
+1. Navigate to **Identity(1)** under **Settings**. Under System-assigned set the Status to **On(2)** and click on **Save(3)**. 
+
+   ![](./media/ag24.png)
+
+1. Select **Yes** for **Enable System assigned managed identity**.
+
+   ![](./media/ag25.png)
+
+1. Go to the **Azure OpenAI**, **my-openai-service<inject key="DeploymentID" enableCopy="false" /></inject>**.
+
+   ![](./media/ag26.png)
+
+1. Select **Access control(IAM)(1)**, then click on **Add(2)**, and then select **Add role assignment**.
+
+   ![](./media/ag27.png)
+
+1. Under **Job function roles**, search for **Cognitive Services OpenAI User (1)**, select **Cognitive Services OpenAI User (2)**, and then select **Next (3)**.
+
+   ![](./media/ag28.png)
+
+1. On the **Add role assignment** page, 
+
+   - Under Members, select **Managed identity(1)**
+   - Select **Members (1)**
+   - Managed identity: **search services(1)** **(3)**
+   - Then select **my-search-servicexxxx (4)** search service.
+   - Click on **Select (5)**
+
+     ![](./media/ag29.png)
+
 1. Select **Review + assign** twice.
-1. Now navigate to the **Storage Account(1)** for the project.
 
-   ![](./media/lab1-34.png)
-1. On the left pane, under **Access control**, assign the **Storage Blob Data Reader** role to the search service identity just like you followed in the previous steps.
+   ![](./media/ag30.png)
+
+1. On the Azure portal, serach for **Storage accounts (1)** and select **Storage accounts (1)** from the services.
+
+   ![](./media/ag31.png)
+
+1. Now navigate to the **Storage Account** for the project.
+
+   ![](./media/ag32.png)
+
+1. Select **Access control(IAM)(1)**, then click on **Add(2)**, and then select **Add role assignment**.
+
+   ![](./media/ag33.png)
+
+1. Under **Job function roles**, search for **Storage Blob Data Reader (1)**, select **Storage Blob Data Reader (2)**, and then select **Next (3)**.
+
+   ![](./media/ag34.png)
+
+1. On the **Add role assignment** page, 
+
+   - Under Members, select **Managed identity(1)**
+   - Select **Members (1)**
+   - Managed identity: **search services(1)** **(3)**
+   - Then select **my-search-servicexxxx (4)** search service.
+   - Click on **Select (5)**
+
+     ![](./media/ag35.png)
+
+1. Select **Review + assign** twice.
+
+   ![](./media/ag36.png)   
 
 ## Task 4: Install dependencies, create a virtual environment, and create an environment variables file
-1. On your **Lab VM**, launch **Visual Studio Code** and open the **azure-ai-agents-labs** folder located in *C:\Labfiles*.
+1. On your **Lab VM**, launch **Visual Studio Code**.
 
-1. Open a new terminal and navigate to the AZURE-AI-AGENTS-LABS project directory. Run the below powershell commands to create and activate your virtual environment:
+1. Click on **File (1)**, then **Open Folder**.
+
+   ![](./media/ag37.png) 
+
+1. Navigate to `C:\Labfiles` **(1)**, select the **azure-ai-agents-labs (2)** folder and then click on **Select folder (3)**.
+
+   ![](./media/ag38.png) 
+
+1. Click on **Yes, I Trust the authors**,
+
+   ![](./media/ag39.png)
+
+1. Click on the **elipses(...) (1)**, then **Terminal (1)** and then **New Terminal (3)**.
+
+   ![](./media/ag40.png)
+
+1. Make sure your in **azure-ai-agents-labs** project directory. Run the below powershell commands to create and activate your virtual environment:
 
    ```powershell
    python -m venv venv
    venv/Scripts/activate
    ```
 
-   ![](./media/lab1-16.png)
+   ![](./media/ag41.png)
 
-1. Still in the **azure-ai-agents-labs** project directory, run the below powershell command. This installs all the required packages:
+1. Run the below powershell command. This installs all the required packages:
 
    ```powershell
    pip install -r requirements.txt
    ```
-   ![](./media/lab1-17.png)
+   ![](./media/ag42.png)
 
-1. Still in the **azure-ai-agents-labs** project directory, run the below powershell command. 
+1. Run the below powershell command to  install or upgrade pip to the latest version.
 
    ```powershell
    python.exe -m pip install --upgrade pip
    ```
 
-1. Still in the **azure-ai-agents-labs** project directory, run the below command and select the user account to authorize.
+   ![](./media/ag43.png)
+
+1. Run the below command to log into your Azure account.
 
    ```
    az login
    ```
-1. Open the **Sample.env** file and provide the necessary environment variables. Retrieve the required values from your **Azure AI Foundry project**.
 
-   ![](./media/lab1-18.png)
+1. Select the <inject key="AzureAdUserEmail"></inject> user account to authorize.
 
-   ![](./media/lab1-19.png)
+   ![](./media/ag44.png)
+
+1. Once the Authorization is completed, navigate back to the Visual studio code.
+
+   ![](./media/ag45.png)
+
+1. Open the **Sample.env** file and provide the necessary environment variables. 
+
+   ![](./media/ag46.png)
+
+   - Retrieve the required values from your **Azure AI Foundry project**.
+   - Navigate to your **Overview (1)** page of `my-ai-project` and then copy and paste the **Project connection string** in a notepad
+
+     ![](./media/ag47.png)
+
+   - Navigate to **gpt-4o** model, copy the under **Endpoint** from right pane, copy and paste the **Target URI (1)** and **Key (2)** in a notepad
+
+     ![](./media/ag48.png)
+
+1. On the **Sample.env** file,
+
+   - `AIPROJECT_CONNECTION_STRING`: Provide **Project connection string** value you have copied in the previous step
+   - `CHAT_MODEL_ENDPOINT`: Provide the **Target URI** of **gpt-4o** model you have copied in the previous step
+   - `CHAT_MODEL_API_KEY`: Provide the **Key** value of **gpt-4o** model you have copied in the previous step
+   - `CHAT_MODEL`: **gpt-4o**
+
+     ![](./media/ag49.png)
 
 1. Save changes to the **Sample.env** file.
 
-1. Still in the **azure-ai-agents-labs** project directory, run the below powershell command. This creates your **.env** file:
+1. Run the below powershell command. This creates your **.env** file:
 
    ```powershell
    cp sample.env .env
    ```
 
-1. Later Open the **Lab 1 - Project Setup.ipynb** file, select the **Select kernel (1)** setting available in the top right corner and select **Install/enable selected extensions (python+jupyter) (2)**
+   ![](./media/ag50.png)   
+
+1. Later Open the **Lab 1 - Project Setup.ipynb** file. The **Lab 1 - Project Setup.ipynb** notebook guides you through setting up an AI Project in Azure AI Foundry, deploying an LLM and embedding models, and configuring VS Code connectivity. It also includes a simple Chat Completion API call to verify the setup. Running this notebook ensures that your environment is correctly configured for developing AI-powered applications. 
+
+   ![](./media/ag61.png)
+
+1. Select the **Select kernel (1)** setting available in the top right corner and select **Install/enable selected extensions (python+jupyter) (2)**.
 
    ![](./media/lab1-22.png)
 
-1. Select **Python Environments**
+1. Select **Python Environments** to ensure that Jupyter Notebook runs in the correct Python interpreter with the necessary dependencies installed. 
 
    ![](./media/lab1-23.png)
 
-1. Select **venv (Python 3.12.1)** from the list
+1. Select **venv (Python 3.12.1)** from the list as this version is likely required for compatibility with Azure AI Foundry SDK and other dependencies.
 
    ![](./media/lab1-24.png)
 
-1. Run the each cell and observe the output and finally see the output provided from the chat model.
+1. Run the first cell to import necessary Python libraries for working with Azure AI services.   
 
-   ![](./media/lab1-21.png)
+   ![](./media/ag72.png)
+
+1. Run the below cell to retrieve the project connection string and model name from environment variables. These values are needed to interact with the Large Language Model (LLM) securely, without hardcoding sensitive information.
+
+   ![](./media/ag73.png)
+
+1. Run the below cell to connect to your Azure AI Foundry project using the connection string. This establishes a secure connection with AIProjectClient, enabling interactions with your project resources.
+
+   ![](./media/ag74.png)
+
+1. Run the below cell to interact with the GPT-4o model using your Azure AI Foundry project. This code initializes a chat client, sends a request for a joke about a teddy bear, and prints the response. Finally see the output provided from the chat model.
+
+   ![](./media/ag75.png)
 
 ## Review
 
