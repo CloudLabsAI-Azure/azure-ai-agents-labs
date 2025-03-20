@@ -44,9 +44,15 @@ Welcome to your Azure AI agents lab, Let's begin by making the most of this expe
 
 ## Accessing Your Lab Environment
  
-Once you're ready to dive in, your virtual machine and lab guide will be right at your fingertips within your web browser.
+Once you're ready to dive in, your virtual machine and **lab guide** will be right at your fingertips within your web browser.
  
-  ![Access Your VM and Lab Guide](./media/gt-7-1.png)
+  ![Access Your VM and Lab Guide](./media/agg1.png)
+
+## Lab Guide Zoom In/Zoom Out
+ 
+1. To adjust the zoom level for the environment page, click the **A↕ : 100%** icon located next to the timer in the lab environment.
+
+   ![](./media/agg2.png)  
 
 ### Virtual Machine & Lab Guide
  
@@ -56,26 +62,19 @@ Your virtual machine is your workhorse throughout the workshop. The lab guide is
  
 To get a better understanding of your lab resources and credentials, navigate to the **Environment** tab.
  
-  ![Explore Lab Resources](./media/gt-2.png)
+  ![Explore Lab Resources](./media/agg3.png)
  
 ## Utilizing the Split Window Feature
  
 For convenience, you can open the lab guide in a separate window by selecting the **Split Window** button from the Top right corner.
  
-  ![Use the Split Window Feature](./media/gt-9.png)
+  ![Use the Split Window Feature](./media/agg4.png)
  
 ## Managing Your Virtual Machine
  
-Feel free to start, stop, or restart your virtual machine as needed from the **Resources** tab. Your experience is in your hands!
+Feel free to **start, stop, or restart (2)** your virtual machine as needed from the **Resources (1)** tab. Your experience is in your hands!
 
-   ![Manage Your Virtual Machine](./media/gt-10.png)
-
-## Lab Guide Zoom In/Zoom Out
- 
-1. To adjust the zoom level for the environment page, click the **A↕ : 100%** icon located next to the timer in the lab environment.
-
-   ![](./media/gt-8.png)
-
+   ![Manage Your Virtual Machine](./media/agg5.png)
 
 <!-- ## Lab Duration Extension
 
@@ -108,6 +107,7 @@ Feel free to start, stop, or restart your virtual machine as needed from the **R
       ![Enter Your Password](./media/gt-4.png)
 
 1. If **Action required** pop-up window appears, click on **Ask later**.
+1. If prompted to **stay signed in**, you can click **No**.
 1. If a **Welcome to Microsoft Azure** pop-up window appears, simply click **"Cancel"** to skip the tour.
 
 ## Steps to Proceed with MFA Setup if "Ask Later" Option is Not Visible
@@ -145,6 +145,6 @@ Learner Support Contacts:
 
 Click **Next** from the bottom right corner to embark on your Lab journey!
  
-   ![Start Your Azure Journey](./media/gt-6.png)
+   ![Start Your Azure Journey](./media/agg7.png)
  
 Now you're all set to explore the powerful world of technology. Feel free to reach out if you have any questions along the way. Enjoy your workshop!
