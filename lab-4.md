@@ -21,9 +21,16 @@ In this lab, you will complete the following tasks:
 
 ## Task 1: Create the Search, Report, and Validation Agents
 
-1. Open the **Lab 4 - Develop A Mult-Agent System.ipynb** file, select the **Select kernel (1)** setting available in the top right corner and select **venv (Python 3.12.1)** from the list.
+In this task, you will create the Search, Report, and Validation Agents to retrieve, generate, and validate health plan reports. These agents will work together to ensure accuracy and compliance with requirements. Each agent plays a distinct role in retrieving, compiling, and ensuring the accuracy of the reports.
 
-   ![](./media/lab1-24.png)
+1. Open the **Lab 4 - Develop A Mult-Agent System.ipynb** file, this **Lab 4 - Develop A Mult-Agent System.ipynb** notebook guides you through developing a multi-agent system with Search, Report, Validation, and Orchestrator Agents to generate and validate health plan reports. Each agent plays a distinct role in retrieving, compiling, and ensuring the accuracy of the reports.
+
+   ![](./media/ag83.png)
+
+1. Select the **Select kernel (1)** setting available in the top right corner and select **venv (Python 3.12.1) (2)** from the list.
+
+   ![](./media/ag84.png)
+   
 1. Run the each cell and observe the output.
 
    ![](./media/lab2-26.png)
