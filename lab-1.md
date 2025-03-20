@@ -143,6 +143,8 @@ In this task, you will deploy a large language model (LLM) and an embedding mode
 
 ## Task 3:  Assign permissions to the Azure AI Search resource
 
+In this task, you will assign the necessary permissions to the Azure AI Search resource to ensure secure access and proper functionality. This includes granting the required roles and access controls for seamless integration with the AI Agent.
+
 1. Navigate to **Azure portal**, search for **AI Search (1)** and select **AI Search (2)** resource from the services.
 
    ![](./media/ag20.png)
@@ -226,6 +228,9 @@ In this task, you will deploy a large language model (LLM) and an embedding mode
    ![](./media/ag36.png)   
 
 ## Task 4: Install dependencies, create a virtual environment, and create an environment variables file
+
+In this task, you will install the required dependencies, set up a virtual environment, and create an environment variables file. This ensures a controlled development environment and securely manages configuration settings for your AI project.
+
 1. On your **Lab VM**, launch **Visual Studio Code**.
 
 1. Click on **File (1)**, then **Open Folder**.
