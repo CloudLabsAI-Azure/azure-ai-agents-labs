@@ -4,65 +4,123 @@
 ## Lab scenario
 In this lab, you will build an AI Agent that utilizes Retrieval-Augmented Generation (RAG) to extract and generate responses from health plan documents. By leveraging Azure AI Search as a vector database, the AI Agent will store and retrieve document embeddings, enabling more accurate and context-aware answers. This approach enhances the AI’s ability to process large volumes of data efficiently, providing meaningful insights for decision-making. Through this hands-on exercise, you will gain experience in implementing RAG-based AI solutions and integrating Azure AI Search to improve response quality in document-driven scenarios.
 
-## Lab objectives
+## Lab Objectives
 In this lab, you will complete the following tasks:
 
 - Task 1: Create the Azure AI Search Index
 - Task 2: Create the Search Agent
 
 ## Task 1: Create the Azure AI Search Index
-1. Navigate to **Azure Portal** and select the **storage account**.
 
-   ![](./media/lab1-34.png)
-1. Click on **containers(1)** under data storage, then **select +container(2)**.
+In this task, you will create an **Azure AI Search index** to store vectorized representations of health insurance plan documents, enabling efficient retrieval for AI-driven search and analysis.
 
-   ![](./media/lab3-1.png)
-1. On New Container page enter `healthplan`(1) as name and click on **create(2)**.
+1. Navigate to **Azure Portal**, search for **Storage account (1)** and select the **Storage account (2)**.
 
-   ![](./media/lab3-2.png)
-1. Open healthplan container by clicking on it, click on **upload** to upload the files.
-1. Click on **browse for files**.
-1. Navigate to `C:\LabFiles\azure-ai-agents-labs\data` and select both the PDFs to upload, and click on **next**.
+   ![](./media/ag31.png)
+
+1. Select the Storage account that starts with **stodluser....**.
+
+   ![](./media/ag32.png)
+
+1. Click on **Containers(1)** under data storage, then select **+Container(2)**.
+
+   ![](./media/ag51.png)
+
+1. On New Container page enter `healthplan`(1) as name and click on **Create(2)**.
+
+   ![](./media/ag52.png)
+
+1. Open **healthplan** container by clicking on it.
+
+   ![](./media/ag53.png)
+
+1. Click on **upload (1)** to upload the file and then Click on **browse for files (2)**.
+
+   ![](./media/ag54.png)
+
+1. Navigate to `C:\LabFiles\azure-ai-agents-labs\data` **(1)** and select both the PDFs to upload **(2)**, and click on **Open (3)**.
+
+   ![](./media/ag55.png)
+
 1. Click on **upload**.
-1. Navigate to **Azure Ai search** service in azure portal.
-1. Open the **Azure Ai search** service.
-1. Click on **import and vectorize data(1)**.
 
-   ![](./media/lab3-3.png)
+1. Navigate to **Azure Ai search** service **my-aisearch-servicexxxx** in azure portal.
+
+   ![](./media/ag21.png)
+
+1. Click on **import and vectorize data**.
+
+   ![](./media/ag56.png)
+
 1. Select **azure blob storage**.
+
+   ![](./media/ag57.png)
+
 1. On Configure your Azure Blob Storage , enter the following details and click on **Next(5)**:
    |Setting|Value|
    |---|---|
-   |Subscription|leave it default (1)|
+   |Subscription|leave it default **(1)**|
    |Storage account|select the Storage account with prefix **stodluser**(2)|
    |Blob container|**healthplan**(3)|
    |Management identity type|**System-assigned**(4)|
 
-      ![](./media/lab3-4upd.png)
+      ![](./media/ag58.png)
 
 1. On Vectorize your text, enter the following details and click on **Next (7)**:
    |Setting|Value|
    |---|---|
-   |Kind|Azure OpenAI (1)|
-   |Subscription|leave it default (2)|
-   |Azure OpenAI service|**my-openai-service<inject key="DeploymentID" enableCopy="false" /></inject>** (3)|
-   |Model deployment|**text-embedding-3-large**(4)|
-   |Authentication type|**System assigned identity**(5)|
-   |Acknowledgement rectangle|**checked** (6)|
+   |Kind|**Azure OpenAI (1)**|
+   |Subscription|leave it default **(2)**|
+   |Azure OpenAI service|**my-openai-service<inject key="DeploymentID" enableCopy="false" /></inject>** **(3)**|
+   |Model deployment|**text-embedding-3-large** **(4)**|
+   |Authentication type|**System assigned identity** **(5)**|
+   |Acknowledgement rectangle|**checked** **(6)**|
 
-      ![](./media/lab3-5.png)
+      ![](./media/ag59.png)
 
 1. Click on **Next** twice.
-1. Enter **health-plan** for  **Objects name prefix** and click on create.
+1. Enter **health-plan (1)** for  **Objects name prefix** and click on **Create (2)**.
+
+   ![](./media/ag60.png)
+
    >**Note**: The uploading of data to indexes in search service might take 5-10 minutes.
 
 ## Task 2: Create the Search Agent
 
-1. Navigate back to **Visual Studio Code** on your **Lab VM**
-1. Later Open the **Lab 3 - Create A RAG Agent.ipynb** file, select the **Select kernel (1)** setting available in the top right corner and select **venv (Python 3.12.1)** from the list.
+In this task, you will build an AI Agent using **Retrieval-Augmented Generation (RAG)** to extract and generate responses from health plan documents stored in **Azure AI Search**. By leveraging the **Azure AI Agent Service**, the agent will retrieve document embeddings for accurate and context-aware answers.
 
-   ![](./media/lab1-24.png)
-1. Run the each cell and observe the output.
+1. Navigate back to **Visual Studio Code** on your **Lab VM**.
+   
+1. Open the **Lab 3 - Create A RAG Agent.ipynb** file, This **Lab 3 - Create A RAG Agent.ipynb** notebook guides you through building an AI agent using the **Azure AI Agent Service**. This agent will retrieve information from health insurance policy documents stored in **Azure AI Search**, a vector database, enabling efficient and accurate information retrieval.
+
+   ![](./media/ag76.png)
+
+1. Select the **Select kernel (1)** setting available in the top right corner and select **venv (Python 3.12.1) (2)** from the list.
+
+   ![](./media/ag77.png)
+   
+1. Run this cell to set up the foundation for a RAG (Retrieval-Augmented Generation) Agent using Azure AI Foundry. This script imports necessary libraries, loads environment variables, and initializes components like AIProjectClient for project management and AzureAISearchTool for retrieval capabilities.
+
+   ![](./media/ag78.png)
+
+1. Run this cell to connect to your Azure AI Foundry project and access the deployed GPT-4o model.
+
+   ![](./media/ag79.png)
+
+1. Run this cell to retrieve the connection ID for your Azure AI Search instance and connect to the "health-plan" index. This ensures your RAG Agent can fetch relevant data from Azure AI Search for retrieval-augmented generation.
+
+   ![](./media/ag80.png)
+
+1. Run this cell to define a search agent that utilizes Azure AI Search and the GPT-4o model to retrieve relevant health plan documents.
+
+   ![](./media/ag82.png)
+
+1. Run this cell to chat with the search agent and retrieve details about the Northwind Standard health plan using Azure AI Search and GPT-4o. This script initiates a conversation, queries the agent for health plan information, and displays the agent’s response.
+
+   ![](./media/ag81.png)
+   
+1. Observe the output.
+
 
 ## Review
 
@@ -71,5 +129,4 @@ In this lab, you have accomplished the following:
 - Created the Azure AI Search Index.
 - Created the Search Agent.
 
-
-## You have successfully completed the lab.
+### You have successfully finished the lab. Click **Next** to continue to the next lab.
