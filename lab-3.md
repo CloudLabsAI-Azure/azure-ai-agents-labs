@@ -95,9 +95,32 @@ In this task, you will build an AI Agent using **Retrieval-Augmented Generation 
 
    ![](./media/ag75.png)
 
-1. Select the **Select kernel (1)** setting available in the top right corner and select **venv (Python 3.12.1)** from the list.
+1. Select the **Select kernel (1)** setting available in the top right corner and select **venv (Python 3.12.1) (2)** from the list.
 
-1. Run the each cell and observe the output.
+   ![](./media/ag77.png)
+   
+1. Run this cell to set up the foundation for a RAG (Retrieval-Augmented Generation) Agent using Azure AI Foundry. This script imports necessary libraries, loads environment variables, and initializes components like AIProjectClient for project management and AzureAISearchTool for retrieval capabilities.
+
+   ![](./media/ag78.png)
+
+1. Run this cell to connect to your Azure AI Foundry project and access the deployed GPT-4o model.
+
+   ![](./media/ag79.png)
+
+1. Run this cell to retrieve the connection ID for your Azure AI Search instance and connect to the "health-plan" index. This ensures your RAG Agent can fetch relevant data from Azure AI Search for retrieval-augmented generation.
+
+   ![](./media/ag80.png)
+
+1. Run this cell to define a search agent that utilizes Azure AI Search and the GPT-4o model to retrieve relevant health plan documents.
+
+   ![](./media/ag81.png)
+
+1. Run this cell to chat with the search agent and retrieve details about the Northwind Standard health plan using Azure AI Search and GPT-4o. This script initiates a conversation, queries the agent for health plan information, and displays the agent’s response.
+
+   ![](./media/ag82.png)
+   
+1. Observe the output.
+
 
 ## Review
 
