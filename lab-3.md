@@ -93,7 +93,7 @@ In this task, you will build an AI Agent using **Retrieval-Augmented Generation 
    
 1. Open the **Lab 3 - Create A RAG Agent.ipynb** file, This **Lab 3 - Create A RAG Agent.ipynb** notebook guides you through building an AI agent using the **Azure AI Agent Service**. This agent will retrieve information from health insurance policy documents stored in **Azure AI Search**, a vector database, enabling efficient and accurate information retrieval.
 
-   ![](./media/ag75.png)
+   ![](./media/ag76.png)
 
 1. Select the **Select kernel (1)** setting available in the top right corner and select **venv (Python 3.12.1) (2)** from the list.
 
@@ -113,11 +113,11 @@ In this task, you will build an AI Agent using **Retrieval-Augmented Generation 
 
 1. Run this cell to define a search agent that utilizes Azure AI Search and the GPT-4o model to retrieve relevant health plan documents.
 
-   ![](./media/ag81.png)
+   ![](./media/ag82.png)
 
 1. Run this cell to chat with the search agent and retrieve details about the Northwind Standard health plan using Azure AI Search and GPT-4o. This script initiates a conversation, queries the agent for health plan information, and displays the agent’s response.
 
-   ![](./media/ag82.png)
+   ![](./media/ag81.png)
    
 1. Observe the output.
 
