@@ -11,6 +11,9 @@ In this lab, you will complete the following tasks:
 - Task 2: Create the Search Agent
 
 ## Task 1: Create the Azure AI Search Index
+
+In this task, you will create an **Azure AI Search index** to store vectorized representations of health insurance plan documents, enabling efficient retrieval for AI-driven search and analysis.
+
 1. Navigate to **Azure Portal**, search for **Storage account (1)** and select the **Storage account (2)**.
 
    ![](./media/ag31.png)
@@ -84,10 +87,16 @@ In this lab, you will complete the following tasks:
 
 ## Task 2: Create the Search Agent
 
-1. Navigate back to **Visual Studio Code** on your **Lab VM**
-1. Later Open the **Lab 3 - Create A RAG Agent.ipynb** file, select the **Select kernel (1)** setting available in the top right corner and select **venv (Python 3.12.1)** from the list.
+In this task, you will build an AI Agent using **Retrieval-Augmented Generation (RAG)** to extract and generate responses from health plan documents stored in **Azure AI Search**. By leveraging the **Azure AI Agent Service**, the agent will retrieve document embeddings for accurate and context-aware answers.
 
-   ![](./media/lab1-24.png)
+1. Navigate back to **Visual Studio Code** on your **Lab VM**.
+   
+1. Open the **Lab 3 - Create A RAG Agent.ipynb** file, This **Lab 3 - Create A RAG Agent.ipynb** notebook guides you through building an AI agent using the **Azure AI Agent Service**. This agent will retrieve information from health insurance policy documents stored in **Azure AI Search**, a vector database, enabling efficient and accurate information retrieval.
+
+   ![](./media/ag75.png)
+
+1. Select the **Select kernel (1)** setting available in the top right corner and select **venv (Python 3.12.1)** from the list.
+
 1. Run the each cell and observe the output.
 
 ## Review
