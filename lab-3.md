@@ -11,7 +11,7 @@ In this lab, you will complete the following tasks:
 - Task 2: Create the Search Agent
 
 ## Task 1: Create the Azure AI Search Index
-1. Navigate to **Azure Portal**, search for **storage account (1)** and select the **storage account (2)**.
+1. Navigate to **Azure Portal**, search for **Storage account (1)** and select the **Storage account (2)**.
 
    ![](./media/ag31.png)
 
