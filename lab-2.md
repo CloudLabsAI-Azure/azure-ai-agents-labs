@@ -1,4 +1,4 @@
-# Lab 2 - Build a simple AI Agent
+# Lab 2 - Build a Smple AI Agent
 
 ## Estimated time: 30 minutes
 ## Lab scenario
@@ -42,4 +42,4 @@ In this task, you will build a simple AI Agent that processes data and generates
 In this lab, you have accomplished the following:
 - Created a Simple AI Agent
 
-## You have successfully completed the lab.
+### You have successfully finished the lab. Click **Next** to continue to the next lab.
