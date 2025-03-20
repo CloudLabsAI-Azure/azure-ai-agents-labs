@@ -129,5 +129,4 @@ In this lab, you have accomplished the following:
 - Created the Azure AI Search Index.
 - Created the Search Agent.
 
-
-## You have successfully completed the lab.
+### You have successfully finished the lab. Click **Next** to continue to the next lab.
