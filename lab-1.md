@@ -292,7 +292,7 @@ In this task, you will install the required dependencies, set up a virtual envir
    ![](./media/ag46.png)
 
    - Retrieve the required values from your **Azure AI Foundry project**.
-   - Navigate to your **Overview (1)** page of `my-ai-project` and then copy and paste the **Project connection string** in a notepad
+   - Navigate to your **Overview (1)** page of `my-ai-project` and then copy and paste the **Project connection string (2)** in a notepad
 
      ![](./media/ag47.png)
 
