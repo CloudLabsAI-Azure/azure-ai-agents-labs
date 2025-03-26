@@ -1,4 +1,4 @@
-# Lab 2 - Build a Smple AI Agent
+# Lab 2 - Build a Simple AI Agent
 
 ## Estimated time: 30 minutes
 ## Lab scenario
