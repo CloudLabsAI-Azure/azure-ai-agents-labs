@@ -41,13 +41,13 @@ In this task, you will create and configure an AI Project within Azure AI Foundr
 
    ![](./media/ag2.png)
 
-1. Under a **Create a hub**, Leave everthing to deafult. Select **Create new AI Search (1)** to create a AI search service and provide `my-aisearch-service` as the name **(2)** and click on **Next (3)**, followed by **Next (4)**. 
+1. Under a **Create a hub**, Select **East US (1)** under **Location** and leave everthing to deafult. Select **Create new AI Search (2)** to create a AI search service and provide `my-aisearch-service` as the name **(3)** and click on **Next (4)**, followed by **Next (5)**. 
 
-   ![](./media/ag-3.png)
+   ![](./media/1.jpg)
 
 1. On the **Review and finish** page, verify all the details and click on **Create**
 
-   ![](./media/ag4.png)
+   ![](./media/2.jpg)
 
 1. Wait for few minutes until the necessary resources provisioned.    
 
@@ -69,13 +69,13 @@ In this task, you will deploy a large language model (LLM) and an embedding mode
 
 1. On **Deploy model gpt-4o** window, select **Customize**.
 
-   ![](./media/lab1-7-1.png)
+   ![](./media/3.jpg)
 
    - Change the **Model version to 2024-08-06 (1)**
    - Change the Tokens per Minute Rate Limit to **200K (2)**
    - click on **deploy (3)**
 
-     ![](./media/ag8.png)   
+     ![](./media/4.jpg)   
 
 1. Click on **Model + Endpoints (1)**, there you can see the deployed **gpt-4o (2)** model.
 
@@ -94,8 +94,8 @@ In this task, you will deploy a large language model (LLM) and an embedding mode
    | Setting | Value | 
    | --- | --- |
    | Subscription | leave the default subscription **(1)** |
-   | Resource group | select the resource group with prefix **rg-odl_user_<inject key="DeploymentID" enableCopy="false" /></inject>** **(2)** |
-   | Region | leave the default region **(3)** |
+   | Resource group | select the resource group with prefix **rg-odl_user_<inject key="DeploymentID" enableCopy="false" /></inject> -****_ai** **(2)** |
+   | Region | **East US (3)** |
    | Name | **my-openai-service<inject key="DeploymentID" enableCopy="false" /></inject> (4)** |
    | Pricing tier | **Standard S0 (5)** |
 
