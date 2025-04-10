@@ -1,4 +1,4 @@
-# Lab 1 - Setup AI Project and peform Chat Completion from VS Code
+# Lab 1 - Setup AI Project and perform Chat Completion from VS Code
 ## Estimated duration : 120 minutes
 ## Lab scenario
 
