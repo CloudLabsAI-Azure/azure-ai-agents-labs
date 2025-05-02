@@ -117,11 +117,11 @@ In this task, you will deploy a large language model (LLM) and an embedding mode
 
    ![](./media/ag13.png)
 
-1. Seach for **my-openai-service<inject key="DeploymentID" enableCopy="false" /></inject> (1)** and then select **my-openai-service<inject key="DeploymentID" enableCopy="false" /></inject> (2)**.
+1. Seach for **my-openai-service-<inject key="DeploymentID" enableCopy="false" /></inject> (1)** and then select **my-openai-service-<inject key="DeploymentID" enableCopy="false" /></inject> (2)**.
 
    ![](./media/ag14.png)
 
-1. On the **my-openai-service<inject key="DeploymentID" enableCopy="false" /></inject>** resource page, select **Go to Azure AI Foundry portal**
+1. On the **my-openai-service-<inject key="DeploymentID" enableCopy="false" /></inject>** resource page, select **Go to Azure AI Foundry portal**
 
    ![](./media/ag15.png)
 
@@ -177,7 +177,7 @@ In this task, you will assign the necessary permissions to the Azure AI Search r
 
    ![](./media/ag25.png)
 
-1. Go to the **Azure OpenAI**, **my-openai-service<inject key="DeploymentID" enableCopy="false" /></inject>**.
+1. Go to the **Azure OpenAI**, **my-openai-service-<inject key="DeploymentID" enableCopy="false" /></inject>**.
 
    ![](./media/ag26.png)
 
