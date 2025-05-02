@@ -42,7 +42,7 @@ In this task, you will create and configure an AI Project within Azure AI Foundr
    ![](./media/ag2.png)
 
 1. On the **Create a Project** blade, specify the following configuration options and click on **Next (4)**:
-   - **Resource group**: **AgenticAI** (1)
+   - **Resource group**: **azure-ai-agents-<inject key="Deployment ID" enableCopy="false"></inject>** (1)
    - **Location**: **<inject key="Region" enableCopy="false"></inject>** (2)
    - **Connect Azure AI Search**: click on **Create new AI Search (3)**, enter the below provided name and click on **Next (2)**
 
