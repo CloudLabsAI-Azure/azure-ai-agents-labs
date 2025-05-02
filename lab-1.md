@@ -100,9 +100,9 @@ In this task, you will deploy a large language model (LLM) and an embedding mode
    | Setting | Value | 
    | --- | --- |
    | Subscription | leave the default subscription **(1)** |
-   | Resource group | select the resource group with prefix **rg-odl_user_<inject key="DeploymentID" enableCopy="false" /></inject> -****_ai** **(2)** |
-   | Region | **East US (3)** |
-   | Name | **my-openai-service<inject key="DeploymentID" enableCopy="false" /></inject> (4)** |
+   | Resource group | select the resource group with prefix **azure-ai-agents-<inject key="Deployment ID" enableCopy="false"></inject>** **(2)** |
+   | Region | **<inject key="Region" enableCopy="false"></inject>** |
+   | Name | **my-openai-service-<inject key="DeploymentID" enableCopy="false" /></inject> (4)** |
    | Pricing tier | **Standard S0 (5)** |
 
    ![](./media/ag11.png)
