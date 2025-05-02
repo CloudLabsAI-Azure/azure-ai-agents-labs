@@ -37,7 +37,7 @@ In this task, you will create and configure an AI Project within Azure AI Foundr
 
    ![](./media/lab1-1.png)
 
-1. On a **Create a Project** window, provide `my-ai-project` for **Project name (1)** and select **Customize (2)**
+1. On a **Create a Project** window, provide **my-ai-project-<inject key="Deployment ID" enableCopy="false"></inject>** for **Project name (1)** and select **Customize (2)**
 
    ![](./media/ag2.png)
 
