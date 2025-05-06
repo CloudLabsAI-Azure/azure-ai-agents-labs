@@ -47,7 +47,7 @@ In this task, you will create and configure an AI Project within Azure AI Foundr
    - **Connect Azure AI Search**: click on **Create new AI Search (3)**, enter the below provided name and click on **Next (2)**
 
       ```
-      ai-search-<inject key="Deployment ID" enableCopy="false"></inject>
+      my-search-service-<inject key="Deployment ID" enableCopy="false"></inject>
       ```
    ![](./media/1.jpg)
 
@@ -155,7 +155,7 @@ In this task, you will assign the necessary permissions to the Azure AI Search r
 
    ![](./media/ag20.png)
 
-1. Select **my-aisearch-servicexxxxxx**.
+1. Select **my-search-servicexxxxxx**.
 
    ![](./media/ag21.png)
 
