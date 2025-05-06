@@ -76,6 +76,8 @@ In this task, you will create the Search, Report, and Validation Agents to retri
     Orchestrator Agent is starting...
     ```
 
+1. Type `exit` the box and press enter to stop the running the code block.
+
 ## Review
 
 In this lab, you have accomplished the following:
