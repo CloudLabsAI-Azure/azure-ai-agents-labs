@@ -44,7 +44,7 @@ In this task, you will create an **Azure AI Search index** to store vectorized r
 
 1. Click on **upload**.
 
-1. Navigate to **Azure Ai search** service **my-aisearch-servicexxxx** in azure portal.
+1. Navigate to Azure Portal and search **Azure Ai search** and select **my-aisearch-servicexxxx** in azure portal.
 
    ![](./media/ag21.png)
 
