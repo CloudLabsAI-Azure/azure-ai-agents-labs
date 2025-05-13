@@ -42,6 +42,9 @@ In this task, you will create and configure an AI Project within Azure AI Foundr
    ![](./media/ag2.png)
 
 1. On the **Create a Project** blade, specify the following configuration options and click on **Next (4)**:
+
+   > **Note**: You may initially encounter a permission issue, which will be resolved once the appropriate resource group is selected.
+
    - **Resource group**: **azure-ai-agents-<inject key="Deployment ID" enableCopy="false"></inject>** (1)
    - **Location**: **<inject key="Region" enableCopy="false"></inject>** (2)
    - **Connect Azure AI Search**: click on **Create new AI Search (3)**, enter the below provided name and click on **Next (2)**
@@ -192,7 +195,7 @@ In this task, you will assign the necessary permissions to the Azure AI Search r
 1. On the **Add role assignment** page, 
 
    - Under Members, select **Managed identity(1)**
-   - Select **Members (1)**
+   - Click on **+ Select Members (1)**
    - Managed identity: **search services(1)** **(3)**
    - Then select **my-search-servicexxxx (4)** search service.
    - Click on **Select (5)**
@@ -222,7 +225,7 @@ In this task, you will assign the necessary permissions to the Azure AI Search r
 1. On the **Add role assignment** page, 
 
    - Under Members, select **Managed identity(1)**
-   - Select **Members (1)**
+   - Click on **+ Select Members (1)**
    - Managed identity: **search services(1)** **(3)**
    - Then select **my-search-servicexxxx (4)** search service.
    - Click on **Select (5)**
@@ -298,7 +301,7 @@ In this task, you will install the required dependencies, set up a virtual envir
    ![](./media/ag46.png)
 
    - Retrieve the required values from your **Azure AI Foundry project**.
-   - Navigate to your **Overview (1)** page of `my-ai-project` and then copy and paste the **Project connection string (2)** in a notepad
+   - Navigate to your **Overview (1)** page of **my-ai-project-<inject key="Deployment ID" enableCopy="false"></inject>** and then copy and paste the **Project connection string (2)** in a notepad
 
      ![](./media/ag47.png)
 
