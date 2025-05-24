@@ -10,8 +10,8 @@ In this lab, you will perform:
 
 - Task 1: Setting up the AI Project in the Azure AI Foundry
 - Task 2: Deploying an LLM and embedding models
-- Task 3: Establish connectivity from VS Code into the AI Project
-- Task 4: Perform a simple Chat completion call
+- Task 3: Assign permissions to the Azure AI Search resource
+- Task 4: Install dependencies, create a virtual environment, and create an environment variables file.
 
 ## Task 1: Setting up the AI Project in the Azure AI Foundry
 
