@@ -325,19 +325,12 @@ In this task, you will install the required dependencies, set up a virtual envir
    ![](./media/ag46.png)
 
    - Retrieve the required values from your **Azure AI Foundry project**.
-   - Navigate to your **Overview (1)** page of **my-ai-project-<inject key="Deployment ID" enableCopy="false"></inject>** and then copy and paste the **Project connection string (2)** in a notepad
-
-     ![](./media/ag47.png)
-
-   - Navigate to **gpt-4o** model, copy the under **Endpoint** from right pane, copy and paste the **Target URI (1)** and **Key (2)** in a notepad
-
-     ![](./media/ag48.png)
 
 1. On the **Sample.env** file,
 
-   - `AIPROJECT_CONNECTION_STRING`: Provide **Project connection string** value you have copied in the previous step
-   - `CHAT_MODEL_ENDPOINT`: Provide the **Target URI** of **gpt-4o** model you have copied in the previous step
-   - `CHAT_MODEL_API_KEY`: Provide the **Key** value of **gpt-4o** model you have copied in the previous step
+   - `AIPROJECT_CONNECTION_STRING`: Provide **Project connection string** value you have copied in Task 1 of step 9
+   - `CHAT_MODEL_ENDPOINT`: Provide the **Target URI** of **gpt-4o** model you have copied in the Task 2 of step 4.
+   - `CHAT_MODEL_API_KEY`: Provide the **Key** value of **gpt-4o** model you have copied in Task 2 of step 4.
    - `CHAT_MODEL`: **gpt-4o**
 
      ![](./media/ag49.png)
