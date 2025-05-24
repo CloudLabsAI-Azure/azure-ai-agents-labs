@@ -224,7 +224,7 @@ In this task, you will assign the necessary permissions to the Azure AI Search r
    - Then select **my-search-service-xxxxxx (4)** search service.
    - Click on **Select (5)**
 
-     ![](./media/.png)
+     ![](./media/l1.task1.24.png)
 
 1. Select **Review + assign** twice.
 
