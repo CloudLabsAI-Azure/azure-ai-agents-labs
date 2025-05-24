@@ -17,60 +17,69 @@ In this lab, you will perform:
 
 In this task, you will create and configure an AI Project within Azure AI Foundry. This involves setting up the necessary resources, defining project parameters, and ensuring that the environment is ready for deploying AI models. By the end of this task, you will have a fully initialized AI Project, serving as the foundation for further development and experimentation.
 
-1. Open a new tab in the browser and navigate to Azure AI Foundry portal using below link
+1. On the Azure Portal page, in the Search resources, services, and docs (G+/) box at the top of the portal, enter **Azure AI Foundry (1)**, and then select **Azure AI Foundry (2)** under **Services**.
 
-   ```
-    https://ai.azure.com/
-   ```
+    ![](./media/challenge6.task.1.png) 
 
-1. Click on **Sign in**.
+1. In the left navigation pane for the AI Foundry, select **AI Hubs (1)**. On the AI Hubs page, click on **Create (2)** and select **Hub (3)** from the drop-down.
 
-   ![](./media/ag1.png)
+    ![](./media/challenge6.task.3.png) 
 
-1. Sign in with the below credentials, if prompted.
+1. On the **Create an AI hub resource** pane enter the following details:
 
-   - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
+    - Subscription : **Leave default subscription** 
+    - Resource Group : Select **(1)** 
+    - Region : Use the same location as the resource group **(2)**
+    - Name : Use the format **aihub-xxxxxx (3)** (replace **xxxxxx** with the **Deployment ID**) 
 
-   - **Password:** <inject key="AzureAdUserPassword"></inject>
+        ![](./media/l1.task1.1.png) 
 
-1. After sign in to the portal, click on **Create project**
+    - Connect AI Services incl. OpenAI : Click on **Create New (1)**
+    - Connect AI Services incl. OpenAI : Provide a name to the AI Service ,Use the format **my-ai-service-xxxxxx (2)** (replace **xxxxxx** with the **Deployment ID**)  
+    - Click on **Save (3)**, followed by **Next:Storage (4)**
+    
+        ![](./media/aiservice.png) 
 
-   ![](./media/lab1-1.png)
+        >**Note**: Here, xxxxxx refers to the **deployment ID** which you can get from the Environment tab. 
 
-1. On a **Create a Project** window, provide **my-ai-project-<inject key="Deployment ID" enableCopy="false"></inject>** for **Project name (1)** and select **Customize (2)**
+1. Click on **Review + Create** tab followed by **Create.**
 
-   ![](./media/ag2.png)
+   ![](./media/l1.task1.4.png)
 
-1. On the **Create a Project** blade, specify the following configuration options and click on **Next (4)**:
+   ![](./media/l1.task1.5.png) 
 
-   > **Note**: You may initially encounter a permission issue, which will be resolved once the appropriate resource group is selected.
+1. Wait for the deployment is completed and then click on **Go to resource**
 
-   - **Resource group**: **azure-ai-agents-<inject key="Deployment ID" enableCopy="false"></inject>** (1)
-   - **Location**: **<inject key="Region" enableCopy="false"></inject>** (2)
-   - **Connect Azure AI Search**: click on **Create new AI Search (3)**, enter the below provided name and click on **Next (2)**
+   ![](./media/l1.task1.6.png)
 
-      ```
-      my-search-service-<inject key="Deployment ID" enableCopy="false"></inject>
-      ```
-   ![](./media/1.jpg)
+1. On the Overview pane, click on **Launch Azure AI Foundry**. This will navigate you to the Azure AI Foundry portal.
 
-1. On the **Review and finish** page, verify all the details and click on **Create**
+    ![](./media/l1.task1.7.png)
 
-   ![](./media/2.jpg)
 
-1. Wait for few minutes until the necessary resources provisioned.    
+1. Scroll down and click on **+ New project** on the Hub Overview. 
 
-   ![](./media/ag5.png) 
+    ![](./media/l1.task1.8.png)
 
-    >**Note**: Click on **Close**, if you recieve any pop up.
+1. Provide the project name as **my-project-xxxxxx(1),** then click on **Create (2)**.
+
+    ![](./media/l1.task1.9.png)
+
+    >**Note**: Here, xxxxxx refers to the **deployment ID** which you can get from the Environment tab.
+
+1. Once the project is created, scroll down and copy the **Project connection string**, then paste them into Notepad or a secure location, as they will be required for upcoming tasks.
+
+
+   ![](./media/l1.task1.10.png)
+
 
 ## Task 2: Deploying an LLM and embedding models
 
 In this task, you will deploy a large language model (LLM) and an embedding model within your Azure AI Foundry project. These models will be used for AI-driven applications and vector-based search capabilities in upcoming labs.
 
-1. In your **AI Foundry project**, navigate to the **My assets (1)** section, then select **Models + endpoints (2)**. Click **Deploy model (3)**, and choose **Deploy base model (4)** to proceed.
+1. In your **AI Foundry project**, navigate to the **My assets** section, then select **Models + endpoints (1)**. Click **Deploy model (2)**, and choose **Deploy base model (3)** to proceed.
 
-   ![](./media/lab1-5.png)
+   ![](./media/l1.task2.1.png)
 
 1. On a **Select a model** window, search for **gpt-4o (1)**, select **gpt-4o (2)** and select **Confirm (3)**
 
@@ -78,17 +87,20 @@ In this task, you will deploy a large language model (LLM) and an embedding mode
 
 1. On **Deploy model gpt-4o** window, select **Customize**.
 
-   ![](./media/3.jpg)
+   ![](./media/l1.task2.2.png)
 
    - Change the **Model version to 2024-08-06 (1)**
    - Change the Tokens per Minute Rate Limit to **200K (2)**
    - click on **deploy (3)**
 
-     ![](./media/4.jpg)   
+     ![](./media/l1.task1.11.png)   
 
-1. Click on **Model + Endpoints (1)**, there you can see the deployed **gpt-4o (2)** model.
+1. Click on **Model + Endpoints (1)** to view the deployed **gpt-4o (2)** model. Copy the Target URI and key, then paste them into Notepad or a secure location, as they will be required for upcoming tasks.
 
-   ![](./media/ag9.png)
+   ![](./media/l1.task2.4.png)
+
+   ![](./media/l1.task2.3.png)
+
 
 1. Navigate back to **Azure Portal** and search for **Open AI (1)** and select **Azure Open AI (2)** resource.
 
@@ -108,35 +120,32 @@ In this task, you will deploy a large language model (LLM) and an embedding mode
    | Name | **my-openai-service-<inject key="DeploymentID" enableCopy="false" /></inject> (4)** |
    | Pricing tier | **Standard S0 (5)** |
 
-   ![](./media/ag11.png)
+   ![](./media/l1.task2.5.png)
 
 1. Click on **Next** twice.
 
 1. On the **Review + submit** page, click on **Create**
  
-   ![](./media/ag12.png)
+   ![](./media/l1.task2.6.png)
 
 1. Wait until the deployment got succeeded and select **Go to resource**.
 
    ![](./media/ag13.png)
 
-1. Seach for **my-openai-service-<inject key="DeploymentID" enableCopy="false" /></inject> (1)** and then select **my-openai-service-<inject key="DeploymentID" enableCopy="false" /></inject> (2)**.
-
-   ![](./media/ag14.png)
 
 1. On the **my-openai-service-<inject key="DeploymentID" enableCopy="false" /></inject>** resource page, select **Go to Azure AI Foundry portal**
 
-   ![](./media/ag15.png)
+   ![](./media/new.png)
 
 1. In your AI Foundry project, navigate to the **Shared resources** section, then select **Deployments (1)**. Click **Deploy model (2)**, and choose **Deploy base model (3)** to proceed.
 
-   ![](./media/ag16.png)
+   ![](./media/l1.task1.14.png)
 
     >**Note**: The import and vectorize wizard in Azure AI Search, which will be used in subsequent labs, does not yet support text embedding models within your AI Foundry project. Because of this, we need to create an Azure OpenAI service and deploy a text embedding model there. We will use this text embedding model later when we create our vector index.
 
 1. On a **Select a model** window, search for **text-embedding-3-large (1)**, then select **text-embedding-3-large (2)** and select **Confirm (3)**
 
-   ![](./media/ag17.png)
+   ![](./media/l1.task1.15.png)
 
 1. On **Deploy model text-embedding-3-large** window, 
 
@@ -144,41 +153,56 @@ In this task, you will deploy a large language model (LLM) and an embedding mode
    - Tokens per Minutes Rate Limit: **120K (2)**
    - Select **Deploy (3)** to deploy the model.
 
-     ![](./media/ag18.png)
+     ![](./media/l1.task1.16.png)
 
 1. Click on **Deployment (1)**, you can see the deployed **text-embedding-3-large (2)** model.
 
-   ![](./media/ag19.png)
+   ![](./media/l1.task1.17.png)
 
 ## Task 3:  Assign permissions to the Azure AI Search resource
 
 In this task, you will assign the necessary permissions to the Azure AI Search resource to ensure secure access and proper functionality. This includes granting the required roles and access controls for seamless integration with the AI Agent.
 
-1. Navigate to **Azure portal**, search for **AI Search (1)** and select **AI Search (2)** resource from the services.
+1. On the Azure Portal page, in the Search resources, services, and docs (G+/) box at the top of the portal, enter **AI Search (1)**, and then select **AI Search (2)** under Services.
 
-   ![](./media/ag20.png)
+   ![](./media/aisearch1.png)
 
-1. Select **my-search-servicexxxxxx**.
 
-   ![](./media/ag21.png)
+1. This will navigate you to the AI Foundry, within **AI Search**, click on **Create**
 
-    >**Note**: `xxxxxx` denotes some randome numbers, it varies.
+   ![](./media/l1.task1.18.png)
 
-1. Navigate to **Keys (1)** under **Settings** in the left menu. Under **API Access control** select **Both(2)**.
+1. On the **Create a Search service** pane enter the following details and click on **Review + Create**
 
-   ![](./media/ag22.png)
+    - Subscription : **Leave default subscription** 
+    - Resource Group : Select **(1)** 
+    - Region : Use the same location as the resource group **(2)**
+    - Name : Use the format **my-search-service-xxxxxx (3)** (replace **xxxxxx** with the **Deployment ID**) 
 
-1. Select **Yes** for **Are you sure want to update the API Access Control for this serach service**. 
+      ![](./media/l1.task1.19.png)
 
-   ![](./media/ag23.png)
+      >**Note**: `xxxxxx` denotes some randome numbers, it varies.
+
+1. On the **Review + Create**, click on **Create**
+
+   ![](./media/l1.task1.20.png)
+
+1. Wait for untill the deployment is completetd and then click on **Go to resource**
+
+   ![](./media/l1.task1.21.png)
 
 1. Navigate to **Identity(1)** under **Settings**. Under System-assigned set the Status to **On(2)** and click on **Save(3)**. 
 
-   ![](./media/ag24.png)
+   ![](./media/l1.task1.22.png)
 
+   
 1. Select **Yes** for **Enable System assigned managed identity**.
 
    ![](./media/ag25.png)
+
+1. Navigate to **Identity (1)** under Settings. Under System-assigned set the **Status to On (2)** and click on **Save (3).**
+
+   ![](./media/l1.task1.23.png)
 
 1. Go to the **Azure OpenAI**, **my-openai-service-<inject key="DeploymentID" enableCopy="false" /></inject>**.
 
@@ -197,10 +221,10 @@ In this task, you will assign the necessary permissions to the Azure AI Search r
    - Under Members, select **Managed identity(1)**
    - Click on **+ Select Members (1)**
    - Managed identity: **search services(1)** **(3)**
-   - Then select **my-search-servicexxxx (4)** search service.
+   - Then select **my-search-service-xxxxxx (4)** search service.
    - Click on **Select (5)**
 
-     ![](./media/ag29.png)
+     ![](./media/.png)
 
 1. Select **Review + assign** twice.
 
@@ -212,11 +236,11 @@ In this task, you will assign the necessary permissions to the Azure AI Search r
 
 1. Now navigate to the **Storage Account** for the project.
 
-   ![](./media/ag32.png)
+   ![](./media/l3.task1.1.png)
 
 1. Select **Access control(IAM)(1)**, then click on **Add(2)**, and then select **Add role assignment**.
 
-   ![](./media/ag33.png)
+   ![](./media/storage1.png)
 
 1. Under **Job function roles**, search for **Storage Blob Data Reader (1)**, select **Storage Blob Data Reader (2)**, and then select **Next (3)**.
 
@@ -230,7 +254,7 @@ In this task, you will assign the necessary permissions to the Azure AI Search r
    - Then select **my-search-servicexxxx (4)** search service.
    - Click on **Select (5)**
 
-     ![](./media/ag35.png)
+     ![](./media/storage2.png)
 
 1. Select **Review + assign** twice.
 
