@@ -18,13 +18,13 @@ In this task, you will create an **Azure AI Search index** to store vectorized r
 
    ![](./media/ag31.png)
 
-1. Select the Storage account that starts with **stodluser....**.
+1. Select the Storage account that starts with **storageaccount....**.
 
-   ![](./media/ag32.png)
+   ![](./media/l3.task1.1.png)
 
 1. Click on **Containers(1)** under data storage, then select **+Container(2)**.
 
-   ![](./media/ag51.png)
+   ![](./media/l3.task1.2.png)
 
 1. On New Container page enter `healthplan`(1) as name and click on **Create(2)**.
 
@@ -32,7 +32,7 @@ In this task, you will create an **Azure AI Search index** to store vectorized r
 
 1. Open **healthplan** container by clicking on it.
 
-   ![](./media/ag53.png)
+   ![](./media/l3.task1.3.png)
 
 1. Click on **upload (1)** to upload the file and then Click on **browse for files (2)**.
 
@@ -44,9 +44,9 @@ In this task, you will create an **Azure AI Search index** to store vectorized r
 
 1. Click on **upload**.
 
-1. Navigate to Azure Portal and search **Azure Ai search** and select **my-aisearch-servicexxxx** in azure portal.
+1. Navigate to Azure Portal and search **Azure Ai search** and select **my-search-service-xxxxx** in azure portal.
 
-   ![](./media/ag21.png)
+   ![](./media/l3.search.png)
 
 1. Click on **import and vectorize data**.
 
@@ -56,15 +56,19 @@ In this task, you will create an **Azure AI Search index** to store vectorized r
 
    ![](./media/ag57.png)
 
+1. Choose **RAG** Model.
+
+   ![](./media/RAG.png)
+
 1. On Configure your Azure Blob Storage , enter the following details and click on **Next(5)**:
    |Setting|Value|
    |---|---|
    |Subscription|leave it default **(1)**|
-   |Storage account|select the Storage account with prefix **stodluser**(2)|
+   |Storage account|select the Storage account with prefix **storageaccount**(2)|
    |Blob container|**healthplan**(3)|
    |Management identity type|**System-assigned**(4)|
 
-      ![](./media/ag58.png)
+      ![](./media/l3.task1.4.png)
 
 1. On Vectorize your text, enter the following details and click on **Next (7)**:
    |Setting|Value|
@@ -84,6 +88,8 @@ In this task, you will create an **Azure AI Search index** to store vectorized r
    ![](./media/ag60.png)
 
    >**Note**: The uploading of data to indexes in search service might take 5-10 minutes.
+
+   >**Note:** On the **Create Suceeded** Pop Up click on close.
 
 ## Task 2: Create the Search Agent
 
