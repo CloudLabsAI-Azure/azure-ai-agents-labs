@@ -54,7 +54,6 @@ In this task, you will create and configure an AI Project within Azure AI Foundr
 
     ![](./media/l1.task1.7.png)
 
-
 1. Scroll down and click on **+ New project** on the Hub Overview. 
 
     ![](./media/l1.task1.8.png)
@@ -94,7 +93,6 @@ In this task, you will deploy a large language model (LLM) and an embedding mode
    ![](./media/l1.task2.4.png)
 
    ![](./media/l1.task2.3.png)
-
 
 1. Navigate back to **Azure Portal** and search for **Open AI (1)** and select **Azure Open AI (2)** resource.
 
@@ -160,7 +158,6 @@ In this task, you will assign the necessary permissions to the Azure AI Search r
 1. On the Azure Portal page, in the Search resources, services, and docs (G+/) box at the top of the portal, enter **AI Search (1)**, and then select **AI Search (2)** under Services.
 
    ![](./media/aisearch1.png)
-
 
 1. This will navigate you to the AI Foundry, within **AI Search**, click on **Create**
 
