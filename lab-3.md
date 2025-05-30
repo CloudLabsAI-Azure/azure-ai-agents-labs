@@ -1,10 +1,13 @@
 # Lab 3 - Build a RAG Agent
 
 ## Estimated time: 60 minutes
+
 ## Lab scenario
+
 In this lab, you will build an AI Agent that utilizes Retrieval-Augmented Generation (RAG) to extract and generate responses from health plan documents. By leveraging Azure AI Search as a vector database, the AI Agent will store and retrieve document embeddings, enabling more accurate and context-aware answers. This approach enhances the AI’s ability to process large volumes of data efficiently, providing meaningful insights for decision-making. Through this hands-on exercise, you will gain experience in implementing RAG-based AI solutions and integrating Azure AI Search to improve response quality in document-driven scenarios.
 
 ## Lab Objectives
+
 In this lab, you will complete the following tasks:
 
 - Task 1: Create the Azure AI Search Index
@@ -18,9 +21,9 @@ In this task, you will create an **Azure AI Search index** to store vectorized r
 
    ![](./media/ag31.png)
 
-1. Select the Storage account that starts with **storageaccount....**.
+1. Select the Storage account that starts with **aihub....**.
 
-   ![](./media/l3.task1.1.png)
+   ![](./media/ag31a.png)
 
 1. Click on **Containers(1)** under data storage, then select **+Container(2)**.
 
@@ -44,13 +47,13 @@ In this task, you will create an **Azure AI Search index** to store vectorized r
 
 1. Click on **upload**.
 
-1. Navigate to Azure Portal and search **Azure Ai search** and select **my-search-service-xxxxx** in azure portal.
+1. Navigate to Azure Portal and search **Azure Ai search** and select **my-search-service-<inject key="Deployment ID" enableCopy="false"></inject>** in azure portal.
 
    ![](./media/l3.search.png)
 
 1. Click on **import and vectorize data**.
 
-   ![](./media/ag56.png)
+   ![](./media/ag56a.png)
 
 1. Select **azure blob storage**.
 
@@ -61,21 +64,22 @@ In this task, you will create an **Azure AI Search index** to store vectorized r
    ![](./media/RAG.png)
 
 1. On Configure your Azure Blob Storage , enter the following details and click on **Next(5)**:
+
    |Setting|Value|
    |---|---|
    |Subscription|leave it default **(1)**|
-   |Storage account|select the Storage account with prefix **storageaccount**(2)|
+   |Storage account|select the Storage account with prefix **aihub**(2)|
    |Blob container|**healthplan**(3)|
    |Management identity type|**System-assigned**(4)|
 
-      ![](./media/l3.task1.4.png)
+      ![](./media/l3.task1.4a.png)
 
 1. On Vectorize your text, enter the following details and click on **Next (7)**:
    |Setting|Value|
    |---|---|
    |Kind|**Azure OpenAI (1)**|
    |Subscription|leave it default **(2)**|
-   |Azure OpenAI service|**my-openai-service<inject key="DeploymentID" enableCopy="false" /></inject>** **(3)**|
+   |Azure OpenAI service|**my-openai-service-<inject key="DeploymentID" enableCopy="false" /></inject>** **(3)**|
    |Model deployment|**text-embedding-3-large** **(4)**|
    |Authentication type|**System assigned identity** **(5)**|
    |Acknowledgement rectangle|**checked** **(6)**|
@@ -90,6 +94,24 @@ In this task, you will create an **Azure AI Search index** to store vectorized r
    >**Note**: The uploading of data to indexes in search service might take 5-10 minutes.
 
    >**Note:** On the **Create Suceeded** Pop Up click on close.
+
+1. In the **Azure Portal**, navigate to **aihub-<inject key="Deployment ID" enableCopy="false"></inject>** and click on **Launch Azure AI Foundry**.
+
+   ![](./media/ag60a.png)
+
+2. From the left-hand menu, click on **Connected resources (1)** and then select **+ New Connection (2)**.
+
+   ![](./media/ag60b.png)
+
+3. Choose **Azure AI Search** as the resource type.
+
+   ![](./media/ag60c.png)
+
+4. After the connection is successfully added, click **Add connection (1)**, then close the dialog.
+
+   ![](./media/ag60d.png)
+
+   ![](./media/ag60e.png)
 
 ## Task 2: Create the Search Agent
 
@@ -126,7 +148,6 @@ In this task, you will build an AI Agent using **Retrieval-Augmented Generation 
    ![](./media/ag81.png)
    
 1. Observe the output.
-
 
 ## Review
 
