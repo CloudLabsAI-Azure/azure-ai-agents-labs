@@ -28,19 +28,17 @@ In this task, you will create and configure an AI Project within Azure AI Foundr
 1. On the **Create an AI hub resource** pane enter the following details:
 
     - Subscription : **Leave default subscription** 
-    - Resource Group : Select **(1)** 
-    - Region : Use the same location as the resource group **(2)**
-    - Name : Use the format **aihub-xxxxxx (3)** (replace **xxxxxx** with the **Deployment ID**) 
+    - Resource Group : Select azure-ai-agents-<inject key="Deployment ID" enableCopy="false"></inject> **(1)** 
+    - Region : **<inject key="Region" enableCopy="false"></inject>** Use the same location as the resource group **(2)**
+    - Name : Use the format **aihub-<inject key="Deployment ID" enableCopy="false"></inject> (3)** 
 
         ![](./media/l1.task1.1.png) 
 
     - Connect AI Services incl. OpenAI : Click on **Create New (1)**
-    - Connect AI Services incl. OpenAI : Provide a name to the AI Service ,Use the format **my-ai-service-xxxxxx (2)** (replace **xxxxxx** with the **Deployment ID**)  
+    - Connect AI Services incl. OpenAI : Provide a name to the AI Service ,Use the format **my-ai-service-<inject key="Deployment ID" enableCopy="false"></inject> (2)**  
     - Click on **Save (3)**, followed by **Next:Storage (4)**
     
-        ![](./media/aiservice.png) 
-
-        >**Note**: Here, xxxxxx refers to the **deployment ID** which you can get from the Environment tab. 
+        ![](./media/aiservice.png)  
 
 1. Click on **Review + Create** tab followed by **Create.**
 
@@ -61,17 +59,13 @@ In this task, you will create and configure an AI Project within Azure AI Foundr
 
     ![](./media/l1.task1.8.png)
 
-1. Provide the project name as **my-project-xxxxxx(1),** then click on **Create (2)**.
+1. Provide the project name as **my-project-<inject key="Deployment ID" enableCopy="false"></inject>** **(1),** then click on **Create (2)**.
 
     ![](./media/l1.task1.9.png)
 
-    >**Note**: Here, xxxxxx refers to the **deployment ID** which you can get from the Environment tab.
-
 1. Once the project is created, scroll down and copy the **Project connection string**, then paste them into Notepad or a secure location, as they will be required for upcoming tasks.
 
-
-   ![](./media/l1.task1.10.png)
-
+    ![](./media/l1.task1.10.png)
 
 ## Task 2: Deploying an LLM and embedding models
 
@@ -122,7 +116,7 @@ In this task, you will deploy a large language model (LLM) and an embedding mode
 
    ![](./media/l1.task2.5.png)
 
-1. Click on **Next** twice.
+1. Click on **Next** thrice.
 
 1. On the **Review + submit** page, click on **Create**
  
@@ -175,13 +169,11 @@ In this task, you will assign the necessary permissions to the Azure AI Search r
 1. On the **Create a Search service** pane enter the following details and click on **Review + Create**
 
     - Subscription : **Leave default subscription** 
-    - Resource Group : Select **(1)** 
-    - Region : Use the same location as the resource group **(2)**
-    - Name : Use the format **my-search-service-xxxxxx (3)** (replace **xxxxxx** with the **Deployment ID**) 
+    - Resource Group : Select **azure-ai-agents-<inject key="Deployment ID" enableCopy="false"></inject>** **(1)** 
+    - Region : **<inject key="Region" enableCopy="false"></inject>** Use the same location as the resource group **(2)**
+    - Name : Use the format **my-search-service-<inject key="Deployment ID" enableCopy="false"></inject> (3)**
 
       ![](./media/l1.task1.19.png)
-
-      >**Note**: `xxxxxx` denotes some randome numbers, it varies.
 
 1. On the **Review + Create**, click on **Create**
 
@@ -195,14 +187,17 @@ In this task, you will assign the necessary permissions to the Azure AI Search r
 
    ![](./media/l1.task1.22.png)
 
-   
-1. Select **Yes** for **Enable System assigned managed identity**.
+1. Select **Yes** for **API Access control for this search service**.
 
-   ![](./media/ag25.png)
+   ![](./media/ag25a.png)
 
 1. Navigate to **Identity (1)** under Settings. Under System-assigned set the **Status to On (2)** and click on **Save (3).**
 
    ![](./media/l1.task1.23.png)
+
+1. Select **Yes** for **Enable system assigned managed identity**.
+
+   ![](./media/ag25.png)
 
 1. Go to the **Azure OpenAI**, **my-openai-service-<inject key="DeploymentID" enableCopy="false" /></inject>**.
 
@@ -221,7 +216,7 @@ In this task, you will assign the necessary permissions to the Azure AI Search r
    - Under Members, select **Managed identity(1)**
    - Click on **+ Select Members (1)**
    - Managed identity: **search services(1)** **(3)**
-   - Then select **my-search-service-xxxxxx (4)** search service.
+   - Then select **my-search-service-<inject key="Deployment ID" enableCopy="false"></inject> (4)** search service.
    - Click on **Select (5)**
 
      ![](./media/l1.task1.24.png)
@@ -236,7 +231,7 @@ In this task, you will assign the necessary permissions to the Azure AI Search r
 
 1. Now navigate to the **Storage Account** for the project.
 
-   ![](./media/l3.task1.1.png)
+   ![](./media/ag31a.png)
 
 1. Select **Access control(IAM)(1)**, then click on **Add(2)**, and then select **Add role assignment**.
 
@@ -251,7 +246,7 @@ In this task, you will assign the necessary permissions to the Azure AI Search r
    - Under Members, select **Managed identity(1)**
    - Click on **+ Select Members (1)**
    - Managed identity: **search services(1)** **(3)**
-   - Then select **my-search-servicexxxx (4)** search service.
+   - Then select **my-search-service-<inject key="Deployment ID" enableCopy="false"></inject> (4)** search service.
    - Click on **Select (5)**
 
      ![](./media/storage2.png)
@@ -305,6 +300,12 @@ In this task, you will install the required dependencies, set up a virtual envir
    ```
 
    ![](./media/ag43.png)
+
+1. Run the below powershell command to install the required package.
+
+   ```
+   pip install azure-ai-ml azure-identity
+   ```
 
 1. Run the below command to log into your Azure account.
 
