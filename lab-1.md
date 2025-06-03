@@ -293,7 +293,7 @@ In this task, you will install the required dependencies, set up a virtual envir
 1. Run the following PowerShell command to  install or upgrade pip to the latest version.
 
    ```powershell
-   python.exe -m pip install-- upgrade pip
+   python.exe -m pip install --upgrade pip
    ```
 
    ![](./media/ag43.png)
