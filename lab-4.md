@@ -49,7 +49,11 @@ In this task, you will create the Search, Report, and Validation Agents to retri
 
 1. Before proceeding further, let's open the insurance health plan PDFs and review the data structure that we’ll be feeding into the model using RAG. 
 
-    - Navigate to File Explorer and open the following directory: **C:\LabFiles\azure-ai-agents-labs\data** **(1)**. Then, select both health plan PDF files **(2)** and open them in the Edge browser.
+    - Click on **File Explorer Icon** (1) and select **This PC** (2).
+    
+      ![](./media/file-explorer06062025.png)
+   
+    - Now, Navigate to the following directory: **C:\LabFiles\azure-ai-agents-labs\data** **(1)**. Then, select both health plan PDF files **(2)** and open them in the Edge browser.
 
       ![](./media/fileexplore06062025.png)
     
