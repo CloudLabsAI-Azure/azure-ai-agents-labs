@@ -47,10 +47,6 @@ In this task, you will create the Search, Report, and Validation Agents to retri
 
    ![](./media/ag88.png)
    
-1. Finally observe the output.
-
-   ![](./media/lab2-26.png)
-   
 1. **Create a multi-agent system** : When you run the below cell, you will see a chat box pop up at the top of VS Code asking you to input the name of a health plan.
   
    ![](./media/ag89.png)  
