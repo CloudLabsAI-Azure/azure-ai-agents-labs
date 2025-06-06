@@ -47,7 +47,7 @@ In this task, you will create an **Azure AI Search index** to store vectorized r
 
 1. Click on **upload**.
 
-1. Navigate to Azure Portal and search **Azure Ai search** and select **my-search-service-<inject key="Deployment ID" enableCopy="false"></inject>** in azure portal.
+1. Navigate to Azure Portal and search **AI Search** and select **my-search-service-<inject key="Deployment ID" enableCopy="false"></inject>** in azure portal.
 
    ![](./media/l3.search.png)
 
@@ -149,6 +149,8 @@ In this task, you will build an AI Agent using **Retrieval-Augmented Generation 
    
 1. Observe the output.
 
+   ![](./media/lab3-task2-step9output.png)
+   
 ## Review
 
 In this lab, you have accomplished the following:
