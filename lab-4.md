@@ -82,7 +82,7 @@ In this task, you will create the Search, Report, and Validation Agents to retri
     ReportAgent completed successfully.
     Calling ValidationAgent...
     ValidationAgent completed successfully.
-    The report for Northwind Plus has been generated. Please check the Northwind Plus Report.md file for the report.
+    The report for Northwind Health Standard has been generated. Please check the Northwind Health Standard Report.md file for the report.
     Orchestrator Agent is starting...
     ```
 
