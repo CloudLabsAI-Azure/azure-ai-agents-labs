@@ -27,7 +27,7 @@ In this task, you will create an **Azure AI Search index** to store vectorized r
 
 1. Click on **Containers(1)** under data storage, then select **+Container(2)**.
 
-   ![](./media/l3.task1.2.png)
+   ![](./media/6062025l3.task1.2.png)
 
 1. On New Container page enter `healthplan`(1) as name and click on **Create(2)**.
 
