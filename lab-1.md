@@ -124,7 +124,6 @@ In this task, you will deploy a large language model (LLM) and an embedding mode
 
    ![](./media/ag13.png)
 
-
 1. On the **my-openai-service-<inject key="DeploymentID" enableCopy="false" /></inject>** resource page, select **Go to Azure AI Foundry portal**
 
    ![](./media/new.png)
