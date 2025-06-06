@@ -75,44 +75,44 @@ In this task, you will create the Search, Report, and Validation Agents to retri
 
       ![](./media/download1.png)
 
-    **Note**: After the successful run of the cell you will recieve the following outcome.
+    > **Note**: After the successful run of the cell you will recieve the following outcome.
 
-    ```
-    Orchestrator Agent is starting...
-    Calling SearchAgent...
-    SearchAgent completed successfully.
-    Calling ReportAgent...
-    ReportAgent completed successfully.
-    Calling ValidationAgent...
-    ValidationAgent completed successfully.
-    The report for Northwind Health Standard has been generated. Please check the Northwind Health Standard Report.md file for the report.
-    Orchestrator Agent is starting...
-    ```
-    
+      ```
+      Orchestrator Agent is starting...
+      Calling SearchAgent...
+      SearchAgent completed successfully.
+      Calling ReportAgent...
+      ReportAgent completed successfully.
+      Calling ValidationAgent...
+      ValidationAgent completed successfully.
+      The report for Northwind Health Standard has been generated. Please check the Northwind Health Standard Report.md file for the report.
+      Orchestrator Agent is starting...
+      ```
+       
 1. Type `exit` the box and press enter to stop the running the code block.
 
 1. Again, run the below cell, you will see a chat box pop up at the top of VS Code asking you to input the name of a health plan.
   
    ![](./media/ag89.png)  
 
-    - Type the health plan **Northwind Health Plus** in the box and press enter to begin running the multi-agent system:
+   - Type the health plan **Northwind Health Plus** in the box and press enter to begin running the multi-agent system:
   
-      ![](./media/Northwind-Health-Plus-input.png)
+     ![](./media/Northwind-Health-Plus-input.png)
 
-    **Note**: After the successful run of the cell you will recieve the following outcome.
+   > **Note**: After the successful run of the cell you will recieve the following outcome.
 
-    ```
-    Orchestrator Agent is starting...
-    Calling SearchAgent...
-    SearchAgent completed successfully.
-    Calling ReportAgent...
-    ReportAgent completed successfully.
-    Calling ValidationAgent...
-    ValidationAgent completed successfully.
-    The report for Northwind Health Plus has been generated. Please check the Northwind Health Plus Report.md file for the report.
-    Orchestrator Agent is starting...
-    ```
-    
+     ```
+     Orchestrator Agent is starting...
+     Calling SearchAgent...
+     SearchAgent completed successfully.
+     Calling ReportAgent...
+     ReportAgent completed successfully.
+     Calling ValidationAgent...
+     ValidationAgent completed successfully.
+     The report for Northwind Health Plus has been generated. Please check the Northwind Health Plus Report.md file for the report.
+     Orchestrator Agent is starting...
+     ```
+
 1. Type `exit` the box and press enter to stop the running the code block.
 
 1. Lets observe the generated reports
