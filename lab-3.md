@@ -25,7 +25,7 @@ In this task, you will create an **Azure AI Search index** to store vectorized r
 
    ![](./media/ag31a.png)
 
-1. Click on **Containers(1)** under data storage, then select **+Container(2)**.
+1. Click on **Containers(1)** under data storage, then select **+ Add Container(2)**.
 
    ![](./media/6062025l3.task1.2.png)
 
