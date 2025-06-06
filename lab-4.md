@@ -99,7 +99,7 @@ In this task, you will create the Search, Report, and Validation Agents to retri
 
     **Note**: After the successful run of the cell you will recieve the following outcome.
 
-```
+    ```
     Orchestrator Agent is starting...
     Calling SearchAgent...
     SearchAgent completed successfully.
@@ -123,6 +123,7 @@ In this task, you will create the Search, Report, and Validation Agents to retri
     - Open the generated reports one by one and observe that Validation Agent has ensured exclusions are included in the generated report. 
 
     - **Northwind Health Plus Report.md** 
+    
     ![](./media/observethehealthoutput.png)
 
 ## Review
