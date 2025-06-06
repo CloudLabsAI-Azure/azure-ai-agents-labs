@@ -25,9 +25,9 @@ In this task, you will create an **Azure AI Search index** to store vectorized r
 
    ![](./media/ag31a.png)
 
-1. Click on **Containers(1)** under data storage, then select **+Container(2)**.
+1. Click on **Containers(1)** under data storage, then select **+ Add Container(2)**.
 
-   ![](./media/l3.task1.2.png)
+   ![](./media/6062025l3.task1.2.png)
 
 1. On New Container page enter `healthplan`(1) as name and click on **Create(2)**.
 
@@ -47,7 +47,7 @@ In this task, you will create an **Azure AI Search index** to store vectorized r
 
 1. Click on **upload**.
 
-1. Navigate to Azure Portal and search **Azure Ai search** and select **my-search-service-<inject key="Deployment ID" enableCopy="false"></inject>** in azure portal.
+1. Navigate to Azure Portal and search **AI Search** and select **my-search-service-<inject key="Deployment ID" enableCopy="false"></inject>** in azure portal.
 
    ![](./media/l3.search.png)
 
@@ -149,6 +149,10 @@ In this task, you will build an AI Agent using **Retrieval-Augmented Generation 
    
 1. Observe the output.
 
+   ![](./media/lab3-task2-step9output.png)
+
+> **Note**: Here's an example of what your output likely to see; however, the precise recommendation could vary.
+   
 ## Review
 
 In this lab, you have accomplished the following:

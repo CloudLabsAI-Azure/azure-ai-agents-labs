@@ -35,7 +35,7 @@ In this task, you will create and configure an AI Project within Azure AI Foundr
         ![](./media/l1.task1.1.png) 
 
     - Connect AI Services incl. OpenAI : Click on **Create New (1)**
-    - Connect AI Services incl. OpenAI: Provide a name to the AI Service,U se the format **my-ai-service-<inject key="Deployment ID" enableCopy="false"></inject> (2)**  
+    - Create new Azure AI Services: Provide a name to the AI Service,Use the format **my-ai-service-<inject key="Deployment ID" enableCopy="false"></inject> (2)**  
     - Click on **Save (3)**, followed by **Next:Storage (4)**
     
         ![](./media/aiservice.png)  
@@ -123,7 +123,6 @@ In this task, you will deploy a large language model (LLM) and an embedding mode
 1. Wait until the deployment succeeds and select **Go to resource**.
 
    ![](./media/ag13.png)
-
 
 1. On the **my-openai-service-<inject key="DeploymentID" enableCopy="false" /></inject>** resource page, select **Go to Azure AI Foundry portal**
 
