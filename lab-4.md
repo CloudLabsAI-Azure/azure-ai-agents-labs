@@ -76,7 +76,7 @@ In this task, you will create the Search, Report, and Validation Agents to retri
       ![](./media/download1.png)
 
 
-    > **Note**: After the successful run of the cell you will recieve the following outcome.
+    **Note**: After the successful run of the cell you will recieve the following outcome.
 
     ```
     Orchestrator Agent is starting...
@@ -89,9 +89,8 @@ In this task, you will create the Search, Report, and Validation Agents to retri
     The report for Northwind Health Standard has been generated. Please check the Northwind Health Standard Report.md file for the report.
     Orchestrator Agent is starting...
     ```
-
+    
 1. Type `exit` the box and press enter to stop the running the code block.
-
 
 1. Again, run the below cell, you will see a chat box pop up at the top of VS Code asking you to input the name of a health plan.
   
@@ -116,7 +115,6 @@ In this task, you will create the Search, Report, and Validation Agents to retri
     ```
 
 1. Type `exit` the box and press enter to stop the running the code block.
-
 
 1. Lets observe the generated reports
 
