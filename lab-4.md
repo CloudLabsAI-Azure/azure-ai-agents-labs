@@ -116,7 +116,7 @@ In this task, you will create the Search, Report, and Validation Agents to retri
 
 1. Lets observe the generated reports
 
-    - Navigate to left pane, and find the **Northwind Health Plus Report.md** and **Northwind Health Standard Report.md**.
+    - Navigate to left pane, and find the **Northwind Health Plus Report.md** and **Northwind Health Standard Report.md** files.
 
     ![](./media/outputmdfileforinsurance.png)
 
