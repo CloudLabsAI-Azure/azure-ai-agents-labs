@@ -150,6 +150,8 @@ In this task, you will build an AI Agent using **Retrieval-Augmented Generation 
 1. Observe the output.
 
    ![](./media/lab3-task2-step9output.png)
+
+> **Note**: Here's an example of what your output likely to see; however, the precise recommendation could vary.
    
 ## Review
 
