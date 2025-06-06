@@ -49,17 +49,17 @@ In this task, you will create the Search, Report, and Validation Agents to retri
 
 1. Before proceeding further, let's open the insurance health plan PDFs and review the data structure that we’ll be feeding into the model using RAG. 
 
-    -  Navigate to File Explorer and open the following directory: **C:\LabFiles\azure-ai-agents-labs\data** **(1)**. Then, select both health plan PDF files **(2)** and open them in the Edge browser.
+    - Navigate to File Explorer and open the following directory: **C:\LabFiles\azure-ai-agents-labs\data** **(1)**. Then, select both health plan PDF files **(2)** and open them in the Edge browser.
 
-    ![](./media/fileexplore06062025.png)
+      ![](./media/fileexplore06062025.png)
     
     - Review the content of **Northwind_Health_Plus_Benefits_Details** pdf.
 
-    ![](./media/Northwind_Health_Plus_Benefits_Details-snapshot.png)
+      ![](./media/Northwind_Health_Plus_Benefits_Details-snapshot.png)
   
     - Review th content of **Northwind_Standard_Benefits_Details** pdf.
 
-    ![](./media/Northwind_Standard_Benefits_Details-snapshot.png)        
+      ![](./media/Northwind_Standard_Benefits_Details-snapshot.png)        
    
 1. **Create a multi-agent system** : When you run the below cell, you will see a chat box pop up at the top of VS Code asking you to input the name of a health plan.
   
