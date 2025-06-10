@@ -51,31 +51,31 @@ In this task, you will create the Search, Report, and Validation Agents to retri
 
     - Click on **File Explorer Icon** (1) and select **This PC** (2).
     
-      ![](./media/file-explorer06062025.png)
+      ![](./media/L4T1S7.1-1106.png)
    
-    - Now, Navigate to the following directory: **C:\LabFiles\azure-ai-agents-labs\data** **(1)**. Then, select both health plan PDF files **(2)** and open them in the Edge browser.
+    - Now, navigate to the following directory: **C:\LabFiles\azure-ai-agents-labs\data** **(1)**. Then, select both health plan PDF files **(2)** and open them in the Edge browser.
 
       ![](./media/fileexplore06062025.png)
     
-    - Review the content of **Northwind_Health_Plus_Benefits_Details** pdf.
+    - Review the content of the **Northwind_Health_Plus_Benefits_Details** PDF.
 
       ![](./media/Northwind_Health_Plus_Benefits_Details-snapshot.png)
   
-    - Review th content of **Northwind_Standard_Benefits_Details** pdf.
+    - Review the content of the **Northwind_Standard_Benefits_Details** PDF.
 
       ![](./media/Northwind_Standard_Benefits_Details-snapshot.png)        
    
-1. **Create a multi-agent system** : When you run the below cell, you will see a chat box pop up at the top of VS Code asking you to input the name of a health plan.
+1. **Create a multi-agent system**: When you run the below cell, you will see a chat box pop up at the top of VS Code asking you to input the name of a health plan.
   
    ![](./media/ag89.png)  
   
-1. If you recall, we have uploaded two health plans to the search index. Type one of the health plans **Northwind Health Standard** in the box and press enter to begin running the multi-agent system:
+1. If you recall, we have uploaded two health plans to the search index. Type one of the health plans, **Northwind Health Standard**, in the box and press Enter to begin running the multi-agent system:
 
     - Northwind Health Standard
 
       ![](./media/download1.png)
 
-    > **Note**: After the successful run of the cell you will recieve the following outcome.
+    > **Note**: After the successful run of the cell, you will receive the following outcome.
 
       ```
       Orchestrator Agent is starting...
@@ -89,17 +89,17 @@ In this task, you will create the Search, Report, and Validation Agents to retri
       Orchestrator Agent is starting...
       ```
        
-1. Type `exit` the box and press enter to stop the running the code block.
+1. Type `exit` in the box and press Enter to stop running the code block.
 
-1. Again, run the below cell, you will see a chat box pop up at the top of VS Code asking you to input the name of a health plan.
+1. Again, run the below cell, and you will see a chat box pop up at the top of VS Code asking you to input the name of a health plan.
   
    ![](./media/ag89.png)  
 
-   - Type the health plan **Northwind Health Plus** in the box and press enter to begin running the multi-agent system:
+   - Type the health plan **Northwind Health Plus** in the box and press Enter to begin running the multi-agent system:
   
      ![](./media/Northwind-Health-Plus-input.png)
 
-   > **Note**: After the successful run of the cell you will recieve the following outcome.
+   > **Note**: After the successful run of the cell, you will receive the following outcome.
 
      ```
      Orchestrator Agent is starting...
@@ -113,15 +113,15 @@ In this task, you will create the Search, Report, and Validation Agents to retri
      Orchestrator Agent is starting...
      ```
 
-1. Type `exit` the box and press enter to stop the running the code block.
+1. Type `exit` in the box and press Enter to stop running the code block.
 
-1. Lets observe the generated reports
+1. Let's observe the generated reports
 
-    - Navigate to left pane, and find the **Northwind Health Plus Report.md** and **Northwind Health Standard Report.md** files.
+    - Navigate to the left pane, and find the **Northwind Health Plus Report.md** and **Northwind Health Standard Report.md** files.
 
       ![](./media/outputmdfileforinsurance.png)
 
-    - Open the generated reports one by one and observe that Validation Agent has ensured that exclusions are included in the generated report. 
+    - Open the generated reports one by one and observe that the Validation Agent has ensured that exclusions are included in the generated report. 
 
     - **Northwind Health Plus Report.md** 
     
