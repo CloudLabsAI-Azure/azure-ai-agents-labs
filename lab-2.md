@@ -33,7 +33,7 @@ In this task, you will build a simple AI Agent that processes data and generates
 
    ![](./media/ag90.png)
 
-1. Finally observe the output.   
+1. Finally, observe the output.   
 
    ![](./media/lab2-26.png)
 
