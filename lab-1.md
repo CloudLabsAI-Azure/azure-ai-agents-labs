@@ -22,7 +22,7 @@ In this task, we will access Azure AI Foundry, retrieve the project connection s
 
 1. In the left navigation pane of AI Foundry, select **AI Hubs (1)**. On the AI Hubs page, click on the Azure AI project named **aip-<inject key="DeploymentID" enableCopy="false" /></inject> (2)**.
 
-    ![](./media/AIProject.png) 
+    ![](./media/AIProject1.png) 
 
 1. On the **Overview (1)** pane, click on **Launch studio**. This will navigate you to the Azure AI Foundry portal.
 
@@ -34,9 +34,9 @@ In this task, we will access Azure AI Foundry, retrieve the project connection s
  
 1. While in your AI project on the Azure AI Foundry portal, click **Model + Endpoints (1)** under **My Assets** in the left panel to view the deployed **gpt-4o (2)** model. Copy the **Target URI (3)** and **key (4)**, then paste them into Notepad or a secure location, as they will be required for upcoming tasks.
 
-   ![](./media/gpt-4o.png)
+   ![](./media/gpt-4o4.png)
 
-   ![](./media/CopyKey.png)
+   ![](./media/CopyKey5.png)
 
 ## Task 2:  Assign permissions to the Azure AI Search resource
 
@@ -46,34 +46,9 @@ In this task, you will assign the necessary permissions to the Azure AI Search r
 
    ![](./media/aisearch1.png)
 
-1. This will navigate you to the AI Foundry, within **AI Search**, click on **Create**
+1. This will navigate you to the **AI Foundry | AI Search**. Select the search service named **my-search-service-<inject key="Deployment ID" enableCopy="false"></inject>**.
 
-   ![](./media/l1.task1.18.png)
-
-1. On the **Create a Search service** pane enter the following details and click on **Review + Create**
-
-    - Subscription : **Leave default subscription** 
-    - Resource Group : Select **azure-ai-agents-<inject key="Deployment ID" enableCopy="false"></inject>** **(1)** 
-    - Region : **<inject key="Region" enableCopy="false"></inject>** Use the same location as the resource group **(2)**
-    - Name : Use the format **my-search-service-<inject key="Deployment ID" enableCopy="false"></inject> (3)**
-
-      ![](./media/l1.task1.19.png)
-
-1. On the **Review + Create**, click on **Create**
-
-   ![](./media/l1.task1.20.png)
-
-1. Wait until the deployment is completed, and then click on **Go to resource**
-
-   ![](./media/l1.task1.21.png)
-
-1. Navigate to **Identity(1)** under **Settings**. Under System-assigned, set the Status to **On(2)** and click on **Save(3)**. 
-
-   ![](./media/l1.task1.23.png)
-
-1. Select **Yes** for **Enable system assigned managed identity**.
-
-   ![](./media/ag25.png)
+   ![](./media/AISearch6.png)
 
 1. Navigate to **Keys (1)** under Settings and select **Both (2)** for API Access control. 
 
