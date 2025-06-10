@@ -1,80 +1,49 @@
 # Lab 1 - Setup AI Project and perform Chat Completion from VS Code
-## Estimated duration: 120 minutes
+## Estimated duration: 30 minutes
 ## Lab scenario
 
-In this hands-on lab, you will set up the necessary environment for building AI Agents. You will begin by configuring an AI Project in Azure AI Foundry, followed by exploring a Large Language Model (LLM) and embedding models. Next, you will establish connectivity from Visual Studio Code to the AI Project. Finally, you will perform a simple chat completion call to validate the setup.
+In this hands-on lab, you will set up the necessary environment for building AI Agents. You will begin by configuring an AI Project in Azure AI Foundry, followed by deploying a Large Language Model (LLM) and embedding models. Next, you will establish connectivity from Visual Studio Code to the AI Project. Finally, you will perform a simple chat completion call to validate the setup.
 
 ## Lab Objectives
 
 In this lab, you will perform:
 
-- Task 1: Exploring up the AI Project in the Azure AI Foundry
-- Task 2: Deploying an LLM and embedding models
-- Task 3: Assign permissions to the Azure AI Search resource
-- Task 4: Install dependencies, create a virtual environment, and create an environment variables file.
+- Task 1: Accessing Azure AI Foundry Resources
+- Task 2: Install dependencies, create a virtual environment, and create an environment variables file.
 
-## Task 1: Exploring up the AI Project in the Azure AI Foundry
+## Task 1: Accessing Azure AI Foundry Resources
 
-In this task, you will create and configure an AI Project within Azure AI Foundry. This involves setting up the necessary resources, defining project parameters, and ensuring that the environment is ready for deploying AI models. By the end of this task, you will have a fully initialized AI Project, serving as the foundation for further development and experimentation.
+In this task, we will access Azure AI Foundry, retrieve the project connection string, and obtain the GPT-4o model's Target URI and key for integration.
 
 1. On the Azure Portal page, in the Search resources, services, and docs (G+/) box at the top of the portal, enter **Azure AI Foundry (1)**, and then select **Azure AI Foundry (2)** under **Services**.
 
     ![](./media/challenge6.task.1.png) 
 
-1. In the left navigation pane for the AI Foundry, select **AI Hubs (1)**. On the AI Hubs page, click on **Create (2)** and select **Hub (3)** from the drop-down.
+1. In the left navigation pane of AI Foundry, select **AI Hubs (1)**. On the AI Hubs page, click on the Azure AI project named **aip-<inject key="DeploymentID" enableCopy="false" /></inject> (2)**.
 
-    ![](./media/challenge6.task.3.png) 
+    ![](./media/AIProject1.png) 
 
-1. On the Overview pane, click on **Launch Azure AI Foundry**. This will navigate you to the Azure AI Foundry portal.
+1. On the **Overview (1)** pane, click on **Launch studio**. This will navigate you to the Azure AI Foundry portal.
 
-    ![](./media/l1.task1.7.png)
+    ![](./media/LaunchFoundry2.png)
 
-1. copy the **Project connection string**, then paste it into Notepad or a secure location, as it will be required for upcoming tasks.
+1. On the **Overview (1)** page of your AI project in the Azure AI Foundry portal, copy the **Project connection string** under **Project Details** and then paste it into Notepad or a secure location, as it will be required for the upcoming tasks.
 
-    ![](./media/l1.task1.10.png)
+    ![](./media/CopyString3.png)
+ 
+1. While in your AI project on the Azure AI Foundry portal, click **Model + Endpoints (1)** under **My Assets** in the left panel to view the deployed **gpt-4o (2)** model. Copy the **Target URI (3)** and **key (4)**, then paste them into Notepad or a secure location, as they will be required for upcoming tasks.
 
-## Task 2: Deploying an LLM and embedding models
+   ![](./media/gpt-4o4.png)
 
-In this task, you will deploy a large language model (LLM) and an embedding model within your Azure AI Foundry project. These models will be used for AI-driven applications and vector-based search capabilities in upcoming labs.
-
-
-1. Click on **Model + Endpoints (1)** to view the deployed **gpt-4o (2)** model. Copy the Target URI and key, then paste them into Notepad or a secure location, as they will be required for upcoming tasks.
-
-   ![](./media/l1.task2.4.png)
-
-   ![](./media/l1.task2.3.png)
-
-1. Navigate back to **Azure Portal** and search for **Open AI (1)** and select **Azure Open AI (2)** resource.
-
-   ![](./media/ag10.png)
-
-1. On the **Azure AI services | Azure OpenAI** page, select **+ Create** to create Azure OpenAI resource.
-
-   ![](./media/lab1-11.png)
-
-1. On the **my-openai-service-<inject key="DeploymentID" enableCopy="false" /></inject>** resource page, select **Go to Azure AI Foundry portal**
-
-   ![](./media/new.png)
-
-1. In your AI Foundry project, navigate to the **Shared resources** section, then select **Deployments (1)**. Click **Deploy model (2)**, and choose **Deploy base model (3)** to proceed.
-
-   ![](./media/l1.task1.14.png)
-
-    >**Note**: The import and vectorize wizard in Azure AI Search, which will be used in subsequent labs, does not yet support text embedding models within your AI Foundry project. Because of this, we need to create an Azure OpenAI service and deploy a text embedding model there. We will use this text embedding model later when we create our vector index.
-
-1. Click on **Deployment (1)**, you can see the deployed **text-embedding-3-large (2)** model.
-
-   ![](./media/l1.task1.17.png)
-
-## Task 3:  Assign permissions to the Azure AI Search resource
-
-In this task, you will assign the necessary permissions to the Azure AI Search resource to ensure secure access and proper functionality. This includes granting the required roles and access controls for seamless integration with the AI Agent.
+   ![](./media/CopyKey5.png)
 
 1. On the Azure Portal page, in the Search resources, services, and docs (G+/) box at the top of the portal, enter **AI Search (1)**, and then select **AI Search (2)** under Services.
 
    ![](./media/aisearch1.png)
 
-1. This will navigate you to the AI Foundry, within **AI Search**
+1. This will navigate you to **AI Foundry | AI Search** page. Select the search service named **my-search-service-<inject key="Deployment ID" enableCopy="false"></inject>**.
+
+   ![](./media/AISearch6.png)
 
 1. Navigate to **Keys (1)** under Settings and select **Both (2)** for API Access control. 
 
@@ -84,7 +53,7 @@ In this task, you will assign the necessary permissions to the Azure AI Search r
 
    ![](./media/ag25a.png)
 
-## Task 4: Install dependencies, create a virtual environment, and create an environment variables file
+## Task 2: Install dependencies, create a virtual environment, and create an environment variables file
 
 In this task, you will install the required dependencies, set up a virtual environment, and create an environment variables file. This ensures a controlled development environment and securely manages configuration settings for your AI project.
 
@@ -154,13 +123,13 @@ In this task, you will install the required dependencies, set up a virtual envir
 
    ![](./media/ag46.png)
 
-   - Retrieve the required values from your **Azure AI Foundry project**.
+    - Retrieve the required values from your **Azure AI Foundry project**.
 
 1. On the **Sample.env** file,
 
-   - `AIPROJECT_CONNECTION_STRING`: Provide the **Project connection string** value you have copied in Task 1 of step 9
-   - `CHAT_MODEL_ENDPOINT`: Provide the **Target URI** of the **gpt-4o** model you have copied in Task 2 of step 4.
-   - `CHAT_MODEL_API_KEY`: Provide the **Key** value of the **gpt-4o** model you have copied in Task 2 of step 4.
+   - `AIPROJECT_CONNECTION_STRING`: Provide the **Project connection string** value you have copied in Step 4.
+   - `CHAT_MODEL_ENDPOINT`: Provide the **Target URI** of the **gpt-4o** model you have copied in Step 5.
+   - `CHAT_MODEL_API_KEY`: Provide the **Key** value of the **gpt-4o** model you have copied in Step 5.
    - `CHAT_MODEL`: **gpt-4o**
 
      ![](./media/ag49.png)
@@ -210,11 +179,7 @@ In this task, you will install the required dependencies, set up a virtual envir
 ## Review
 
 In this lab, you have accomplished the following:
-- Set up the AI Project in Azure AI Foundry.
-- Deployed an LLM and embedding models.
 - Established connectivity from VS Code to the AI Project.
 - Performed a simple Chat Completion call.
 
 ### You have successfully finished the lab. Click **Next** to continue to the next lab.
-
-
