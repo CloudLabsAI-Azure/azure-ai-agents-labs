@@ -21,9 +21,9 @@ In this task, you will create an **Azure AI Search index** to store vectorized r
 
    ![](./media/ag31.png)
 
-1. Select the Storage account that starts with **aihub....**.
+1. Select the Storage account named **storage<inject key="Deployment ID" enableCopy="false"></inject>** 
 
-   ![](./media/ag31a.png)
+   ![](./media/StorageAccount7.png)
 
 1. Click on **Containers(1)** under data storage, then select **+ Add Container(2)**.
 
@@ -68,7 +68,7 @@ In this task, you will create an **Azure AI Search index** to store vectorized r
    |Setting|Value|
    |---|---|
    |Subscription|leave it default **(1)**|
-   |Storage account|select the Storage account with prefix **aihub**(2)|
+   |Storage account|select the Storage account neamed **storage<inject key="Deployment ID" enableCopy="false"></inject>**|
    |Blob container|**healthplan**(3)|
    |Management identity type|**System-assigned**(4)|
 
@@ -80,7 +80,7 @@ In this task, you will create an **Azure AI Search index** to store vectorized r
    |Kind|**Azure OpenAI (1)**|
    |Subscription|leave it default **(2)**|
    |Azure OpenAI service|**my-openai-service-<inject key="DeploymentID" enableCopy="false" /></inject>** **(3)**|
-   |Model deployment|**text-embedding-3-large** **(4)**|
+   |Model deployment|**text-embedding-ada-002 (4)**|
    |Authentication type|**System assigned identity** **(5)**|
    |Acknowledgement rectangle|**checked** **(6)**|
 
@@ -95,9 +95,9 @@ In this task, you will create an **Azure AI Search index** to store vectorized r
 
    >**Note:** On the **Create Suceeded** Pop Up click on close.
 
-1. In the **Azure Portal**, navigate to **aihub-<inject key="Deployment ID" enableCopy="false"></inject>** and click on **Launch Azure AI Foundry**.
+1. In the Azure Portal, navigate to **AI Foundry| AI Hubs**. Select **aih-<inject key="Deployment ID" enableCopy="false"></inject>** and click on **Launch Azure AI Foundry**.
 
-   ![](./media/ag60a.png)
+   ![](./media/AIHub8.png)
 
 2. From the left-hand menu, click on **Connected resources (1)** and then select **+ New Connection (2)**.
 
