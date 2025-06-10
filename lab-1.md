@@ -179,8 +179,6 @@ In this task, you will install the required dependencies, set up a virtual envir
 ## Review
 
 In this lab, you have accomplished the following:
-- Set up the AI Project in Azure AI Foundry.
-- Deployed an LLM and embedding models.
 - Established connectivity from VS Code to the AI Project.
 - Performed a simple Chat Completion call.
 
