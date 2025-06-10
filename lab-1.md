@@ -41,7 +41,7 @@ In this task, we will access Azure AI Foundry, retrieve the project connection s
 
    ![](./media/aisearch1.png)
 
-1. This will navigate you to the **AI Foundry | AI Search**. Select the search service named **my-search-service-<inject key="Deployment ID" enableCopy="false"></inject>**.
+1. This will navigate you to **AI Foundry | AI Search** page. Select the search service named **my-search-service-<inject key="Deployment ID" enableCopy="false"></inject>**.
 
    ![](./media/AISearch6.png)
 
