@@ -61,7 +61,7 @@ In this task, you will create the Search, Report, and Validation Agents to retri
 
       ![](./media/Northwind_Health_Plus_Benefits_Details-snapshot.png)
   
-    - Review th content of **Northwind_Standard_Benefits_Details** pdf.
+    - Review the content of **Northwind_Standard_Benefits_Details** pdf.
 
       ![](./media/Northwind_Standard_Benefits_Details-snapshot.png)        
    
