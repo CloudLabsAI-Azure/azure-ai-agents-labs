@@ -9,7 +9,6 @@ In this hands-on lab, you will set up the necessary environment for building AI 
 In this lab, you will perform:
 
 - Task 1: Accessing Azure AI Foundry Resources and GPT-4o Endpoint Details
-- Task 2: Assign permissions to the Azure AI Search resource
 - Task 3: Install dependencies, create a virtual environment, and create an environment variables file.
 
 ## Task 1: Accessing Azure AI Foundry Resources and GPT-4o Endpoint Details
@@ -37,10 +36,6 @@ In this task, we will access Azure AI Foundry, retrieve the project connection s
    ![](./media/gpt-4o4.png)
 
    ![](./media/CopyKey5.png)
-
-## Task 2:  Assign permissions to the Azure AI Search resource
-
-In this task, you will assign the necessary permissions to the Azure AI Search resource to ensure secure access and proper functionality. This includes granting the required roles and access controls for seamless integration with the AI Agent.
 
 1. On the Azure Portal page, in the Search resources, services, and docs (G+/) box at the top of the portal, enter **AI Search (1)**, and then select **AI Search (2)** under Services.
 
@@ -132,9 +127,9 @@ In this task, you will install the required dependencies, set up a virtual envir
 
 1. On the **Sample.env** file,
 
-   - `AIPROJECT_CONNECTION_STRING`: Provide the **Project connection string** value you have copied in Task 1-Step 4.
-   - `CHAT_MODEL_ENDPOINT`: Provide the **Target URI** of the **gpt-4o** model you have copied in Task 1 -Step 5.
-   - `CHAT_MODEL_API_KEY`: Provide the **Key** value of the **gpt-4o** model you have copied in Task 1-Step 5.
+   - `AIPROJECT_CONNECTION_STRING`: Provide the **Project connection string** value you have copied in Step 4.
+   - `CHAT_MODEL_ENDPOINT`: Provide the **Target URI** of the **gpt-4o** model you have copied in Step 5.
+   - `CHAT_MODEL_API_KEY`: Provide the **Key** value of the **gpt-4o** model you have copied in Step 5.
    - `CHAT_MODEL`: **gpt-4o**
 
      ![](./media/ag49.png)
