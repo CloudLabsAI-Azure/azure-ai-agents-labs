@@ -8,10 +8,10 @@ In this hands-on lab, you will set up the necessary environment for building AI 
 
 In this lab, you will perform:
 
-- Task 1: Accessing Azure AI Foundry Resources and GPT-4o Endpoint Details
-- Task 3: Install dependencies, create a virtual environment, and create an environment variables file.
+- Task 1: Accessing Azure AI Foundry Resources
+- Task 2: Install dependencies, create a virtual environment, and create an environment variables file.
 
-## Task 1: Accessing Azure AI Foundry Resources and GPT-4o Endpoint Details
+## Task 1: Accessing Azure AI Foundry Resources
 
 In this task, we will access Azure AI Foundry, retrieve the project connection string, and obtain the GPT-4o model's Target URI and key for integration.
 
@@ -53,7 +53,7 @@ In this task, we will access Azure AI Foundry, retrieve the project connection s
 
    ![](./media/ag25a.png)
 
-## Task 3: Install dependencies, create a virtual environment, and create an environment variables file
+## Task 2: Install dependencies, create a virtual environment, and create an environment variables file
 
 In this task, you will install the required dependencies, set up a virtual environment, and create an environment variables file. This ensures a controlled development environment and securely manages configuration settings for your AI project.
 
