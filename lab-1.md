@@ -58,62 +58,6 @@ In this task, you will assign the necessary permissions to the Azure AI Search r
 
    ![](./media/ag25a.png)
 
-1. Go to the **Azure OpenAI**, **my-openai-service-<inject key="DeploymentID" enableCopy="false" /></inject>**.
-
-   ![](./media/ag26.png)
-
-1. Select **Access control(IAM)(1)**, then click on **Add(2)**, and then select **Add role assignment**.
-
-   ![](./media/ag27.png)
-
-1. Under **Job function roles**, search for **Cognitive Services OpenAI User (1)**, select **Cognitive Services OpenAI User (2)**, and then select **Next (3)**.
-
-   ![](./media/ag28.png)
-
-1. On the **Add role assignment** page, 
-
-   - Under Members, select **Managed identity(1)**
-   - Click on **+ Select Members (1)**
-   - Managed identity: **search services(1)** **(3)**
-   - Then select **my-search-service-<inject key="Deployment ID" enableCopy="false"></inject> (4)** search service.
-   - Click on **Select (5)**
-
-     ![](./media/l1.task1.24.png)
-
-1. Select **Review + assign** twice.
-
-   ![](./media/ag30.png)
-
-1. On the Azure portal, search for **Storage accounts (1)** and select **Storage accounts (1)** from the services.
-
-   ![](./media/ag31.png)
-
-1. Now navigate to the **Storage Account** for the project.
-
-   ![](./media/ag31a.png)
-
-1. Select **Access control(IAM)(1)**, then click on **Add(2)**, and then select **Add role assignment**.
-
-   ![](./media/storage1.png)
-
-1. Under **Job function roles**, search for **Storage Blob Data Reader (1)**, select **Storage Blob Data Reader (2)**, and then select **Next (3)**.
-
-   ![](./media/ag34.png)
-
-1. On the **Add role assignment** page, 
-
-   - Under Members, select **Managed identity(1)**
-   - Click on **+ Select Members (1)**
-   - Managed identity: **search services(1)** **(3)**
-   - Then select **my-search-service-<inject key="Deployment ID" enableCopy="false"></inject> (4)** search service.
-   - Click on **Select (5)**
-
-     ![](./media/storage2.png)
-
-1. Select **Review + assign** twice.
-
-   ![](./media/ag36.png)   
-
 ## Task 3: Install dependencies, create a virtual environment, and create an environment variables file
 
 In this task, you will install the required dependencies, set up a virtual environment, and create an environment variables file. This ensures a controlled development environment and securely manages configuration settings for your AI project.
@@ -184,13 +128,13 @@ In this task, you will install the required dependencies, set up a virtual envir
 
    ![](./media/ag46.png)
 
-   - Retrieve the required values from your **Azure AI Foundry project**.
+    - Retrieve the required values from your **Azure AI Foundry project**.
 
 1. On the **Sample.env** file,
 
-   - `AIPROJECT_CONNECTION_STRING`: Provide the **Project connection string** value you have copied in Task 1 of step 9
-   - `CHAT_MODEL_ENDPOINT`: Provide the **Target URI** of the **gpt-4o** model you have copied in Task 2 of step 4.
-   - `CHAT_MODEL_API_KEY`: Provide the **Key** value of the **gpt-4o** model you have copied in Task 2 of step 4.
+   - `AIPROJECT_CONNECTION_STRING`: Provide the **Project connection string** value you have copied in Task 1-Step 4.
+   - `CHAT_MODEL_ENDPOINT`: Provide the **Target URI** of the **gpt-4o** model you have copied in Task 1 -Step 5.
+   - `CHAT_MODEL_API_KEY`: Provide the **Key** value of the **gpt-4o** model you have copied in Task 1-Step 5.
    - `CHAT_MODEL`: **gpt-4o**
 
      ![](./media/ag49.png)
