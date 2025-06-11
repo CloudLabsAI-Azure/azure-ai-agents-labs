@@ -28,14 +28,14 @@ In this task, you will create and configure an AI Project within Azure AI Foundr
 1. On the **Create an AI hub resource** pane, enter the following details:
 
     - Subscription : **Leave default subscription** 
-    - Resource Group : Select azure-ai-agents-<inject key="Deployment ID" enableCopy="false"></inject> **(1)** 
+    - Resource Group : Select **azure-ai-agents-<inject key="Deployment ID" enableCopy="false"></inject> (1)** 
     - Region : **<inject key="Region" enableCopy="false"></inject>** Use the same location as the resource group **(2)**
     - Name : Use the format **aihub-<inject key="Deployment ID" enableCopy="false"></inject> (3)** 
 
         ![](./media/l1.task1.1.png) 
 
     - Connect AI Services incl. OpenAI : Click on **Create New (1)**
-    - Create new Azure AI Services: Provide a name to the AI Service,Use the format **my-ai-service-<inject key="Deployment ID" enableCopy="false"></inject> (2)**  
+    - Create new Azure AI Services: Provide a name to the AI Service, Use the format **my-ai-service-<inject key="Deployment ID" enableCopy="false"></inject> (2)**  
     - Click on **Save (3)**, followed by **Next:Storage (4)**
     
         ![](./media/aiservice.png)  
@@ -46,7 +46,7 @@ In this task, you will create and configure an AI Project within Azure AI Foundr
 
    ![](./media/l1.task1.5.png) 
 
-1. Wait for the deployment is completed and then click on **Go to resource**
+1. Wait for the deployment to be completed and then click on **Go to resource**
 
    ![](./media/l1.task1.6.png)
 
@@ -273,7 +273,7 @@ In this task, you will install the required dependencies, set up a virtual envir
 
    ![](./media/ag40.png)
 
-1. Make sure you are in the **azure-ai-agents-labs** project directory. Run the below PowerShell commands to create and activate your virtual environment:
+1. Make sure you are in the **azure-ai-agents-labs** project directory. Run the following PowerShell commands to create and activate your virtual environment:
 
    ```powershell
    python -m venv venv
@@ -313,7 +313,7 @@ In this task, you will install the required dependencies, set up a virtual envir
 
    ![](./media/ag44.png)
 
-1. Once the Authorization is completed, navigate back to the Visual Studio Code.
+1. Once the Authorization is completed, navigate back to Visual Studio Code.
 
    ![](./media/ag45.png)
 

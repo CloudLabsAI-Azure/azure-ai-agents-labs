@@ -63,7 +63,7 @@ In this task, you will create an **Azure AI Search index** to store vectorized r
 
    ![](./media/RAG.png)
 
-1. On Configure your Azure Blob Storage , enter the following details and click on **Next(5)**:
+1. On Configure your Azure Blob Storage, enter the following details and click on **Next(5)**:
 
    |Setting|Value|
    |---|---|
@@ -84,14 +84,14 @@ In this task, you will create an **Azure AI Search index** to store vectorized r
    |Authentication type|**System assigned identity** **(5)**|
    |Acknowledgement rectangle|**checked** **(6)**|
 
-      ![](./media/ag59.png)
+      ![](./media/L3T1S14-1106.png)
 
 1. Click on **Next** twice.
 1. Enter **health-plan (1)** for  **Objects name prefix** and click on **Create (2)**.
 
-   ![](./media/ag60.png)
+   ![](./media/L3T1S16-1106.png)
 
-   >**Note**: The uploading of data to indexes in search service might take 5-10 minutes.
+   >**Note**: The uploading of data to indexes in the search service might take 5-10 minutes.
 
    >**Note:** On the **Create Suceeded** Pop Up click on close.
 
@@ -151,7 +151,7 @@ In this task, you will build an AI Agent using **Retrieval-Augmented Generation 
 
    ![](./media/lab3-task2-step9output.png)
 
-> **Note**: Here's an example of what your output likely to see; however, the precise recommendation could vary.
+> **Note**: Here's an example of what your output is likely to see; however, the precise recommendation could vary.
    
 ## Review
 
