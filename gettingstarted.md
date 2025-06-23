@@ -133,9 +133,9 @@ Feel free to **start, stop, or restart (2)** your virtual machine as needed from
 
 1. On your phone, enter the number shown on your computer screen in the Authenticator app and select **Next**.
        
-1. If prompted to stay signed in, you can click "No."
+1. If prompted to stay signed in, you can click **Yes**.
  
-1. If a **Welcome to Microsoft Azure** pop-up window appears, simply click "Maybe Later" to skip the tour.
+1. If a **Welcome to Microsoft Azure** pop-up window appears, simply click **Cancel** to skip the tour.
 
 ## Support Contact
  

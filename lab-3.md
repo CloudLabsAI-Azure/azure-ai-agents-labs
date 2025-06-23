@@ -25,7 +25,7 @@ In this task, you will create an **Azure AI Search index** to store vectorized r
 
    ![](./media/ag31a.png)
 
-1. Click on **Containers(1)** under data storage, then select **+ Add Container(2)**.
+1. Click on **Containers(1)** under **Data storage**, then select **+ Add container(2)**.
 
    ![](./media/6062025l3.task1.2.png)
 
@@ -37,25 +37,25 @@ In this task, you will create an **Azure AI Search index** to store vectorized r
 
    ![](./media/l3.task1.3.png)
 
-1. Click on **upload (1)** to upload the file and then Click on **browse for files (2)**.
+1. Click on **Upload (1)** to upload the file and then Click on **Browse for files (2)**.
 
-   ![](./media/ag54.png)
+   ![](./media/azure-aiagent-june-4.png)
 
 1. Navigate to `C:\LabFiles\azure-ai-agents-labs\data` **(1)** and select both the PDFs to upload **(2)**, and click on **Open (3)**.
 
    ![](./media/ag55.png)
 
-1. Click on **upload**.
+1. Click on **Upload**.
 
 1. Navigate to Azure Portal and search **AI Search** and select **my-search-service-<inject key="Deployment ID" enableCopy="false"></inject>** in azure portal.
 
    ![](./media/l3.search.png)
 
-1. Click on **import and vectorize data**.
+1. Click on **Import and vectorize data**.
 
    ![](./media/ag56a.png)
 
-1. Select **azure blob storage**.
+1. Select **Azure Blob Storage**.
 
    ![](./media/ag57.png)
 
@@ -74,7 +74,7 @@ In this task, you will create an **Azure AI Search index** to store vectorized r
 
       ![](./media/l3.task1.4a.png)
 
-1. On Vectorize your text, enter the following details and click on **Next (7)**:
+1. On **Vectorize your text** page, enter the following details and click on **Next (7)**:
    |Setting|Value|
    |---|---|
    |Kind|**Azure OpenAI (1)**|
@@ -93,13 +93,13 @@ In this task, you will create an **Azure AI Search index** to store vectorized r
 
    >**Note**: The uploading of data to indexes in the search service might take 5-10 minutes.
 
-   >**Note:** On the **Create Suceeded** Pop Up click on close.
+   >**Note:** On the **Create Suceeded** Pop Up click on **Close**.
 
 1. In the **Azure Portal**, navigate to **aihub-<inject key="Deployment ID" enableCopy="false"></inject>** and click on **Launch Azure AI Foundry**.
 
    ![](./media/ag60a.png)
 
-2. From the left-hand menu, click on **Connected resources (1)** and then select **+ New Connection (2)**.
+2. From the left-hand menu, click on **Connected resources (1)** and then select **+ New connection (2)**.
 
    ![](./media/ag60b.png)
 
@@ -123,7 +123,7 @@ In this task, you will build an AI Agent using **Retrieval-Augmented Generation 
 
    ![](./media/ag76.png)
 
-1. Select the **Select kernel (1)** setting available in the top right corner and select **venv (Python 3.12.1) (2)** from the list.
+1. Select the **Select Kernel (1)** setting available in the top right corner and select **venv (Python 3.12.1) (2)** from the list.
 
    ![](./media/ag77.png)
    
