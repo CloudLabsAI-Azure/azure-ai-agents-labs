@@ -17,9 +17,9 @@ In this lab, you will perform:
 
 In this task, you will create and configure an AI Project within Azure AI Foundry. This involves setting up the necessary resources, defining project parameters, and ensuring that the environment is ready for deploying AI models. By the end of this task, you will have a fully initialized AI Project, serving as the foundation for further development and experimentation.
 
-1. On the Azure Portal page, in the Search resources, services, and docs (G+/) box at the top of the portal, enter **Azure AI Foundry (1)**, and then select **Azure AI Foundry (2)** under **Services**.
+1. On the Azure Portal page, in the Search resources, services, and docs (G+/) box at the top of the portal, enter **AI Foundry (1)**, and then select **Azure AI Foundry (2)** under **Services**.
 
-    ![](./media/challenge6.task.1.png) 
+    ![](./media/L1T1S1.png) 
 
 1. In the left navigation pane for the AI Foundry, select **AI Hubs (1)**. On the AI Hubs page, click on **Create (2)** and select **Hub (3)** from the drop-down.
 
@@ -38,7 +38,7 @@ In this task, you will create and configure an AI Project within Azure AI Foundr
     - Connect AI Services incl. OpenAI: Provide a name to the AI Service,U se the format **my-ai-service-<inject key="Deployment ID" enableCopy="false"></inject> (2)**  
     - Click on **Save (3)**, followed by **Next:Storage (4)**
     
-        ![](./media/aiservice.png)  
+        ![](./media/L1T1S3ii.png)  
 
 1. Click on **Review + Create** tab followed by **Create.**
 
@@ -52,11 +52,11 @@ In this task, you will create and configure an AI Project within Azure AI Foundr
 
 1. On the Overview pane, click on **Launch Azure AI Foundry**. This will navigate you to the Azure AI Foundry portal.
 
-    ![](./media/l1.task1.7.png)
+    ![](./media/L1T1S6.png)
 
 1. Scroll down and click on **+ New project** on the Hub Overview. 
 
-    ![](./media/l1.task1.8.png)
+    ![](./media/L1T1S7.png)
 
 1. Provide the project name as **my-project-<inject key="Deployment ID" enableCopy="false"></inject>** **(1),** then click on **Create (2)**.
 
@@ -76,7 +76,7 @@ In this task, you will deploy a large language model (LLM) and an embedding mode
 
 1. On a **Select a model** window, search for **gpt-4o (1)**, select **gpt-4o (2)** and select **Confirm (3)**
 
-   ![](./media/ag6.png)
+   ![](./media/L1T2S2.png)
 
 1. On **Deploy model gpt-4o** window, select **Customize**.
 
@@ -96,11 +96,11 @@ In this task, you will deploy a large language model (LLM) and an embedding mode
 
 1. Navigate back to **Azure Portal** and search for **Open AI (1)** and select **Azure Open AI (2)** resource.
 
-   ![](./media/ag10.png)
+   ![](./media/L1T2S5.png)
 
 1. On the **Azure AI services | Azure OpenAI** page, select **+ Create** to create Azure OpenAI resource.
 
-   ![](./media/lab1-11.png)
+   ![](./media/L1T2S6.png)
 
 1. On **Create Azure OpenAI** page, provide the following settings and click on **Next (6)**
 
@@ -122,8 +122,7 @@ In this task, you will deploy a large language model (LLM) and an embedding mode
 
 1. Wait until the deployment succeeds and select **Go to resource**.
 
-   ![](./media/ag13.png)
-
+   ![](./media/L1T2S10.png)
 
 1. On the **my-openai-service-<inject key="DeploymentID" enableCopy="false" /></inject>** resource page, select **Go to Azure AI Foundry portal**
 
@@ -137,7 +136,7 @@ In this task, you will deploy a large language model (LLM) and an embedding mode
 
 1. On a **Select a model** window, search for **text-embedding-3-large (1)**, then select **text-embedding-3-large (2)** and select **Confirm (3)**
 
-   ![](./media/l1.task1.15.png)
+   ![](./media/L1T2S13.png)
 
 1. On **Deploy model text-embedding-3-large** window, 
 
@@ -145,7 +144,7 @@ In this task, you will deploy a large language model (LLM) and an embedding mode
    - Tokens per Minute Rate Limit: **120K (2)**
    - Select **Deploy (3)** to deploy the model.
 
-     ![](./media/l1.task1.16.png)
+     ![](./media/L1T2S14.png)
 
 1. Click on **Deployment (1)**, you can see the deployed **text-embedding-3-large (2)** model.
 
@@ -174,7 +173,7 @@ In this task, you will assign the necessary permissions to the Azure AI Search r
 
 1. On the **Review + Create**, click on **Create**
 
-   ![](./media/l1.task1.20.png)
+   ![](./media/L1T3S4.png)
 
 1. Wait until the deployment is completed, and then click on **Go to resource**
 
@@ -198,15 +197,15 @@ In this task, you will assign the necessary permissions to the Azure AI Search r
 
 1. Go to the **Azure OpenAI**, **my-openai-service-<inject key="DeploymentID" enableCopy="false" /></inject>**.
 
-   ![](./media/ag26.png)
+   ![](./media/L1T3S10.png)
 
 1. Select **Access control(IAM)(1)**, then click on **Add(2)**, and then select **Add role assignment**.
 
-   ![](./media/ag27.png)
+   ![](./media/L1T3S11.png)
 
 1. Under **Job function roles**, search for **Cognitive Services OpenAI User (1)**, select **Cognitive Services OpenAI User (2)**, and then select **Next (3)**.
 
-   ![](./media/ag28.png)
+   ![](./media/L1T3S12.png)
 
 1. On the **Add role assignment** page, 
 
@@ -216,15 +215,15 @@ In this task, you will assign the necessary permissions to the Azure AI Search r
    - Then select **my-search-service-<inject key="Deployment ID" enableCopy="false"></inject> (4)** search service.
    - Click on **Select (5)**
 
-     ![](./media/l1.task1.24.png)
+     ![](./media/L1T3S13.png)
 
 1. Select **Review + assign** twice.
 
-   ![](./media/ag30.png)
+   ![](./media/L1T3S14.png)
 
 1. On the Azure portal, search for **Storage accounts (1)** and select **Storage accounts (1)** from the services.
 
-   ![](./media/ag31.png)
+   ![](./media/L1T3S15.png)
 
 1. Now navigate to the **Storage Account** for the project.
 
@@ -232,11 +231,11 @@ In this task, you will assign the necessary permissions to the Azure AI Search r
 
 1. Select **Access control(IAM)(1)**, then click on **Add(2)**, and then select **Add role assignment**.
 
-   ![](./media/storage1.png)
+   ![](./media/L1T3S17.png)
 
 1. Under **Job function roles**, search for **Storage Blob Data Reader (1)**, select **Storage Blob Data Reader (2)**, and then select **Next (3)**.
 
-   ![](./media/ag34.png)
+   ![](./media/L1T3S18.png)
 
 1. On the **Add role assignment** page, 
 
@@ -246,11 +245,11 @@ In this task, you will assign the necessary permissions to the Azure AI Search r
    - Then select **my-search-service-<inject key="Deployment ID" enableCopy="false"></inject> (4)** search service.
    - Click on **Select (5)**
 
-     ![](./media/storage2.png)
+     ![](./media/L1T3S19.png)
 
 1. Select **Review + assign** twice.
 
-   ![](./media/ag36.png)   
+   ![](./media/L1T3S20.png)   
 
 ## Task 4: Install dependencies, create a virtual environment, and create an environment variables file
 
