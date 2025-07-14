@@ -86,7 +86,7 @@ In this task, you will deploy a large language model (LLM) and an embedding mode
    - Change the Tokens per Minute Rate Limit to **200K (2)**
    - click on **deploy (3)**
 
-     ![](./media/l1.task1.11.png)   
+     ![](./media/L1T2S3i.png)   
 
 1. Click on **Model + Endpoints (1)** to view the deployed **gpt-4o (2)** model. Copy the Target URI and key, then paste them into Notepad or a secure location, as they will be required for upcoming tasks.
 
@@ -185,7 +185,7 @@ In this task, you will assign the necessary permissions to the Azure AI Search r
 
 1. Select **Yes** for **Enable system assigned managed identity**.
 
-   ![](./media/ag25.png)
+   ![](./media/L1T3S7.png)
 
 1. Navigate to **Keys (1)** under Settings and select **Both (2)** for API Access control. 
 
@@ -227,7 +227,7 @@ In this task, you will assign the necessary permissions to the Azure AI Search r
 
 1. Now navigate to the **Storage Account** for the project.
 
-   ![](./media/ag31a.png)
+   ![](./media/L1T3S16.png)
 
 1. Select **Access control(IAM)(1)**, then click on **Add(2)**, and then select **Add role assignment**.
 
@@ -271,7 +271,7 @@ In this task, you will install the required dependencies, set up a virtual envir
 
 1. Click on the **elipses(...) (1)**, then **Terminal (1)** and then **New Terminal (3)**.
 
-   ![](./media/ag40.png)
+   ![](./media/L1T4S5.png)
 
 1. Make sure you are in the **azure-ai-agents-labs** project directory. Run the below PowerShell commands to create and activate your virtual environment:
 
@@ -373,6 +373,10 @@ In this task, you will install the required dependencies, set up a virtual envir
 1. Run the below cell to interact with the GPT-4o model using your Azure AI Foundry project. This code initializes a chat client, sends a request for a joke about a teddy bear, and prints the response. Finally, see the output provided from the chat model.
 
    ![](./media/ag75.png)
+
+   > **Note**: If in case of any errors related to **unknown connection** please verify the **.env file** and verify the updated values correct them if they are updated incorrectly and save the file. Once right values are corrected, restart the **Jupyter Kernel Session**.
+
+   ![](./media/L1T4S24N.png)
 
 ## Review
 
