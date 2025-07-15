@@ -27,9 +27,7 @@ In this task, you will create an **Azure AI Search index** to store vectorized r
 
 1. Click on **Containers(1)** under **Data storage**, then select **+ Add container(2)**.
 
-stage
    ![](./media/L3T1S3.png)
-stage
 
 1. On New Container page enter `healthplan`(1) as name and click on **Create(2)**.
 
@@ -41,9 +39,7 @@ stage
 
 1. Click on **Upload (1)** to upload the file and then Click on **Browse for files (2)**.
 
- stage
    ![](./media/L3T1S6.png)
- stage
 
 1. Navigate to `C:\LabFiles\azure-ai-agents-labs\data` **(1)** and select both the PDFs to upload **(2)**, and click on **Open (3)**.
 
