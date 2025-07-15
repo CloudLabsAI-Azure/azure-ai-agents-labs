@@ -35,15 +35,15 @@ Participants should have:
 ### Explanation of Components
 
 - **Azure AI Foundry:** A cloud-based platform for developing, deploying, and managing AI models. It allows users to configure AI projects, deploy Large Language Models (LLMs), and integrate embedding models to enhance AI applications.
-- **Azure AI Hub**: A core component of Azure AI Foundry, is a top-level Azure resource that provides a central, secure, and collaborative environment for teams to build, manage, and deploy AI applications, offering access to various Azure AI services with a single setup. 
+- **Azure AI Hub**: A core component of Azure AI Foundry, it is a top-level Azure resource that provides a central, secure, and collaborative environment for teams to build, manage, and deploy AI applications, offering access to various Azure AI services with a single setup. 
 - **Azure AI Search:** A vector-based search service that enables Retrieval-Augmented Generation (RAG) by indexing and retrieving relevant documents to improve AI-generated responses.
 - **Azure AI Services**: A collection of cloud-based AI services that allow developers and data scientists to build intelligent applications, offering pre-built and customizable APIs and models for tasks like speech, vision, language, and knowledge
-- **Azure Key Vault**: It is cloud service that securely stores and manages secrets, certificates, and cryptographic keys, allowing authorized users and applications to access them while enhancing security and reducing data breach risks. 
+- **Azure Key Vault**: It is a cloud service that securely stores and manages secrets, certificates, and cryptographic keys, allowing authorized users and applications to access them while enhancing security and reducing data breach risks. 
 - **LLMs and Embeddings:** Understanding Large Language Models (LLMs), their capabilities, and how embeddings are used for text similarity, search, and knowledge retrieval in AI applications.
 
 # Getting Started with the lab
  
-Welcome to your Azure AI agents lab, Let's begin by making the most of this experience:
+Welcome to your Azure AI agents lab. Let's begin by making the most of this experience:
 
 ## Accessing Your Lab Environment
  
@@ -53,7 +53,7 @@ Once you're ready to dive in, your virtual machine and **lab guide** will be rig
 
 ## Lab Guide Zoom In/Zoom Out
  
-To adjust the zoom level for the environment page, click the **A↕ : 100%** icon located next to the timer in the lab environment.
+To adjust the zoom level for the environment page, click the **A↕: 100%** icon located next to the timer in the lab environment.
 
 ![](./media/agg2.png)  
 
@@ -91,7 +91,7 @@ Feel free to **start, stop, or restart (2)** your virtual machine as needed from
  
    ![Manage Your Virtual Machine](../Media/gext2.png)
 
-3. If you have not extended the duration prior to when the lab is about to end, a pop-up will appear, giving you the option to extend. Click **OK** to proceed. -->
+3. If you have not extended the duration before when the lab is about to end, a pop-up will appear, giving you the option to extend. Click **OK** to proceed. -->
 
 
 ## Let's Get Started with Azure Portal
@@ -133,9 +133,9 @@ Feel free to **start, stop, or restart (2)** your virtual machine as needed from
 
 1. On your phone, enter the number shown on your computer screen in the Authenticator app and select **Next**.
        
-1. If prompted to stay signed in, you can click "No."
+1. If prompted to stay signed in, you can click **Yes**.
  
-1. If a **Welcome to Microsoft Azure** pop-up window appears, simply click "Maybe Later" to skip the tour.
+1. If a **Welcome to Microsoft Azure** pop-up window appears, simply click **Cancel** to skip the tour.
 
 ## Support Contact
  

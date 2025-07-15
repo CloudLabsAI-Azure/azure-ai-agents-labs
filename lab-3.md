@@ -25,9 +25,11 @@ In this task, you will create an **Azure AI Search index** to store vectorized r
 
    ![](./media/L1T3S16.png)
 
-1. Click on **Containers(1)** under data storage, then select **+Container(2)**.
+1. Click on **Containers(1)** under **Data storage**, then select **+ Add container(2)**.
 
+stage
    ![](./media/L3T1S3.png)
+stage
 
 1. On New Container page enter `healthplan`(1) as name and click on **Create(2)**.
 
@@ -37,25 +39,27 @@ In this task, you will create an **Azure AI Search index** to store vectorized r
 
    ![](./media/L3T1S5.png)
 
-1. Click on **upload (1)** to upload the file and then Click on **browse for files (2)**.
+1. Click on **Upload (1)** to upload the file and then Click on **Browse for files (2)**.
 
+ stage
    ![](./media/L3T1S6.png)
+ stage
 
 1. Navigate to `C:\LabFiles\azure-ai-agents-labs\data` **(1)** and select both the PDFs to upload **(2)**, and click on **Open (3)**.
 
    ![](./media/ag55.png)
 
-1. Click on **upload**.
+1. Click on **Upload**.
 
-1. Navigate to Azure Portal and search **Azure Ai search** and select **my-search-service-<inject key="Deployment ID" enableCopy="false"></inject>** in azure portal.
+1. Navigate to Azure Portal and search **AI Search** and select **my-search-service-<inject key="Deployment ID" enableCopy="false"></inject>** in azure portal.
 
    ![](./media/l3.search.png)
 
-1. Click on **import and vectorize data**.
+1. Click on **Import and vectorize data**.
 
    ![](./media/L3T1S10.png)
 
-1. Select **azure blob storage**.
+1. Select **Azure Blob Storage**.
 
    ![](./media/L3T1S11.png)
 
@@ -63,7 +67,7 @@ In this task, you will create an **Azure AI Search index** to store vectorized r
 
    ![](./media/L3T1S12.png)
 
-1. On Configure your Azure Blob Storage , enter the following details and click on **Next(5)**:
+1. On Configure your Azure Blob Storage, enter the following details and click on **Next(5)**:
 
    |Setting|Value|
    |---|---|
@@ -74,7 +78,7 @@ In this task, you will create an **Azure AI Search index** to store vectorized r
 
       ![](./media/l3.task1.4a.png)
 
-1. On Vectorize your text, enter the following details and click on **Next (7)**:
+1. On **Vectorize your text** page, enter the following details and click on **Next (7)**:
    |Setting|Value|
    |---|---|
    |Kind|**Azure OpenAI (1)**|
@@ -84,22 +88,22 @@ In this task, you will create an **Azure AI Search index** to store vectorized r
    |Authentication type|**System assigned identity** **(5)**|
    |Acknowledgement rectangle|**checked** **(6)**|
 
-      ![](./media/ag59.png)
+      ![](./media/L3T1S14-1106.png)
 
 1. Click on **Next** twice.
 1. Enter **health-plan (1)** for  **Objects name prefix** and click on **Create (2)**.
 
-   ![](./media/ag60.png)
+   ![](./media/L3T1S16-1106.png)
 
-   >**Note**: The uploading of data to indexes in search service might take 5-10 minutes.
+   >**Note**: The uploading of data to indexes in the search service might take 5-10 minutes.
 
-   >**Note:** On the **Create Suceeded** Pop Up click on close.
+   >**Note:** On the **Create Suceeded** Pop Up click on **Close**.
 
 1. In the **Azure Portal**, navigate to **aihub-<inject key="Deployment ID" enableCopy="false"></inject>** and click on **Launch Azure AI Foundry**.
 
    ![](./media/ag60a.png)
 
-2. From the left-hand menu, click on **Connected resources (1)** and then select **+ New Connection (2)**.
+2. From the left-hand menu, click on **Connected resources (1)** and then select **+ New connection (2)**.
 
    ![](./media/L3T1S18.png)
 
@@ -123,7 +127,7 @@ In this task, you will build an AI Agent using **Retrieval-Augmented Generation 
 
    ![](./media/ag76.png)
 
-1. Select the **Select kernel (1)** setting available in the top right corner and select **venv (Python 3.12.1) (2)** from the list.
+1. Select the **Select Kernel (1)** setting available in the top right corner and select **venv (Python 3.12.1) (2)** from the list.
 
    ![](./media/ag77.png)
    
@@ -149,6 +153,10 @@ In this task, you will build an AI Agent using **Retrieval-Augmented Generation 
    
 1. Observe the output.
 
+   ![](./media/lab3-task2-step9output.png)
+
+> **Note**: Here's an example of what your output is likely to see; however, the precise recommendation could vary.
+   
 ## Review
 
 In this lab, you have accomplished the following:
