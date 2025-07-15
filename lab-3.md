@@ -19,27 +19,31 @@ In this task, you will create an **Azure AI Search index** to store vectorized r
 
 1. Navigate to **Azure Portal**, search for **Storage account (1)** and select the **Storage account (2)**.
 
-   ![](./media/ag31.png)
+   ![](./media/L1T3S15.png)
 
 1. Select the Storage account that starts with **aihub....**.
 
-   ![](./media/ag31a.png)
+   ![](./media/L1T3S16.png)
 
 1. Click on **Containers(1)** under **Data storage**, then select **+ Add container(2)**.
 
-   ![](./media/6062025l3.task1.2.png)
+stage
+   ![](./media/L3T1S3.png)
+stage
 
 1. On New Container page enter `healthplan`(1) as name and click on **Create(2)**.
 
-   ![](./media/ag52.png)
+   ![](./media/L3T1S4.png)
 
 1. Open **healthplan** container by clicking on it.
 
-   ![](./media/l3.task1.3.png)
+   ![](./media/L3T1S5.png)
 
 1. Click on **Upload (1)** to upload the file and then Click on **Browse for files (2)**.
 
-   ![](./media/azure-aiagent-june-4.png)
+ stage
+   ![](./media/L3T1S6.png)
+ stage
 
 1. Navigate to `C:\LabFiles\azure-ai-agents-labs\data` **(1)** and select both the PDFs to upload **(2)**, and click on **Open (3)**.
 
@@ -53,15 +57,15 @@ In this task, you will create an **Azure AI Search index** to store vectorized r
 
 1. Click on **Import and vectorize data**.
 
-   ![](./media/ag56a.png)
+   ![](./media/L3T1S10.png)
 
 1. Select **Azure Blob Storage**.
 
-   ![](./media/ag57.png)
+   ![](./media/L3T1S11.png)
 
 1. Choose **RAG** Model.
 
-   ![](./media/RAG.png)
+   ![](./media/L3T1S12.png)
 
 1. On Configure your Azure Blob Storage, enter the following details and click on **Next(5)**:
 
@@ -101,7 +105,7 @@ In this task, you will create an **Azure AI Search index** to store vectorized r
 
 2. From the left-hand menu, click on **Connected resources (1)** and then select **+ New connection (2)**.
 
-   ![](./media/ag60b.png)
+   ![](./media/L3T1S18.png)
 
 3. Choose **Azure AI Search** as the resource type.
 
@@ -109,9 +113,9 @@ In this task, you will create an **Azure AI Search index** to store vectorized r
 
 4. After the connection is successfully added, click **Add connection (1)**, then close the dialog.
 
-   ![](./media/ag60d.png)
+   ![](./media/L3T1S20.png)
 
-   ![](./media/ag60e.png)
+   ![](./media/L3T1S20i.png)
 
 ## Task 2: Create the Search Agent
 
