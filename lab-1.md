@@ -86,9 +86,7 @@ SS
    - Change the Tokens per Minute Rate Limit to **200K (2)**
    - click on **Connect and deploy (3)**
 
- stage
      ![](./media/L1T2S3i.png)   
-stage
 
 1. Click on **Model + Endpoints (1)** to view the deployed **gpt-4o (2)** model. Copy the Target URI and key, then paste them into Notepad or a secure location, as they will be required for upcoming tasks.
 
@@ -100,11 +98,9 @@ stage
 
    ![](./media/L1T2S5.png)
 
- stage
 1. On the **Use with AI Foundry | Azure OpenAI** page, select **+ Create** to create Azure OpenAI resource.
 
    ![](./media/L1T2S6.png)
- stage
 
 1. On **Create Azure OpenAI** page, provide the following settings and click on **Next (6)**
 
@@ -126,9 +122,7 @@ stage
 
 1. Wait until the deployment succeeds and select **Go to resource**.
 
-stage
    ![](./media/L1T2S10.png)
- stage
 
 1. On the **my-openai-service-<inject key="DeploymentID" enableCopy="false" /></inject>** resource page, select **Go to Azure AI Foundry portal**
 
