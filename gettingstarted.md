@@ -55,7 +55,7 @@ Once you're ready to dive in, your virtual machine and **lab guide** will be rig
  
 To adjust the zoom level for the environment page, click the **A↕: 100%** icon located next to the timer in the lab environment.
 
-![](./media/agg2.png)  
+![](./media/GS1.png)  
 
 ### Virtual Machine & Lab Guide
  
@@ -65,7 +65,7 @@ Your virtual machine is your workhorse throughout the workshop. The lab guide is
  
 To get a better understanding of your lab resources and credentials, navigate to the **Environment** tab.
  
-  ![Explore Lab Resources](./media/agg3a.png)
+  ![Explore Lab Resources](./media/GS2.png)
  
 ## Utilizing the Split Window Feature
  
@@ -77,7 +77,7 @@ For convenience, you can open the lab guide in a separate window by selecting th
  
 Feel free to **start, stop, or restart (2)** your virtual machine as needed from the **Resources (1)** tab. Your experience is in your hands!
 
-   ![Manage Your Virtual Machine](./media/agg5a.png)
+   ![Manage Your Virtual Machine](./media/GS3.png)
 
 <!-- ## Lab Duration Extension
 
