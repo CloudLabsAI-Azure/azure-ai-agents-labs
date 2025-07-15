@@ -32,7 +32,7 @@ In this task, you will create and configure an AI Project within Azure AI Foundr
     - Region : **<inject key="Region" enableCopy="false"></inject>** Use the same location as the resource group **(2)**
     - Name : Use the format **aihub-<inject key="Deployment ID" enableCopy="false"></inject> (3)** 
 
-        ![](./media/l1.task1.1.png) 
+         ![](./media/L1T1S3i.png) 
 
     - Connect AI Services incl. OpenAI : Click on **Create New (1)**
     - Connect AI Services incl. OpenAI: Provide a name to the AI Service,U se the format **my-ai-service-<inject key="Deployment ID" enableCopy="false"></inject> (2)**  
@@ -42,9 +42,9 @@ In this task, you will create and configure an AI Project within Azure AI Foundr
 
 1. Click on **Review + Create** tab followed by **Create.**
 
-   ![](./media/l1.task1.4.png)
+   ![](./media/L1T1S4i.png)
 
-   ![](./media/l1.task1.5.png) 
+   ![](./media/L1T1S4ii.png) 
 
 1. Wait for the deployment is completed and then click on **Go to resource**
 
@@ -98,7 +98,7 @@ In this task, you will deploy a large language model (LLM) and an embedding mode
 
    ![](./media/L1T2S5.png)
 
-1. On the **Azure AI services | Azure OpenAI** page, select **+ Create** to create Azure OpenAI resource.
+1. On the **Use with AI Foundry | Azure OpenAI** page, select **+ Create** to create Azure OpenAI resource.
 
    ![](./media/L1T2S6.png)
 
@@ -112,13 +112,13 @@ In this task, you will deploy a large language model (LLM) and an embedding mode
    | Name | **my-openai-service-<inject key="DeploymentID" enableCopy="false" /></inject> (4)** |
    | Pricing tier | **Standard S0 (5)** |
 
-   ![](./media/l1.task2.5.png)
+   ![](./media/L1T2S7.png)
 
 1. Click on **Next** thrice.
 
 1. On the **Review + submit** page, click on **Create**
  
-   ![](./media/l1.task2.6.png)
+   ![](./media/L1T2S9.png)
 
 1. Wait until the deployment succeeds and select **Go to resource**.
 
