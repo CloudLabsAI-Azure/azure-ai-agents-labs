@@ -27,9 +27,8 @@ In this task, you will create an **Azure AI Search index** to store vectorized r
 
 1. Click on **Containers(1)** under **Data storage**, then select **+ Add container(2)**.
 
-stage
    ![](./media/L3T1S3.png)
-stage
+
 
 1. On New Container page enter `healthplan`(1) as name and click on **Create(2)**.
 
@@ -41,9 +40,7 @@ stage
 
 1. Click on **Upload (1)** to upload the file and then Click on **Browse for files (2)**.
 
- stage
    ![](./media/L3T1S6.png)
- stage
 
 1. Navigate to `C:\LabFiles\azure-ai-agents-labs\data` **(1)** and select both the PDFs to upload **(2)**, and click on **Open (3)**.
 
@@ -53,7 +50,7 @@ stage
 
 1. Navigate to Azure Portal and search **AI Search** and select **my-search-service-<inject key="Deployment ID" enableCopy="false"></inject>** in azure portal.
 
-   ![](./media/l3.search.png)
+   ![](./media/L3T1S9.png)
 
 1. Click on **Import and vectorize data**.
 
@@ -76,7 +73,7 @@ stage
    |Blob container|**healthplan**(3)|
    |Management identity type|**System-assigned**(4)|
 
-      ![](./media/l3.task1.4a.png)
+      ![](./media/L3T1S13.png)
 
 1. On **Vectorize your text** page, enter the following details and click on **Next (7)**:
    |Setting|Value|
@@ -88,12 +85,12 @@ stage
    |Authentication type|**System assigned identity** **(5)**|
    |Acknowledgement rectangle|**checked** **(6)**|
 
-      ![](./media/L3T1S14-1106.png)
+      ![](./media/L3T1S14.png)
 
 1. Click on **Next** twice.
 1. Enter **health-plan (1)** for  **Objects name prefix** and click on **Create (2)**.
 
-   ![](./media/L3T1S16-1106.png)
+   ![](./media/L3T1S16.png)
 
    >**Note**: The uploading of data to indexes in the search service might take 5-10 minutes.
 

@@ -64,7 +64,7 @@ In this task, you will create and configure an AI Project within Azure AI Foundr
 
 1. Once the project is created, scroll down and copy the **Project connection string**, then paste it into Notepad or a secure location, as it will be required for upcoming tasks.
 
-    ![](./media/l1.task1.10.png)
+      ![](./media/L1T1S9.png)
 
 ## Task 2: Deploying an LLM and embedding models
 
@@ -90,9 +90,9 @@ SS
 
 1. Click on **Model + Endpoints (1)** to view the deployed **gpt-4o (2)** model. Copy the Target URI and key, then paste them into Notepad or a secure location, as they will be required for upcoming tasks.
 
-   ![](./media/l1.task2.4.png)
+   ![](./media/L1T2S4i.png)
 
-   ![](./media/l1.task2.3.png)
+   ![](./media/L1T2S4ii.png)
 
 1. Navigate back to **Azure Portal** and search for **Open AI (1)** and select **Azure OpenAI (2)** resource.
 
@@ -169,7 +169,7 @@ In this task, you will assign the necessary permissions to the Azure AI Search r
     - Location : **<inject key="Region" enableCopy="false"></inject>** Use the same location as the resource group **(2)**
     - Service Name : Use the format **my-search-service-<inject key="Deployment ID" enableCopy="false"></inject> (3)**
 
-      ![](./media/l1.task1.19.png)
+      ![](./media/L1T3S3.png)
 
 1. On the **Review + create**, click on **Create**.
 
