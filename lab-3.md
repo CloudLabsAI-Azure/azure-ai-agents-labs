@@ -29,7 +29,6 @@ In this task, you will create an **Azure AI Search index** to store vectorized r
 
    ![](./media/L3T1S3.png)
 
-
 1. On New Container page enter `healthplan`(1) as name and click on **Create(2)**.
 
    ![](./media/L3T1S4.png)
