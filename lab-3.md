@@ -49,7 +49,7 @@ In this task, you will create an **Azure AI Search index** to store vectorized r
 
 1. Navigate to Azure Portal and search **AI Search** and select **my-search-service-<inject key="Deployment ID" enableCopy="false"></inject>** in azure portal.
 
-   ![](./media/l3.search.png)
+   ![](./media/L3T1S9.png)
 
 1. Click on **Import and vectorize data**.
 
@@ -72,7 +72,7 @@ In this task, you will create an **Azure AI Search index** to store vectorized r
    |Blob container|**healthplan**(3)|
    |Management identity type|**System-assigned**(4)|
 
-      ![](./media/l3.task1.4a.png)
+      ![](./media/L3T1S13.png)
 
 1. On **Vectorize your text** page, enter the following details and click on **Next (7)**:
    |Setting|Value|
@@ -84,12 +84,12 @@ In this task, you will create an **Azure AI Search index** to store vectorized r
    |Authentication type|**System assigned identity** **(5)**|
    |Acknowledgement rectangle|**checked** **(6)**|
 
-      ![](./media/L3T1S14-1106.png)
+      ![](./media/L3T1S14.png)
 
 1. Click on **Next** twice.
 1. Enter **health-plan (1)** for  **Objects name prefix** and click on **Create (2)**.
 
-   ![](./media/L3T1S16-1106.png)
+   ![](./media/L3T1S16.png)
 
    >**Note**: The uploading of data to indexes in the search service might take 5-10 minutes.
 
