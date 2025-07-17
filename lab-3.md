@@ -1,6 +1,6 @@
-# Lab 3 - Build a RAG Agent
+# Lab 3: Build a RAG Agent
 
-## Estimated time: 60 minutes
+### Estimated time: 60 Minutes
 
 ## Lab scenario
 
@@ -25,15 +25,15 @@ In this task, you will create an **Azure AI Search index** to store vectorized r
 
    ![](./media/L1T3S16.png)
 
-1. Click on **Containers(1)** under **Data storage**, then select **+ Add container(2)**.
+1. Click on **Containers(1)** under **Data storage**, then select **+ Add container (2)**.
 
    ![](./media/L3T1S3.png)
 
-1. On New Container page enter `healthplan`(1) as name and click on **Create(2)**.
+1. On the New Container page, enter `healthplan` (1) as name and click on **Create (2)**.
 
    ![](./media/L3T1S4.png)
 
-1. Open **healthplan** container by clicking on it.
+1. Open the **healthplan** container by clicking on it.
 
    ![](./media/L3T1S5.png)
 
@@ -63,18 +63,18 @@ In this task, you will create an **Azure AI Search index** to store vectorized r
 
    ![](./media/L3T1S12.png)
 
-1. On Configure your Azure Blob Storage, enter the following details and click on **Next(5)**:
+1. On Configure your Azure Blob Storage, enter the following details and click on **Next (5):**
 
    |Setting|Value|
    |---|---|
    |Subscription|leave it default **(1)**|
-   |Storage account|select the Storage account with prefix **aihub**(2)|
-   |Blob container|**healthplan**(3)|
-   |Management identity type|**System-assigned**(4)|
+   |Storage account|select the Storage account with prefix **aihub** **(2)**|
+   |Blob container|**healthplan** **(3)**|
+   |Management identity type|**System-assigned** **(4)**|
 
    ![](./media/L3T1S13.png)
 
-1. On **Vectorize your text** page, enter the following details and click on **Next (7)**:
+1. On **Vectorize your text** page, enter the following details and click on **Next (7):**
    |Setting|Value|
    |---|---|
    |Kind|**Azure OpenAI (1)**|
@@ -91,7 +91,7 @@ In this task, you will create an **Azure AI Search index** to store vectorized r
 
    ![](./media/L3T1S16.png)
 
-   >**Note**: The uploading of data to indexes in the search service might take 5-10 minutes.
+   >**Note:** The uploading of data to indexes in the search service might take 5-10 minutes.
 
    >**Note:** On the **Create Suceeded** Pop Up click on **Close**.
 
@@ -151,7 +151,7 @@ In this task, you will build an AI Agent using **Retrieval-Augmented Generation 
 
    ![](./media/lab3-task2-step9output.png)
 
-> **Note**: Here's an example of what your output is likely to see; however, the precise recommendation could vary.
+> **Note:** Here's an example of what your output is likely to see; however, the precise recommendation could vary.
    
 ## Review
 
