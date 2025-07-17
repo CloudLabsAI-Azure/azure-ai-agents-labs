@@ -44,4 +44,4 @@ In this task, you will build a simple AI Agent that processes data and generates
 In this lab, you have accomplished the following:
 - Created a Simple AI Agent
 
-### You have successfully finished the lab. Click **Next** to continue to the next lab.
+### You have successfully completed the lab. Click **Next** to continue to the next lab.
