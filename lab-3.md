@@ -1,6 +1,6 @@
 # Lab 3: Build a RAG Agent
 
-### Estimated time: 60 Minutes
+### Estimated Duration: 60 Minutes
 
 ## Lab scenario
 
