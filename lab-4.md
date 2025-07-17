@@ -1,6 +1,6 @@
 # Lab 4: Develop a multi-agent system
 
-### Estimated time: 30 Minutes
+### Estimated Duration: 30 Minutes
 
 ## Lab scenario
 In this lab, you will build a **multi-agent system** that includes four AI agents working together to generate and validate reports on health plan documents:
