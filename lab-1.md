@@ -1,5 +1,7 @@
-# Lab 1 - Setup AI Project and perform Chat Completion from VS Code
-## Estimated duration: 120 minutes
+# Lab 1: Setup AI Project and perform Chat Completion from VS Code
+
+## Estimated duration: 120 Minutes
+
 ## Lab scenario
 
 In this hands-on lab, you will set up the necessary environment for building AI Agents. You will begin by configuring an AI Project in Azure AI Foundry, followed by deploying a Large Language Model (LLM) and embedding models. Next, you will establish connectivity from Visual Studio Code to the AI Project. Finally, you will perform a simple chat completion call to validate the setup.
@@ -27,26 +29,26 @@ In this task, you will create and configure an AI Project within Azure AI Foundr
 
 1. On the **Create an AI hub resource** pane, enter the following details:
 
-    - Subscription : **Leave default subscription** 
-    - Resource Group : Select **azure-ai-agents-<inject key="Deployment ID" enableCopy="false"></inject> (1)** 
-    - Region : **<inject key="Region" enableCopy="false"></inject>** Use the same location as the resource group **(2)**
-    - Name : Use the format **aihub-<inject key="Deployment ID" enableCopy="false"></inject> (3)** 
+    - Subscription: **Leave default subscription** 
+    - Resource Group: Select **azure-ai-agents-<inject key="Deployment ID" enableCopy="false"></inject> (1)** 
+    - Region: **<inject key="Region" enableCopy="false"></inject>** Use the same location as the resource group **(2)**
+    - Name: Use the format **aihub-<inject key="Deployment ID" enableCopy="false"></inject> (3)** 
 
          ![](./media/L1T1S3i.png) 
 
-    - Connect AI Services incl. OpenAI : Click on **Create new (1)**
+    - Connect AI Services incl. OpenAI: Click on **Create new (1)**
     - Create new Azure AI Services: Provide a name to the AI Service, Use the format **my-ai-service-<inject key="Deployment ID" enableCopy="false"></inject> (2)**  
     - Click on **Save (3)**, followed by **Next : Storage (4)**
     
         ![](./media/L1T1S3ii.png)  
 
-1. Click on **Review + create** tab followed by **Create.**
+1. Click on **Review + create** tab followed by **Create**.
 
    ![](./media/L1T1S4i.png)
 
    ![](./media/L1T1S4ii.png) 
 
-1. Wait for the deployment to be completed and then click on **Go to resource**
+1. Wait for the deployment to be completed, and then click on **Go to resource**
 
    ![](./media/l1.task1.6.png)
 
@@ -84,7 +86,7 @@ In this task, you will deploy a large language model (LLM) and an embedding mode
    
    - Change the **Model version to 2024-08-06 (1)**
    - Change the Tokens per Minute Rate Limit to **200K (2)**
-   - click on **Connect and deploy (3)**
+   - Click on **Connect and deploy (3)**
 
      ![](./media/L1T2S3i.png)   
 
@@ -132,7 +134,7 @@ In this task, you will deploy a large language model (LLM) and an embedding mode
 
    ![](./media/l1.task1.14.png)
 
-    >**Note**: The import and vectorize wizard in Azure AI Search, which will be used in subsequent labs, does not yet support text embedding models within your AI Foundry project. Because of this, we need to create an Azure OpenAI service and deploy a text embedding model there. We will use this text embedding model later when we create our vector index.
+    >**Note:** The import and vectorize wizard in Azure AI Search, which will be used in subsequent labs, does not yet support text embedding models within your AI Foundry project. Because of this, we need to create an Azure OpenAI service and deploy a text embedding model there. We will use this text embedding model later when we create our vector index.
 
 1. On a **Select a model** window, search for **text-embedding-3-large (1)**, then select **text-embedding-3-large (2)** and select **Confirm (3)**
 
@@ -150,7 +152,7 @@ In this task, you will deploy a large language model (LLM) and an embedding mode
 
    ![](./media/l1.task1.17.png)
 
-## Task 3:  Assign permissions to the Azure AI Search resource
+## Task 3: Assign permissions to the Azure AI Search resource
 
 In this task, you will assign the necessary permissions to the Azure AI Search resource to ensure secure access and proper functionality. This includes granting the required roles and access controls for seamless integration with the AI Agent.
 
@@ -179,7 +181,7 @@ In this task, you will assign the necessary permissions to the Azure AI Search r
 
    ![](./media/l1.task1.21.png)
 
-1. Navigate to **Identity(1)** under **Settings**. Under System-assigned, set the Status to **On(2)** and click on **Save(3)**. 
+1. Navigate to **Identity(1)** under **Settings**. Under System-assigned, set the Status to **On (2)** and click on **Save (3)**. 
 
    ![](./media/l1.task1.23.png)
 
@@ -210,7 +212,7 @@ In this task, you will assign the necessary permissions to the Azure AI Search r
 1. On the **Add role assignment** page, 
 
    - Under Members, select **Managed identity(1)**
-   - Click on **+ Select members (1)**
+   - Click on **+ Select members (2)**
    - Managed identity: **Search service(1)** **(3)**
    - Then, select **my-search-service-<inject key="Deployment ID" enableCopy="false"></inject> (4)** search service.
    - Click on **Select (5)**
@@ -374,7 +376,7 @@ In this task, you will install the required dependencies, set up a virtual envir
 
    ![](./media/ag75.png)
 
-   > **Note**: If in case of any errors related to **unknown connection** please verify the **.env file** and verify the updated values correct them if they are updated incorrectly and save the file. Once right values are corrected, restart the **Jupyter Kernel Session**.
+   > **Note:** In case of any errors related to **unknown connection**, please verify the **.env file** and verify the updated values, correct them if they are updated incorrectly and save the file. Once right values are corrected, restart the **Jupyter Kernel Session**.
 
    ![](./media/L1T4S24N.png)
 
@@ -387,5 +389,3 @@ In this lab, you have accomplished the following:
 - Performed a simple Chat Completion call.
 
 ### You have successfully finished the lab. Click **Next** to continue to the next lab.
-
-
