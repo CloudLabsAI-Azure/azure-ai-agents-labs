@@ -153,11 +153,11 @@ In this task, you will build an AI Agent using **Retrieval-Augmented Generation 
 
 > **Note:** Here's an example of what your output is likely to see; however, the precise recommendation could vary.
    
-## Review
+## Summary
 
 In this lab, you have accomplished the following:
 
 - Created the Azure AI Search Index.
 - Created the Search Agent.
 
-### You have successfully finished the lab. Click **Next** to continue to the next lab.
+### You have successfully completed the lab. Click **Next** to continue to the next lab.
