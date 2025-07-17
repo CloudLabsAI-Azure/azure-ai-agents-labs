@@ -1,7 +1,9 @@
-# Lab 2 - Build a Simple AI Agent
+# Lab 2: Build a Simple AI Agent
 
-## Estimated time: 30 minutes
+### Estimated time: 30 Minutes
+
 ## Lab scenario
+
 AI Agents are designed to automate tasks and generate insights based on user input. In this lab, you will learn how to build a simple AI Agent that processes data and generates a bar chart comparing different health benefit plans. This AI Agent leverages Azure AI services to analyze and visualize data efficiently.
 
 ## Lab Objective
@@ -29,7 +31,7 @@ In this task, you will build a simple AI Agent that processes data and generates
 
    ![](./media/ag64.png)
 
-1. Run this cell to create a **simple AI Agent** that processes data and generates a bar chart comparing different health benefit plans using Azure AI Foundry.This script initializes the AI agent, sends a prompt containing health plan data, and requests a bar chart. The agent processes the request, generates the chart, saves the image file, and then cleans up by deleting the agent.
+1. Run this cell to create a **simple AI Agent** that processes data and generates a bar chart comparing different health benefit plans using Azure AI Foundry. This script initializes the AI agent, sends a prompt containing health plan data, and requests a bar chart. The agent processes the request, generates the chart, saves the image file, and then cleans up by deleting the agent.
 
    ![](./media/ag90.png)
 
