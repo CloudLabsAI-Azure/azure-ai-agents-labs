@@ -3,7 +3,7 @@
 ### Estimated time: 30 Minutes
 
 ## Lab scenario
-In this lab, you will be creating a multi-agent system consisting of 4 agents working together to generate reports about health plan documents. You will build these 4 AI Agents:
+In this lab, you will build a **multi-agent system** that includes four AI agents working together to generate and validate reports on health plan documents:
 
 - **Search Agent:** This agent will search an Azure AI Search index for information about specific health plan policies.
 - **Report Agent:** This agent will generate a detailed report about the health plan policy based on the information returned from the Search Agent.
@@ -30,7 +30,7 @@ In this task, you will create the Search, Report, and Validation Agents to retri
 
    ![](./media/ag83.png)
 
-1. Select the **Select kernel (1)** setting available in the top right corner and select **venv (Python 3.12.1) (2)** from the list.
+1. In the top-right corner of the notebook, click **Select kernel (1)** and choose **venv (Python 3.12.1) (2)**.
 
    ![](./media/ag84.png)
 
@@ -68,7 +68,7 @@ In this task, you will create the Search, Report, and Validation Agents to retri
 
       ![](./media/Northwind_Standard_Benefits_Details-snapshot.png)        
    
-1. **Create a multi-agent system**: When you run the below cell, you will see a chat box pop up at the top of VS Code asking you to input the name of a health plan.
+1. Run the next cell to **launch the multi-agent system**. A chat box will appear in VS Code asking you to enter the name of a health plan.
   
    ![](./media/ag89.png)  
   
@@ -78,7 +78,7 @@ In this task, you will create the Search, Report, and Validation Agents to retri
 
       ![](./media/download1.png)
 
-    > **Note**: After the successful run of the cell, you will receive the following outcome.
+      > **Note**: After successful execution, you’ll see output like:
 
       ```
       Orchestrator Agent is starting...
@@ -92,7 +92,7 @@ In this task, you will create the Search, Report, and Validation Agents to retri
       Orchestrator Agent is starting...
       ```
        
-1. Type `exit` in the box and press Enter to stop running the code block.
+1. Type `exit` in the box and press **Enter** to stop the process.
 
 1. Again, run the below cell, and you will see a chat box pop up at the top of VS Code asking you to input the name of a health plan.
   
@@ -102,7 +102,7 @@ In this task, you will create the Search, Report, and Validation Agents to retri
   
      ![](./media/Northwind-Health-Plus-input.png)
 
-   > **Note**: After the successful run of the cell, you will receive the following outcome.
+     > **Note**: After successful execution, you’ll see output like:
 
      ```
      Orchestrator Agent is starting...
@@ -116,7 +116,7 @@ In this task, you will create the Search, Report, and Validation Agents to retri
      Orchestrator Agent is starting...
      ```
 
-1. Type `exit` in the box and press Enter to stop running the code block.
+1. Type `exit` in the box and press **Enter** to stop the process.
 
 1. Let's observe the generated reports
 
