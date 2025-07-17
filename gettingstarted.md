@@ -10,7 +10,7 @@ This lab is aimed to give learners hands-on experience with Azure OpenAI resourc
 
 Participants will learn:
 
-1. **Set Up AI Project and Perform Chat Completion from VS Code:** This hands-on lab will guide you through setting up the environment for building AI Agents. You will begin by configuring an AI Project in Azure AI Foundry, deploying a Large Language Model (LLM) and embedding models. Next, you will connect Visual Studio Code to the AI Project and perform a chat completion call to validate the setup, ensuring seamless integration and functionality.
+1. **Set Up AI Project and Perform Chat Completion from VS Code:** In this hands-on lab will guide you through setting up the environment for building AI Agents. You will begin by configuring an AI Project in Azure AI Foundry, deploying a Large Language Model (LLM) and embedding models. Next, you will connect Visual Studio Code to the AI Project and perform a chat completion call to validate the setup, ensuring seamless integration and functionality.
 
 2. **Build a Simple AI Agent:** In this hands-on lab, you will be introduced to AI Agents in Azure and learn how to build a simple AI Agent. You will create an agent that generates a bar chart comparing health benefit plans, leveraging AI capabilities to process data and visualize insights effectively.
 
@@ -43,7 +43,7 @@ Participants should have:
 
 # Getting Started with the lab
  
-Welcome to your Azure AI agents lab. Let's begin by making the most of this experience:
+Welcome to your Azure AI agents workshop! We've prepared a seamless environment for you to explore and learn about Azure services. Let's begin by making the most of this experience:
 
 ## Accessing Your Lab Environment
  
@@ -96,7 +96,8 @@ Feel free to **start, stop, or restart (2)** your virtual machine as needed from
 
 ## Let's Get Started with Azure Portal
  
-1. On your virtual machine, click on the Azure Portal icon.
+1. On your virtual machine, click on the **Azure Portal** icon.
+
 2. You'll see the **Sign into Microsoft Azure** tab. Here, enter your credentials:
  
    - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
@@ -110,7 +111,7 @@ Feel free to **start, stop, or restart (2)** your virtual machine as needed from
       ![Enter Your Password](./media/gt-4.png)
 
 1. If **Action required** pop-up window appears, click on **Ask later**.
-1. If prompted to **stay signed in**, you can click **No**.
+1. If prompted to **Stay Signed in**, you can click **No**.
 1. If a **Welcome to Microsoft Azure** pop-up window appears, simply click **"Cancel"** to skip the tour.
 
 ## Steps to Proceed with MFA Setup if "Ask Later" Option is Not Visible
