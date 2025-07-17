@@ -81,7 +81,7 @@ In this task, you will deploy a large language model (LLM) and an embedding mode
 1. On **Deploy gpt-4o** window, select **Customize**.
 
    ![](./media/l1.task2.2.png)
-SS
+   
    - Change the **Model version to 2024-08-06 (1)**
    - Change the Tokens per Minute Rate Limit to **200K (2)**
    - click on **Connect and deploy (3)**

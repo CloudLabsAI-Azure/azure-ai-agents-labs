@@ -72,7 +72,7 @@ In this task, you will create an **Azure AI Search index** to store vectorized r
    |Blob container|**healthplan**(3)|
    |Management identity type|**System-assigned**(4)|
 
-      ![](./media/L3T1S13.png)
+   ![](./media/L3T1S13.png)
 
 1. On **Vectorize your text** page, enter the following details and click on **Next (7)**:
    |Setting|Value|
