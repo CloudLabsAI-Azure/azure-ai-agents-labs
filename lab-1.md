@@ -388,4 +388,4 @@ In this lab, you have accomplished the following:
 - Established connectivity from VS Code to the AI Project.
 - Performed a simple Chat Completion call.
 
-### You have successfully finished the lab. Click **Next** to continue to the next lab.
+### You have successfully completed the lab. Click **Next** to continue to the next lab.
