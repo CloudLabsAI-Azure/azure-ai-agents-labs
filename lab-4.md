@@ -3,7 +3,7 @@
 ### Estimated Duration: 30 Minutes
 
 ## Lab scenario
-In this lab, you will build a **multi-agent system** that includes four AI agents working together to generate and validate reports on health plan documents:
+In this hands-on lab, you will build a **multi-agent system** that includes four AI agents working together to generate and validate reports on health plan documents:
 
 - **Search Agent:** This agent will search an Azure AI Search index for information about specific health plan policies.
 - **Report Agent:** This agent will generate a detailed report about the health plan policy based on the information returned from the Search Agent.
