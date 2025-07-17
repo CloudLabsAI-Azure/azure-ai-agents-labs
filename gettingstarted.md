@@ -70,7 +70,7 @@ For convenience, you can open the lab guide in a separate window by selecting th
  
 ## Managing Your Virtual Machine
  
-Feel free to **start, stop, or restart (2)** your virtual machine as needed from the **Resources (1)** tab. Your experience is in your hands!
+Feel free to **Start, Stop, or Restart (2)** your virtual machine as needed from the **Resources (1)** tab. Your experience is in your hands!
 
    ![Manage Your Virtual Machine](./media/GS3.png)
 
@@ -82,15 +82,17 @@ To adjust the zoom level for the environment page, click the **A↕: 100%** icon
 
 ## Let's Get Started with Azure Portal
  
-1. On your virtual machine, click on the **Azure Portal** icon.
+1. In the LabVM, click on the **Azure portal** shortcut of the Microsoft Edge browser, which is created on the desktop.
+ 
+   ![Enter Your Username](./media/azureportall.png)
 
-2. You'll see the **Sign into Microsoft Azure** tab. Here, enter your credentials:
+1. You'll see the **Sign into Microsoft Azure** tab. Here, enter your credentials:
  
    - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
  
      ![Enter Your Username](./media/gt-5.png)
  
-3. Next, provide your password:
+1. Next, provide your password:
  
    - **Password:** <inject key="AzureAdUserPassword"></inject>
  
@@ -129,11 +131,10 @@ To adjust the zoom level for the environment page, click the **A↕: 100%** icon
 The CloudLabs support team is available 24/7, 365 days a year, via email and live chat to ensure seamless assistance at any time. We offer dedicated support channels tailored specifically for both learners and instructors, ensuring that all your needs are promptly and efficiently addressed.
  
 Learner Support Contacts:
- 
-- Email Support: [cloudlabs-support@spektrasystems.com](mailto:cloudlabs-support@spektrasystems.com)
+- Email Support: cloudlabs-support@spektrasystems.com
 - Live Chat Support: https://cloudlabs.ai/labs-support
 
-Click **Next** from the bottom right corner to embark on your Lab journey!
+Now, click on **Next** from the lower right corner to move on to the next page.
  
    ![Start Your Azure Journey](./media/agg6.png)
  
