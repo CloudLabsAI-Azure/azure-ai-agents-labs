@@ -4,7 +4,7 @@
 
 ## Lab scenario
 
-In this lab, you will learn how to build a simple AI Agent that processes data and generates a bar chart comparing different health benefit plans. This AI Agent leverages Azure AI services to analyze and visualize data efficiently.
+In this hands-on lab, you will learn how to build a simple AI Agent that processes data and generates a bar chart comparing different health benefit plans. This AI Agent leverages Azure AI services to analyze and visualize data efficiently.
 
 ## Lab Objective
 In this lab, you will complete the following tasks:
