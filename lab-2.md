@@ -45,3 +45,5 @@ In this lab, you have accomplished the following:
 - Created a Simple AI Agent
 
 ### You have successfully completed the lab. Click **Next** to continue to the next lab.
+
+   ![Start Your Azure Journey](./media/agg6.png)
