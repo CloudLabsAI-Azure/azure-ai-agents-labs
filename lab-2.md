@@ -39,7 +39,7 @@ In this task, you will build a simple AI Agent that processes data and generates
 
    ![](./media/lab2-26.png)
 
-## Review
+## Summary
 
 In this lab, you have accomplished the following:
 - Created a Simple AI Agent
