@@ -1,12 +1,14 @@
-# Lab 4 - Develop a multi-agent system
+# Lab 4: Develop a multi-agent system
 
-## Estimated time: 30 minutes
+### Estimated time: 30 Minutes
+
 ## Lab scenario
 In this lab, you will be creating a multi-agent system consisting of 4 agents working together to generate reports about health plan documents. You will build these 4 AI Agents:
-- **Search Agent** - This agent will search an Azure AI Search index for information about specific health plan policies.
-- **Report Agent** - This agent will generate a detailed report about the health plan policy based on the information returned from the Search Agent.
-- **Validation Agent** - This agent will validate that the generated report meets specified requirements. In our case, making sure that the report contains information about coverage exclusions.
-- **Orchestrator Agent** - This agent will act as an orchestrator that manages the communication between the Search Agent, Report Agent, and Validation Agent.
+
+- **Search Agent:** This agent will search an Azure AI Search index for information about specific health plan policies.
+- **Report Agent:** This agent will generate a detailed report about the health plan policy based on the information returned from the Search Agent.
+- **Validation Agent:** This agent will validate that the generated report meets specified requirements. In our case, making sure that the report contains information about coverage exclusions.
+- **Orchestrator Agent:** This agent will act as an orchestrator that manages the communication between the Search Agent, Report Agent, and Validation Agent.
 
     ![](./media/download1upd.png)
 
@@ -15,6 +17,7 @@ Orchestration is a key part of multi-agentic systems since the agents that we cr
 We'll use the Azure AI Agent Service to create the Search, Report, and Validation agents. However, to create the Orchestrator Agent, we'll use Semantic Kernel. The Semantic Kernel library provides out-of-the-box functionality for orchestrating multi-agent systems.
 
 ## Lab Objective
+
 In this lab, you will complete the following tasks:
 
 - Task 1: Create the Search, Report, and Validation Agents.
@@ -49,7 +52,7 @@ In this task, you will create the Search, Report, and Validation Agents to retri
 
 1. Before proceeding further, let's open the insurance health plan PDFs and review the data structure that we’ll be feeding into the model using RAG. 
 
-    - Click on **File Explorer Icon** (1) and select **This PC** (2).
+    - Click on **File Explorer Icon** **(1)** and select **This PC** **(2)**.
     
       ![](./media/L4T1S7.1-1106.png)
    
@@ -127,9 +130,9 @@ In this task, you will create the Search, Report, and Validation Agents to retri
     
       ![](./media/observethehealthoutput.png)
 
-## Review
+## Summary
 
 In this lab, you have accomplished the following:
 - Created the Search, Report, and Validation Agents.
 
-## You have successfully completed the lab.
+## You have successfully completed the Hands-on lab.
