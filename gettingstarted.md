@@ -1,12 +1,14 @@
 # Getting Started with Your Azure-AI-Agents Workshop
+
 ### Overall Estimated Duration: 4 Hours
-### Overview
+
+## Overview
 
 This hands-on lab offers a comprehensive introduction to building AI agents using the Azure AI Agent Service SDK and Semantic Kernel. You will begin by creating AI agents with the Azure AI Agent Service and leveraging Semantic Kernel to orchestrate them in a multi-agent system. Throughout the lab, you will explore techniques for agent collaboration, automation, and task execution. By the end of this experience, you will have hands-on expertise in designing, deploying, and managing AI agents to build intelligent, scalable, and efficient AI-driven applications.
 
 ## Objective 
 
-This lab is aimed to give learners hands-on experience with Azure OpenAI resources, deploy and explore models using the Completions and Chat playgrounds, and experiment with prompts, parameters, and code generation. By completing this lab
+This lab is aimed at giving learners hands-on experience with Azure OpenAI resources, deploying and exploring models using the Completions and Chat playgrounds, and experimenting with prompts, parameters, and code generation. By completing this lab
 
 Participants will learn:
 
@@ -18,7 +20,7 @@ Participants will learn:
 
 4. **Develop a Multi-Agent System:** In this hands-on exercise, you will build a multi-agent system where four AI Agents collaborate to generate reports on health plan documents. You will create a Search Agent to retrieve policy information from Azure AI Search, a Report Agent to generate detailed reports, a Validation Agent to ensure compliance with specified requirements, and an Orchestrator Agent to manage communication between all agents. This lab will provide practical experience in designing and coordinating AI agents for complex tasks.
 
-### Prerequisites
+## Prerequisites
 Participants should have:
 
 1. **Visual Studio Code (VS Code):** Proficiency in using Visual Studio Code for coding, debugging, and managing extensions for various programming languages and frameworks.
@@ -27,12 +29,11 @@ Participants should have:
 1. **AI & Data Processing:** Knowledge of prompt engineering, chat completion workflows, embedding models, retrieval-augmented generation (RAG), and content filtering techniques.
 1. **System Design & Multi-Agent Coordination:** Understanding AI agent architectures, designing retrieval, validation, and orchestration agents, and coordinating multi-agent interactions.
 
-
 ## Architecture Diagram
 
 ![Architecture Diagram](./media/standard-agent-setup-resources.png)
  
-### Explanation of Components
+## Explanation of Components
 
 - **Azure AI Foundry:** A cloud-based platform for developing, deploying, and managing AI models. It allows users to configure AI projects, deploy Large Language Models (LLMs), and integrate embedding models to enhance AI applications.
 - **Azure AI Hub**: A core component of Azure AI Foundry, it is a top-level Azure resource that provides a central, secure, and collaborative environment for teams to build, manage, and deploy AI applications, offering access to various Azure AI services with a single setup. 
@@ -47,17 +48,11 @@ Welcome to your Azure AI agents workshop! We've prepared a seamless environment 
 
 ## Accessing Your Lab Environment
  
-Once you're ready to dive in, your virtual machine and **lab guide** will be right at your fingertips within your web browser.
+Once you're ready to dive in, your virtual machine and **Guide** will be right at your fingertips within your web browser.
  
   ![Access Your VM and Lab Guide](./media/agg1a.png)
 
-## Lab Guide Zoom In/Zoom Out
- 
-To adjust the zoom level for the environment page, click the **A↕: 100%** icon located next to the timer in the lab environment.
-
-![](./media/GS1.png)  
-
-### Virtual Machine & Lab Guide
+## Virtual Machine & Lab Guide
  
 Your virtual machine is your workhorse throughout the workshop. The lab guide is your roadmap to success.
  
@@ -75,44 +70,37 @@ For convenience, you can open the lab guide in a separate window by selecting th
  
 ## Managing Your Virtual Machine
  
-Feel free to **start, stop, or restart (2)** your virtual machine as needed from the **Resources (1)** tab. Your experience is in your hands!
+Feel free to **Start, Stop, or Restart (2)** your virtual machine as needed from the **Resources (1)** tab. Your experience is in your hands!
 
    ![Manage Your Virtual Machine](./media/GS3.png)
 
-<!-- ## Lab Duration Extension
-
-1. To extend the duration of the lab, kindly click the **Hourglass** icon in the top right corner of the lab environment. 
-
-    ![Manage Your Virtual Machine](../Media/gext.png)
-
-    >**Note:** You will get the **Hourglass** icon when 10 minutes are remaining in the lab.
-
-2. Click **OK** to extend your lab duration.
+## Lab Guide Zoom In/Zoom Out
  
-   ![Manage Your Virtual Machine](../Media/gext2.png)
+To adjust the zoom level for the environment page, click the **A↕: 100%** icon located next to the timer in the lab environment.
 
-3. If you have not extended the duration before when the lab is about to end, a pop-up will appear, giving you the option to extend. Click **OK** to proceed. -->
-
+![](./media/GS1.png)  
 
 ## Let's Get Started with Azure Portal
  
-1. On your virtual machine, click on the **Azure Portal** icon.
+1. In the LabVM, click on the **Azure portal** shortcut of the Microsoft Edge browser, which is created on the desktop.
+ 
+   ![Enter Your Username](./media/azureportall.png)
 
-2. You'll see the **Sign into Microsoft Azure** tab. Here, enter your credentials:
+1. You'll see the **Sign into Microsoft Azure** tab. Here, enter your credentials:
  
    - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
  
      ![Enter Your Username](./media/gt-5.png)
  
-3. Next, provide your password:
+1. Next, provide your password:
  
    - **Password:** <inject key="AzureAdUserPassword"></inject>
  
       ![Enter Your Password](./media/gt-4.png)
 
-1. If **Action required** pop-up window appears, click on **Ask later**.
 1. If prompted to **Stay Signed in**, you can click **No**.
-1. If a **Welcome to Microsoft Azure** pop-up window appears, simply click **"Cancel"** to skip the tour.
+
+1. If a **Welcome to Microsoft Azure** pop-up window appears, simply click **Cancel** to skip the tour.
 
 ## Steps to Proceed with MFA Setup if "Ask Later" Option is Not Visible
 
@@ -143,12 +131,11 @@ Feel free to **start, stop, or restart (2)** your virtual machine as needed from
 The CloudLabs support team is available 24/7, 365 days a year, via email and live chat to ensure seamless assistance at any time. We offer dedicated support channels tailored specifically for both learners and instructors, ensuring that all your needs are promptly and efficiently addressed.
  
 Learner Support Contacts:
- 
-- Email Support: [cloudlabs-support@spektrasystems.com](mailto:cloudlabs-support@spektrasystems.com)
+- Email Support: cloudlabs-support@spektrasystems.com
 - Live Chat Support: https://cloudlabs.ai/labs-support
 
-Click **Next** from the bottom right corner to embark on your Lab journey!
+Now, click on **Next** from the lower right corner to move on to the next page.
  
    ![Start Your Azure Journey](./media/agg6.png)
  
-Now you're all set to explore the powerful world of technology. Feel free to reach out if you have any questions along the way. Enjoy your workshop!
+### Happy Learning!

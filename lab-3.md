@@ -1,10 +1,10 @@
-# Lab 3 - Build a RAG Agent
+# Lab 3: Build a RAG Agent
 
-## Estimated time: 60 minutes
+### Estimated Duration: 60 Minutes
 
 ## Lab scenario
 
-In this lab, you will build an AI Agent that utilizes Retrieval-Augmented Generation (RAG) to extract and generate responses from health plan documents. By leveraging Azure AI Search as a vector database, the AI Agent will store and retrieve document embeddings, enabling more accurate and context-aware answers. This approach enhances the AI’s ability to process large volumes of data efficiently, providing meaningful insights for decision-making. Through this hands-on exercise, you will gain experience in implementing RAG-based AI solutions and integrating Azure AI Search to improve response quality in document-driven scenarios.
+In this hands-on lab, you will build an AI Agent powered by **Retrieval-Augmented Generation (RAG)** to extract insights from health plan documents. Using **Azure AI Search** as a vector database, you will store and retrieve document embeddings to enable context-aware and accurate responses. This hands-on experience will help you understand how to implement RAG-based solutions and integrate Azure AI Search for improved document-driven interactions.
 
 ## Lab Objectives
 
@@ -17,7 +17,7 @@ In this lab, you will complete the following tasks:
 
 In this task, you will create an **Azure AI Search index** to store vectorized representations of health insurance plan documents, enabling efficient retrieval for AI-driven search and analysis.
 
-1. Navigate to **Azure Portal**, search for **Storage account (1)** and select the **Storage account (2)**.
+1. Navigate to **Azure Portal**, search for **Storage Accounts (1)** and select the **Storage accounts (2)** from Services section.
 
    ![](./media/L1T3S15.png)
 
@@ -25,19 +25,19 @@ In this task, you will create an **Azure AI Search index** to store vectorized r
 
    ![](./media/L1T3S16.png)
 
-1. Click on **Containers(1)** under **Data storage**, then select **+ Add container(2)**.
+1. In the left-hand menu, under the **Data storage** section, click **Containers (1)**, then select **+ Add container (2)**.
 
    ![](./media/L3T1S3.png)
 
-1. On New Container page enter `healthplan`(1) as name and click on **Create(2)**.
+1. In the new container dialog, enter `healthplan` **(1)** as the name and click **Create (2)**.
 
    ![](./media/L3T1S4.png)
 
-1. Open **healthplan** container by clicking on it.
+1. Open the newly created **healthplan** container.
 
    ![](./media/L3T1S5.png)
 
-1. Click on **Upload (1)** to upload the file and then Click on **Browse for files (2)**.
+1. Click **Upload (1)** and then **Browse for files (2)**.
 
    ![](./media/L3T1S6.png)
 
@@ -45,36 +45,36 @@ In this task, you will create an **Azure AI Search index** to store vectorized r
 
    ![](./media/ag55.png)
 
-1. Click on **Upload**.
+1. Click **Upload** to upload the documents.
 
 1. Navigate to Azure Portal and search **AI Search** and select **my-search-service-<inject key="Deployment ID" enableCopy="false"></inject>** in azure portal.
 
    ![](./media/L3T1S9.png)
 
-1. Click on **Import and vectorize data**.
+1. On the **Overview** page of the Search Service, click **Import and vectorize data**.
 
    ![](./media/L3T1S10.png)
 
-1. Select **Azure Blob Storage**.
+1. Select **Azure Blob Storage** as the data source.
 
    ![](./media/L3T1S11.png)
 
-1. Choose **RAG** Model.
+1. Choose the **RAG** model type.
 
    ![](./media/L3T1S12.png)
 
-1. On Configure your Azure Blob Storage, enter the following details and click on **Next(5)**:
+1. On **Connect to your data** tab, enter the following details and click on **Next (5):**
 
    |Setting|Value|
    |---|---|
    |Subscription|leave it default **(1)**|
-   |Storage account|select the Storage account with prefix **aihub**(2)|
-   |Blob container|**healthplan**(3)|
-   |Management identity type|**System-assigned**(4)|
+   |Storage account|Select the Storage account with prefix **aihub** **(2)**|
+   |Blob container|**healthplan** **(3)**|
+   |Managed identity type|**System-assigned** **(4)**|
 
    ![](./media/L3T1S13.png)
 
-1. On **Vectorize your text** page, enter the following details and click on **Next (7)**:
+1. On **Vectorize your text** tab, enter the following details and click on **Next (7):**
    |Setting|Value|
    |---|---|
    |Kind|**Azure OpenAI (1)**|
@@ -87,19 +87,19 @@ In this task, you will create an **Azure AI Search index** to store vectorized r
       ![](./media/L3T1S14.png)
 
 1. Click on **Next** twice.
-1. Enter **health-plan (1)** for  **Objects name prefix** and click on **Create (2)**.
+1. On the **Review and create** tab, enter `health-plan` as the **Object name prefix**, and click **Create (2)**.
 
    ![](./media/L3T1S16.png)
 
-   >**Note**: The uploading of data to indexes in the search service might take 5-10 minutes.
+   >**Note:** The uploading of data to indexes in the search service might take 5-10 minutes.
 
    >**Note:** On the **Create Suceeded** Pop Up click on **Close**.
 
-1. In the **Azure Portal**, navigate to **aihub-<inject key="Deployment ID" enableCopy="false"></inject>** and click on **Launch Azure AI Foundry**.
+1. In the Azure Portal, navigate to the **Overview** tab of **aihub-<inject key="Deployment ID" enableCopy="false"></inject>** resource and click **Launch Azure AI Foundry**.
 
    ![](./media/ag60a.png)
 
-2. From the left-hand menu, click on **Connected resources (1)** and then select **+ New connection (2)**.
+2. From the left-hand menu, click **Connected resources (1)**, then click **+ New connection (2)**.
 
    ![](./media/L3T1S18.png)
 
@@ -107,7 +107,7 @@ In this task, you will create an **Azure AI Search index** to store vectorized r
 
    ![](./media/ag60c.png)
 
-4. After the connection is successfully added, click **Add connection (1)**, then close the dialog.
+4. Once the connection is added successfully, click **Add connection (1)** and then **Close** the dialog.
 
    ![](./media/L3T1S20.png)
 
@@ -130,7 +130,7 @@ In this task, you will build an AI Agent using **Retrieval-Augmented Generation 
 
    ![](./media/ag76.png)
 
-1. Select the **Select Kernel (1)** setting available in the top right corner and select **venv (Python 3.12.1) (2)** from the list.
+1. Click **Select Kernel (1)** in the top-right corner and select **venv (Python 3.12.1)**.
 
    ![](./media/ag77.png)
    
@@ -154,17 +154,19 @@ In this task, you will build an AI Agent using **Retrieval-Augmented Generation 
 
    ![](./media/ag81.png)
    
-1. Observe the output.
+1. Observe the output returned by the AI agent.
 
    ![](./media/lab3-task2-step9output.png)
 
-> **Note**: Here's an example of what your output is likely to see; however, the precise recommendation could vary.
+   > **Note:** Here's an example of what your output is likely to see; however, the precise recommendation could vary.
    
-## Review
+## Summary
 
 In this lab, you have accomplished the following:
 
 - Created the Azure AI Search Index.
 - Created the Search Agent.
 
-### You have successfully finished the lab. Click **Next** to continue to the next lab.
+### You have successfully completed the lab. Click **Next** to continue to the next lab.
+
+   ![Start Your Azure Journey](./media/agg6.png)
