@@ -70,6 +70,13 @@ In this task, you will create and configure an AI Project within Azure AI Foundr
 
       ![](./media/L1T1S9.png)
 
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+> - If you receive a success message, you can proceed to the next task.
+> - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
+> - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+
+<validation step="10c2c620-8919-4af8-9a31-7f0722a264a4" />
+
 ## Task 2: Deploying an LLM and embedding models
 
 In this task, you will deploy a large language model (LLM) and an embedding model within your Azure AI Foundry project. These models will be used for AI-driven applications and vector-based search capabilities in upcoming labs.
@@ -154,7 +161,15 @@ In this task, you will deploy a large language model (LLM) and an embedding mode
 
    ![](./media/l1.task1.17.png)
 
-## Task 3: Assign permissions to the Azure AI Search resource
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+> - If you receive a success message, you can proceed to the next task.
+> - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
+> - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+
+<validation step="73125dc6-9bc8-4d62-ae9c-f9ef5a421385" />
+
+## Task 3:  Assign permissions to the Azure AI Search resource
+
 
 In this task, you will configure the necessary permissions for the Azure AI Search resource to ensure it integrates securely and effectively with the AI Agent. This involves setting up the resource, enabling identity, and assigning required roles.
 
