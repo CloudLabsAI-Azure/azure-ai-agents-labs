@@ -50,7 +50,7 @@ Welcome to your Azure AI agents workshop! We've prepared a seamless environment 
  
 Once you're ready to dive in, your virtual machine and **Guide** will be right at your fingertips within your web browser.
  
-  ![Access Your VM and Lab Guide](./media/agg1a.png)
+  ![Access Your VM and Lab Guide](./media/GettingStarted-02.png)
 
 ## Virtual Machine & Lab Guide
  
@@ -72,13 +72,13 @@ For convenience, you can open the lab guide in a separate window by selecting th
  
 Feel free to **Start, Stop, or Restart (2)** your virtual machine as needed from the **Resources (1)** tab. Your experience is in your hands!
 
-   ![Manage Your Virtual Machine](./media/GS3.png)
+   ![Manage Your Virtual Machine](./media/GettingStarted-00.png)
 
 ## Lab Guide Zoom In/Zoom Out
  
 To adjust the zoom level for the environment page, click the **A↕: 100%** icon located next to the timer in the lab environment.
 
-![](./media/GS1.png)  
+ ![](./media/GettingStarted-01.png)  
 
 ## Let's Get Started with Azure Portal
  

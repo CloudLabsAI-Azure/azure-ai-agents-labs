@@ -50,13 +50,13 @@ In this task, you will create and configure an AI Project within Azure AI Foundr
 
    ![](./media/L1T1S4ii.png) 
 
-1. Wait for the deployment to be completed, and then click on **Go to resource**
+1. Wait for the deployment to be completed, and then click on **Go to resource.**
 
-   ![](./media/l1.task1.6.png)
+   ![](./media/Lab1-01.png)
 
 1. On the **Overview** pane, click **Launch Azure AI Foundry** to navigate to the **Azure AI Foundry** portal.
 
-    ![](./media/L1T1S6.png)
+    ![](./media/Lab1-02.png)
 
 1. Scroll down and click on **+ New project** from the **Hub Overview** section.
 
@@ -121,7 +121,7 @@ In this task, you will deploy a large language model (LLM) and an embedding mode
    | --- | --- |
    | Subscription | leave the default subscription **(1)** |
    | Resource group | **azure-ai-agents-<inject key="Deployment ID" enableCopy="false"></inject>** **(2)** |
-   | Region | **<inject key="Region" enableCopy="false"></inject>** |
+   | Region | **<inject key="Region" enableCopy="false"></inject>** **(3)** |
    | Name | **my-openai-service-<inject key="DeploymentID" enableCopy="false" /></inject> (4)** |
    | Pricing tier | **Standard S0 (5)** |
 
@@ -133,11 +133,11 @@ In this task, you will deploy a large language model (LLM) and an embedding mode
 
 1. Wait until the deployment succeeds and select **Go to resource**.
 
-   ![](./media/L1T2S10.png)
+   ![](./media/Lab1-00.png)
 
 1. In the **Overview** page of **my-openai-service-<inject key="DeploymentID" enableCopy="false" /></inject>** resource page, select **Go to Azure AI Foundry portal**.
 
-   ![](./media/new.png)
+   ![](./media/Lab1-03.png)
 
 1. In the AI Foundry project, go to the **Shared resources** section, select **Deployments (1)**, click **+ Deploy model (2)**, and choose **Deploy base model (3)**.
 
@@ -145,7 +145,7 @@ In this task, you will deploy a large language model (LLM) and an embedding mode
 
     >**Note:** Azure AI Search does not currently support text embedding models directly within AI Foundry. Therefore, you must deploy a text embedding model via Azure OpenAI.
 
-1. On a **Select a model** page, search for **text-embedding-3-large (1)**, then select **text-embedding-3-large (2)** and select **Confirm (3)**
+1. On a **Select a model** page, search for **text-embedding-3-large (1)**, then select **text-embedding-3-large (2)** and select **Confirm (3).**
 
    ![](./media/L1T2S13.png)
 
@@ -155,7 +155,7 @@ In this task, you will deploy a large language model (LLM) and an embedding mode
    - Tokens per Minute Rate Limit: **120K (2)**
    - Select **Deploy (3)** to deploy the model.
 
-     ![](./media/L1T2S14.png)
+     ![](./media/Lab1-04.png)
 
 1. Click on **Deployment** under **Shared resources** section, you can see the deployed **text-embedding-3-large** model.
 
@@ -214,7 +214,7 @@ In this task, you will configure the necessary permissions for the Azure AI Sear
 
    ![](./media/ag25a.png)
 
-1. Now, navigate back to your previously created OpenAI service named **my-openai-service--<inject key="DeploymentID" enableCopy="false" /></inject>**.
+1. Now, navigate back to your previously created OpenAI service named **my-openai-service-<inject key="DeploymentID" enableCopy="false" /></inject>**.
 
    ![](./media/L1T3S10.png)
 

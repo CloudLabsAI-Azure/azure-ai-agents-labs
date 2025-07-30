@@ -97,7 +97,7 @@ In this task, you will create an **Azure AI Search index** to store vectorized r
 
 1. In the Azure Portal, navigate to the **Overview** tab of **aihub-<inject key="Deployment ID" enableCopy="false"></inject>** resource and click **Launch Azure AI Foundry**.
 
-   ![](./media/ag60a.png)
+   ![](./media/Lab3-00.png)
 
 2. From the left-hand menu, click **Connected resources (1)**, then click **+ New connection (2)**.
 

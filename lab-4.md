@@ -135,4 +135,7 @@ In this task, you will create the Search, Report, and Validation Agents to retri
 In this lab, you have accomplished the following:
 - Created the Search, Report, and Validation Agents.
 
-## You have successfully completed the Hands-on lab.
+## You have successfully completed the Hands-on lab!
+By completing the **Microsoft Azure AI Agents** hands-on lab, you have successfully designed and implemented AI agents using the Azure AI Agent Service SDK and Semantic Kernel. You built both single and multi-agent systems that enable collaboration, automation, and task execution across roles such as search, reporting, validation, and orchestration. You also explored Retrieval Augmented Generation (RAG) using Azure AI Search for intelligent document retrieval and response generation.Additionally, you created and deployed no-code conversational AI solutions using Microsoft Copilot Studio, allowing users to interact with research documents through natural language. 
+
+This hands-on experience has equipped you with practical skills in building scalable, intelligent AI-driven applications using Azure’s ecosystem, demonstrating how multiple AI services can be integrated to solve complex, real-world challenges efficiently.
