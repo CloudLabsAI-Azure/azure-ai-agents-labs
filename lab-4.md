@@ -136,3 +136,7 @@ In this lab, you have accomplished the following:
 - Created the Search, Report, and Validation Agents.
 
 ## You have successfully completed the Hands-on lab.
+
+## Conclusion
+
+In this hands-on lab, you created AI agents using the Azure AI Agent Service and leveraged Semantic Kernel to orchestrate them in a multi-agent system. Throughout the lab, you explored techniques for agent collaboration, automation, and task execution. By the end of this experience, you gained practical expertise in designing, deploying, and managing AI agents to build intelligent, scalable, and efficient AI-driven applications.
