@@ -130,9 +130,9 @@ In this task, you will build an AI Agent using **Retrieval-Augmented Generation 
 
    ![](./media/ag76.png)
 
-1. Click **Select Kernel (1)** in the top-right corner and select **venv (Python 3.12.1)**.
+1. Click **Select Kernel (1)** in the top-right corner and select **venv (Python 3.16.3)**.
 
-   ![](./media/ag77.png)
+   ![](./media/L3T2S3.png)
    
 1. Run this cell to set up the foundation for a RAG (Retrieval-Augmented Generation) Agent using Azure AI Foundry. This script imports necessary libraries, loads environment variables, and initializes components like AIProjectClient for project management and AzureAISearchTool for retrieval capabilities.
 

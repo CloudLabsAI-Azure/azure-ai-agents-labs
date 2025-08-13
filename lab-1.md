@@ -371,9 +371,9 @@ In this task, you will install the required dependencies, configure a virtual en
 
    ![](./media/lab1-23.png)
 
-1. Select **venv (Python 3.12.1)** from the list as this version is likely required for compatibility with Azure AI Foundry SDK and other dependencies.
+1. Select **venv (Python 3.13.6)** from the list as this version is likely required for compatibility with Azure AI Foundry SDK and other dependencies.
 
-   ![](./media/lab1-24.png)
+   ![](./media/L1T4S20.png)
 
 1. Run the first cell to import the necessary Python libraries for working with Azure AI services.   
 

@@ -30,9 +30,9 @@ In this task, you will create the Search, Report, and Validation Agents to retri
 
    ![](./media/ag83.png)
 
-1. In the top-right corner of the notebook, click **Select kernel (1)** and choose **venv (Python 3.12.1) (2)**.
+1. In the top-right corner of the notebook, click **Select kernel (1)** and choose **venv (Python 3.16.3) (2)**.
 
-   ![](./media/ag84.png)
+   ![](./media/L4T1S2.png)
 
 1. Run this cell to develop a **multi-agent system** that integrates Azure AI Search, GPT-4o, and Semantic Kernel for intelligent task execution. This setup enables multiple AI agents to collaborate on retrieving information, generating responses, and handling complex queries.
 
