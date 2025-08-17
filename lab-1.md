@@ -331,6 +331,8 @@ In this task, you will install the required dependencies, configure a virtual en
 
 1. In the window that opens, select **Work or school account** and click on **Continue**.
 
+   > **Note**: If the window is not visible, try minimizing VS Code and the Edge browser, as it might be hidden behind them.
+
 1. Sign in using below credentials:-
 
    - Username: **<inject key="AzureAdUserEmail"></inject>**
