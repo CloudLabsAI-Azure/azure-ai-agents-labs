@@ -36,7 +36,7 @@ In this task, you will create and configure an AI Project within Azure AI Foundr
 
          ![](./media/L1T1S3i.png) 
 
-1. Scroll down, fill in the necessary details, and then select **Next : Storage (4)** to proceed.
+1. Scroll down, fill in the necessary details: 
 
     - Connect AI Services incl. OpenAI: Click on **Create new (1)**
     - Create new Azure AI Services: Enter **my-ai-service-<inject key="Deployment ID" enableCopy="false"></inject> (2)**  
