@@ -41,10 +41,11 @@ In this task, you will create and configure an AI Project within Azure AI Foundr
     - Connect AI Services incl. OpenAI: Click on **Create new (1)**
     - Create new Azure AI Services: Enter **my-ai-service-<inject key="Deployment ID" enableCopy="false"></inject> (2)**  
     - Click on **Save (3)**
+    - Click on **Next : Storage (4)** to proceed
     
         ![](./media/L1T1S3ii.png)  
 
-1. Click on **Review + create** tab followed by **Create**.
+1. Keep all settings as default, and Click on **Review + create** tab followed by **Create**.
 
    ![](./media/L1T1S4i.png)
 
@@ -66,7 +67,7 @@ In this task, you will create and configure an AI Project within Azure AI Foundr
 
     ![](./media/l1.task1.9.png)
 
-1. Once the project is created, scroll down and copy the **Project connection string**, then paste it into Notepad or a secure location, as it will be required for upcoming tasks.
+1. Once the project is created, scroll down and copy the **Project connection string**, then **paste it into Notepad or a secure location**, as it will be required for upcoming tasks.
 
       ![](./media/L1T1S9.png)
 
@@ -328,13 +329,25 @@ In this task, you will install the required dependencies, configure a virtual en
    az login
    ```
 
-1. In the browser window that opens, sign in using your **<inject key="AzureAdUserEmail"></inject>** account.
+1. In the window that opens, select **Work or school account** and click on **Continue**.
 
-   ![](./media/ag44.png)
+1. Sign in using below credentials:-
+
+   - Username: **<inject key="AzureAdUserEmail"></inject>**
+   - Password: **<inject key="AzureAdUserPassword"></inject>**
+
+
+      ![](./media/ag44.png)
+
+1. Unselect the **Allow my organization to manage my device** checkbox, and click on **No, This app only**.
+
+   ![](./media/image0001.png)
 
 1. Once the Authorization is completed, navigate back to Visual Studio Code.
 
-   ![](./media/ag45.png)
+1. When prompted to **Select a subscription and tenant (Type a number or press Enter to keep the default)**, simply press **Enter**.
+
+   ![](./media/image0002.png)
 
 1. Open the **Sample.env** file and provide the necessary environment variables. 
 
