@@ -336,8 +336,7 @@ In this task, you will install the required dependencies, configure a virtual en
    - Username: **<inject key="AzureAdUserEmail"></inject>**
    - Password: **<inject key="AzureAdUserPassword"></inject>**
 
-
-      ![](./media/ag44.png)
+   ![](./media/ag44.png)
 
 1. Unselect the **Allow my organization to manage my device** checkbox, and click on **No, This app only**.
 
