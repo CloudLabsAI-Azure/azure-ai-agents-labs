@@ -215,7 +215,7 @@ In this task, you will configure the necessary permissions for the Azure AI Sear
 
    ![](./media/ag25a.png)
 
-1. Now, navigate back to your previously created OpenAI service named **my-openai-service--<inject key="DeploymentID" enableCopy="false" /></inject>**.
+1. Now, navigate back to your previously created OpenAI service named **my-openai-service-<inject key="DeploymentID" enableCopy="false" /></inject>**.
 
    ![](./media/L1T3S10.png)
 
