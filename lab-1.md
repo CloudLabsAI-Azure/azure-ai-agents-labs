@@ -199,6 +199,8 @@ In this task, you will configure the necessary permissions for the Azure AI Sear
 
    ![](./media/l1.task1.21.png)
 
+   >**Note**: The deployment may take up to 10 minutes, as the AI Search service typically requires more time to provision.
+
 1. In the resource settings, navigate to **Identity (1)** under the **Settings** section. Under **System-assigned**, set the status to **On (2)** and click **Save (3)**.
 
    ![](./media/l1.task1.23.png)
