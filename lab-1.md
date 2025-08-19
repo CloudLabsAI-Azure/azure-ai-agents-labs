@@ -100,7 +100,7 @@ In this task, you will deploy a large language model (LLM) and an embedding mode
 
     ![](./media/L1T2S3i.png)   
 
-> **Note:** If the **Tokens per Minute rate limit** of **200K** is not available, use the next **highest available limit** (e.g., 150K or 100K).
+   >**Note:** If the **Tokens per Minute rate limit** of **200K** is not available, use the next **highest available limit** (e.g., 150K or 100K).
 
 4. After deployment, click **Model + Endpoints (1)** under **My assets** to view the deployed **gpt-4o (2)** model.
 
@@ -367,10 +367,10 @@ In this task, you will install the required dependencies, configure a virtual en
 
      ![](./media/ag49.png)
 
-> **Note:** If the Project Connection string is not pasted, follow these steps to get the value:
-> 1. On the **Azure Portal** page, in the *Search resources, services, and docs (G+/)* box at the top of the portal, search for **aihub-<inject key="Deployment ID" enableCopy="false"></inject>**.
-> 2. In the **Overview** pane, click **Launch Azure AI Foundry** to open the Azure AI Foundry portal.
-> 3. In the **Project Overview** section, select **Go to project**, then copy the **Project connection string**.
+   > **Note:** If the Project Connection string is not pasted, follow these steps to get the value:
+   > 1. On the **Azure Portal** page, in the *Search resources, services, and docs (G+/)* box at the top of the portal, search for **aihub-<inject key="Deployment ID" enableCopy="false"></inject>**.
+   > 2. In the **Overview** pane, click **Launch Azure AI Foundry** to open the Azure AI Foundry portal.
+   > 3. In the **Project Overview** section, select **Go to project**, then copy the **Project connection string**.
    
 1. Save the changes made to the `Sample.env` file.
 
