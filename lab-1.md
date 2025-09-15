@@ -55,7 +55,7 @@ In this task, you will create and configure an AI Project within Azure AI Foundr
 
    ![](./media/l1.task1.6.png)
 
-1. On the **Overview** pane, click **Launch Azure AI Foundry** to navigate to the **Azure AI Foundry** portal.
+1. On the **Overview** pane, click on **Launch Azure AI Foundry** to navigate to the **Azure AI Foundry** portal.
 
     ![](./media/L1T1S6.png)
 
@@ -82,7 +82,7 @@ In this task, you will create and configure an AI Project within Azure AI Foundr
 
 In this task, you will deploy a large language model (LLM) and an embedding model within your Azure AI Foundry project. These models will be used for AI-driven applications and vector-based search capabilities in upcoming labs.
 
-1. In the Azure AI Foundry project, go to the **My assets** section, then select **Models + endpoints (1)**. Click **+ Deploy model (2)** and choose **Deploy base model (3)** to continue.
+1. In the Azure AI Foundry project, go to the **My assets** section, then select **Models + endpoints (1)**. Click **+ Deploy model (2)** and choose **Deploy base model (3)** from the drop-down to continue.
 
    ![](./media/l1.task2.1.png)
 
@@ -122,7 +122,7 @@ In this task, you will deploy a large language model (LLM) and an embedding mode
 
    | Setting | Value | 
    | --- | --- |
-   | Subscription | leave the default subscription **(1)** |
+   | Subscription | **Leave the default subscription** **(1)** |
    | Resource group | **azure-ai-agents-<inject key="Deployment ID" enableCopy="false"></inject>** **(2)** |
    | Region | **<inject key="Region" enableCopy="false"></inject>** |
    | Name | **my-openai-service-<inject key="DeploymentID" enableCopy="false" /></inject> (4)** |
@@ -176,7 +176,7 @@ In this task, you will deploy a large language model (LLM) and an embedding mode
 
 In this task, you will configure the necessary permissions for the Azure AI Search resource to ensure it integrates securely and effectively with the AI Agent. This involves setting up the resource, enabling identity, and assigning required roles.
 
-1. In the Azure portal, use the search bar at the top to search for **AI Search (1)**, and then select it **(2)** from the Services section.
+1. In the Azure portal, use the search bar at the top to search for **AI Search (1)**, and then select **AI Search** **(2)** from the Services section.
 
    ![](./media/aisearch1.png)
 
@@ -188,12 +188,12 @@ In this task, you will configure the necessary permissions for the Azure AI Sear
 
     - Subscription: **Leave default subscription** 
     - Resource group: Select **azure-ai-agents-<inject key="Deployment ID" enableCopy="false"></inject>** **(1)** 
-    - Location: **<inject key="Region" enableCopy="false"></inject>** **(2)**
-    - Service Name: **my-search-service-<inject key="Deployment ID" enableCopy="false"></inject> (3)**
+    - Service Name: **my-search-service-<inject key="Deployment ID" enableCopy="false"></inject> (2)**
 
+    - Location: **<inject key="Region" enableCopy="false"></inject>** **(3)**
       ![](./media/L1T3S3.png)
 
-1. On the **Review + create** page, click **Create** to deploy the search service.
+1. On the **Review + create** tab, click **Create** to deploy the search service.
 
    ![](./media/L1T3S4.png)
 
@@ -203,7 +203,7 @@ In this task, you will configure the necessary permissions for the Azure AI Sear
 
    >**Note**: The deployment may take around **10 - 12 minutes**, depending on Azure’s provisioning time for the AI Search service.
 
-1. In the resource settings, navigate to **Identity (1)** under the **Settings** section. Under **System-assigned**, set the status to **On (2)** and click **Save (3)**.
+1. In the resource settings, navigate to **Identity (1)** under the **Settings** section. Under **System assigned**, set the status to **On (2)** and click **Save (3)**.
 
    ![](./media/l1.task1.23.png)
 
@@ -223,7 +223,7 @@ In this task, you will configure the necessary permissions for the Azure AI Sear
 
    ![](./media/L1T3S10.png)
 
-1. In the OpenAI service blade, select **Access control (IAM) (1)**, click **+ Add (2)**, and then choose **Add role assignment (3)**.
+1. In the OpenAI service blade, select **Access control (IAM) (1)**, click **+ Add (2)** drop-down, and then choose **Add role assignment (3)**.
 
    ![](./media/L1T3S11.png)
 
@@ -245,7 +245,7 @@ In this task, you will configure the necessary permissions for the Azure AI Sear
 
    ![](./media/L1T3S14.png)
 
-1. On the Azure portal, search for **Storage accounts (1)** and select **Storage accounts (1)** from the services.
+1. On the Azure portal, search for **Storage Accounts (1)** and select **Storage accounts (1)** from the services.
 
    ![](./media/L1T3S15.png)
 
@@ -372,7 +372,7 @@ In this task, you will install the required dependencies, configure a virtual en
    > 2. In the **Overview** pane, click **Launch Azure AI Foundry** to open the Azure AI Foundry portal.
    > 3. In the **Project Overview** section, select **Go to project**, then copy the **Project connection string**.
    
-1. Save the changes made to the `Sample.env` file.
+1. Save the changes made to the `Sample.env` file by clicking **CTRL + S**.
 
 1. Create a `.env` file by running the following PowerShell command:
 

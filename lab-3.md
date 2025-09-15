@@ -29,7 +29,7 @@ In this task, you will create an **Azure AI Search index** to store vectorized r
 
    ![](./media/L3T1S3.png)
 
-1. In the new container dialog, enter `healthplan` **(1)** as the name and click **Create (2)**.
+1. In the new container dialog, enter **healthplan** **(1)** as the name and click **Create (2)**.
 
    ![](./media/L3T1S4.png)
 
@@ -46,6 +46,8 @@ In this task, you will create an **Azure AI Search index** to store vectorized r
    ![](./media/ag55.png)
 
 1. Click **Upload** to upload the documents.
+
+   ![](./media/upload.png)
 
 1. Navigate to Azure Portal and search **AI Search** and select **my-search-service-<inject key="Deployment ID" enableCopy="false"></inject>** in azure portal.
 
@@ -67,7 +69,7 @@ In this task, you will create an **Azure AI Search index** to store vectorized r
 
    |Setting|Value|
    |---|---|
-   |Subscription|leave it default **(1)**|
+   |Subscription|**Leave it default** **(1)**|
    |Storage account|Select the Storage account with prefix **aihub** **(2)**|
    |Blob container|**healthplan** **(3)**|
    |Managed identity type|**System-assigned** **(4)**|
@@ -78,16 +80,16 @@ In this task, you will create an **Azure AI Search index** to store vectorized r
    |Setting|Value|
    |---|---|
    |Kind|**Azure OpenAI (1)**|
-   |Subscription|leave it default **(2)**|
+   |Subscription|**Leave it default** **(2)**|
    |Azure OpenAI service|**my-openai-service-<inject key="DeploymentID" enableCopy="false" /></inject>** **(3)**|
    |Model deployment|**text-embedding-3-large** **(4)**|
    |Authentication type|**System assigned identity** **(5)**|
-   |Acknowledgement rectangle|**checked** **(6)**|
+   |Acknowledgement rectangle|**Checked** **(6)**|
 
       ![](./media/L3T1S14.png)
 
 1. Click on **Next** twice.
-1. On the **Review and create** tab, enter `health-plan` as the **Object name prefix**, and click **Create (2)**.
+1. On the **Review and create** tab, enter **health-plan (1)** as the **Object name prefix**, and click **Create (2)**.
 
    ![](./media/L3T1S16.png)
 
@@ -95,7 +97,7 @@ In this task, you will create an **Azure AI Search index** to store vectorized r
 
    >**Note:** On the **Create Suceeded** Pop Up click on **Close**.
 
-1. In the Azure Portal, navigate to the **Overview** tab of **aihub-<inject key="Deployment ID" enableCopy="false"></inject>** resource and click **Launch Azure AI Foundry**.
+1. In the Azure Portal, navigate to the **Overview** tab of **aihub-<inject key="Deployment ID" enableCopy="false"></inject>** resource and click on **Launch Azure AI Foundry**.
 
    ![](./media/ag60a.png)
 
@@ -107,7 +109,7 @@ In this task, you will create an **Azure AI Search index** to store vectorized r
 
    ![](./media/ag60c.png)
 
-4. Once the connection is added successfully, click **Add connection (1)** and then **Close** the dialog.
+4. Once the connection is added successfully, click **Add connection** and then **Close** the dialog.
 
    ![](./media/L3T1S20.png)
 
@@ -130,7 +132,7 @@ In this task, you will build an AI Agent using **Retrieval-Augmented Generation 
 
    ![](./media/ag76.png)
 
-1. Click **Select Kernel (1)** in the top-right corner and select **venv (Python 3.16.3)**.
+1. Click **Select Kernel (1)** in the top-right corner and select **venv (Python 3.16.3)** **(2)**.
 
    ![](./media/L3T2S3.png)
    
