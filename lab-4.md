@@ -55,11 +55,15 @@ In this task, you will create the Search, Report, and Validation Agents to retri
     - Click on **File Explorer Icon** **(1)** and select **This PC** **(2)**.
     
       ![](./media/L4T1S7.1-1106.png)
-   
-    - Now, navigate to the following directory: **C:\LabFiles\azure-ai-agents-labs\data** **(1)**. Then, select both health plan PDF files **(2)** and open them in the Edge browser.
+
+       >**Note:** If the File Explorer icon is not present,then from the search bar of the LabVM search for **File Explorer (1)** and select **File Explorer (2)**
+
+         ![](./media/file.png)
+
+    - Now, navigate to the following directory: `C:\LabFiles\azure-ai-agents-labs\data` **(1)**. Then, select both health plan PDF files **(2)** and open them in the Edge browser.
 
       ![](./media/fileexplore06062025.png)
-    
+     
     - Review the content of the **Northwind_Health_Plus_Benefits_Details** PDF.
 
       ![](./media/Northwind_Health_Plus_Benefits_Details-snapshot.png)
@@ -137,6 +141,4 @@ In this lab, you have accomplished the following:
 
 ## You have successfully completed the Hands-on lab.
 
-## Conclusion
-
-In this hands-on lab, you created AI agents using the Azure AI Agent Service and leveraged Semantic Kernel to orchestrate them in a multi-agent system. Throughout the lab, you explored techniques for agent collaboration, automation, and task execution. By the end of this experience, you gained practical expertise in designing, deploying, and managing AI agents to build intelligent, scalable, and efficient AI-driven applications.
+In this lab **Hands-On-Lab: Microsoft Azure AI Agents**, you created AI agents using the Azure AI Agent Service and leveraged Semantic Kernel to orchestrate them in a multi-agent system. Throughout the lab, you explored techniques for agent collaboration, automation, and task execution. By the end of this experience, you gained practical expertise in designing, deploying, and managing AI agents to build intelligent, scalable, and efficient AI-driven applications.
