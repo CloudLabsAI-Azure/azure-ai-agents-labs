@@ -398,19 +398,19 @@ In this task, you will install the required dependencies, configure a virtual en
 
    ![](./media/L1T4S20.png)
 
-1. **Run** the first cell to import the necessary Python libraries for working with Azure AI services.   
+1. Run the first cell to import the necessary Python libraries for working with Azure AI services.   
 
    ![](./media/ag72.png)
 
-1. **Run** the below cell to retrieve the project connection string and model name from environment variables. These values are needed to interact with the Large Language Model (LLM) securely, without hardcoding sensitive information.
+1. Run the below cell to retrieve the project connection string and model name from environment variables. These values are needed to interact with the Large Language Model (LLM) securely, without hardcoding sensitive information.
 
    ![](./media/ag73.png)
 
-1. **Run** the below cell to connect to your Azure AI Foundry project using the connection string. This establishes a secure connection with AIProjectClient, enabling interactions with your project resources.
+1. Run the below cell to connect to your Azure AI Foundry project using the connection string. This establishes a secure connection with AIProjectClient, enabling interactions with your project resources.
 
    ![](./media/ag74.png)
 
-1. **Run** the below cell to interact with the GPT-4o model using your Azure AI Foundry project. This code initializes a chat client, sends a request for a joke about a teddy bear, and prints the response. Finally, see the output provided from the chat model.
+1. Run the below cell to interact with the GPT-4o model using your Azure AI Foundry project. This code initializes a chat client, sends a request for a joke about a teddy bear, and prints the response. Finally, see the output provided from the chat model.
 
    ![](./media/ag75.png)
 
