@@ -56,7 +56,7 @@ In this task, you will create the Search, Report, and Validation Agents to retri
     
       ![](./media/L4T1S7.1-1106.png)
 
-       >**Note:** If the File Explorer icon is not present,then from the search bar of the LabVM search for **File Explorer (1)** and select **File Explorer (2)**
+       >**Note:** If the File Explorer icon is not present, then from the search bar of the LabVM search for **File Explorer (1)** and select **File Explorer (2)**
 
          ![](./media/file.png)
 
