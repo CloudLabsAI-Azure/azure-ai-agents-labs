@@ -1,4 +1,4 @@
-# Getting Started with Your Azure-AI-Agents Workshop
+# Hands-On-Lab: Microsoft Azure AI Agents
 
 ### Overall Estimated Duration: 4 Hours
 
@@ -24,9 +24,13 @@ Participants will learn:
 Participants should have:
 
 1. **Visual Studio Code (VS Code):** Proficiency in using Visual Studio Code for coding, debugging, and managing extensions for various programming languages and frameworks.
+
 1. **Development Skills:** Basic programming knowledge in Python or JavaScript, experience with APIs, SDKs, and working in Visual Studio Code.
+
 1. **Azure AI & Cloud Concepts:** Understanding of Azure AI Foundry, AI Agent development, deploying LLMs and embedding models, and working with Azure AI Search for vector-based retrieval.
+
 1. **AI & Data Processing:** Knowledge of prompt engineering, chat completion workflows, embedding models, retrieval-augmented generation (RAG), and content filtering techniques.
+
 1. **System Design & Multi-Agent Coordination:** Understanding AI agent architectures, designing retrieval, validation, and orchestration agents, and coordinating multi-agent interactions.
 
 ## Architecture Diagram
@@ -41,6 +45,7 @@ Participants should have:
 - **Azure AI Services**: A collection of cloud-based AI services that allow developers and data scientists to build intelligent applications, offering pre-built and customizable APIs and models for tasks like speech, vision, language, and knowledge
 - **Azure Key Vault**: It is a cloud service that securely stores and manages secrets, certificates, and cryptographic keys, allowing authorized users and applications to access them while enhancing security and reducing data breach risks. 
 - **LLMs and Embeddings:** Understanding Large Language Models (LLMs), their capabilities, and how embeddings are used for text similarity, search, and knowledge retrieval in AI applications.
+- **Storage Account:** An Azure Storage Account is a cloud resource that provides scalable, secure, and durable storage for data objects like blobs, files, queues, and tables. It’s used to store structured and unstructured data. You create it in Azure, choose redundancy/replication options, and access data via APIs, SDKs, or portals.
 
 # Getting Started with the lab
  
@@ -100,7 +105,11 @@ To adjust the zoom level for the environment page, click the **A↕: 100%** icon
 
 1. If prompted to **Stay Signed in**, you can click **No**.
 
+   ![no](./media/signedinno.png)
+
 1. If a **Welcome to Microsoft Azure** pop-up window appears, simply click **Cancel** to skip the tour.
+
+   ![no](./media/cancel.png)
 
 ## Steps to Proceed with MFA Setup if "Ask Later" Option is Not Visible
 
