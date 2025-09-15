@@ -107,7 +107,7 @@ To adjust the zoom level for the environment page, click the **A↕: 100%** icon
  
       ![Enter Your Password](./media/gt-4.png)
 
-1. If prompted to **Stay Signed in**, you can click **No**.
+1. If prompted to **Stay Signed in?**, you can click **No**.
 
    ![no](./media/signedinno.png)
 
