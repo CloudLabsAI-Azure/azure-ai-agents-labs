@@ -191,6 +191,7 @@ In this task, you will configure the necessary permissions for the Azure AI Sear
     - Service Name: **my-search-service-<inject key="Deployment ID" enableCopy="false"></inject> (2)**
 
     - Location: **<inject key="Region" enableCopy="false"></inject>** **(3)**
+
       ![](./media/L1T3S3.png)
 
 1. On the **Review + create** tab, click **Create** to deploy the search service.
