@@ -46,4 +46,4 @@ In this lab, you have accomplished the following:
 
 ### You have successfully completed the lab. Click **Next** to continue to the next lab.
 
-   ![Start Your Azure Journey](./media/agg6.png)
+   ![Start Your Azure Journey](./media/3-next.jpg)
