@@ -98,7 +98,7 @@ In this task, you will deploy a large language model (LLM) and an embedding mode
    - Change the Tokens per Minute Rate Limit to **200K (2)**
    - Click on **Connect and deploy (3)**
 
-    ![](./media/L1T2S3i.png)   
+      ![](./media/L1T2S3i.png)   
 
    >**Note:** If the **Tokens per Minute rate limit** of **200K** is not available, use the next **highest available limit** (e.g., 150K or 100K).
 
@@ -307,6 +307,10 @@ In this task, you will install the required dependencies, configure a virtual en
 
    ![](./media/ag41.png)
 
+1. Click on **Paste as one line**.
+
+   ![](./media/paste-as-oneline.jpg)
+
 1. Run the below PowerShell command. This installs all the required packages:
 
    ```powershell
@@ -395,9 +399,9 @@ In this task, you will install the required dependencies, configure a virtual en
 
    ![](./media/lab1-23.png)
 
-1. Select **venv (Python 3.13.6)** from the list as this version is likely required for compatibility with Azure AI Foundry SDK and other dependencies.
+1. Select **Python 3.X.X** from the list as this version is likely required for compatibility with Azure AI Foundry SDK and other dependencies.
 
-   ![](./media/L1T4S20.png)
+   ![](./media/python-kernal00.jpg)
 
 1. Run the first cell to import the necessary Python libraries for working with Azure AI services.   
 
