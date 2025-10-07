@@ -21,7 +21,7 @@ In this task, you will create an **Azure AI Search index** to store vectorized r
 
    ![](./media/L1T3S15.png)
 
-1. Select the Storage account that starts with **aihub....**.
+1. Select the Storage account that starts with **aihubxxxx**.
 
    ![](./media/L1T3S16.png)
 
@@ -53,9 +53,9 @@ In this task, you will create an **Azure AI Search index** to store vectorized r
 
    ![](./media/L3T1S9.png)
 
-1. On the **Overview** page of the Search Service, click **Import and vectorize data**.
+1. On the **Overview (1)** page of the Search Service, click **Import data(new) (2)**.
 
-   ![](./media/L3T1S10.png)
+   ![](./media/my-search-service-01.jpg)
 
 1. Select **Azure Blob Storage** as the data source.
 
@@ -132,9 +132,9 @@ In this task, you will build an AI Agent using **Retrieval-Augmented Generation 
 
    ![](./media/ag76.png)
 
-1. Click **Select Kernel (1)** in the top-right corner and select **venv (Python 3.16.3)** **(2)**.
+1. Click **Select Kernel** in the top-right corner and select **Python 3.x.x** **(1)**.
 
-   ![](./media/L3T2S3.png)
+   ![](./media/python-kernal00.jpg)
    
 1. Run this cell to set up the foundation for a RAG (Retrieval-Augmented Generation) Agent using Azure AI Foundry. This script imports necessary libraries, loads environment variables, and initializes components like AIProjectClient for project management and AzureAISearchTool for retrieval capabilities.
 
@@ -171,4 +171,4 @@ In this lab, you have accomplished the following:
 
 ### You have successfully completed the lab. Click **Next** to continue to the next lab.
 
-   ![Start Your Azure Journey](./media/agg6.png)
+   ![Start Your Azure Journey](./media/next-4.jpg)
