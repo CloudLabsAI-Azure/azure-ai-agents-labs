@@ -399,7 +399,7 @@ In this task, you will install the required dependencies, configure a virtual en
 
    ![](./media/lab1-23.png)
 
-1. Select **Python 3.X.X** from the list as this version is likely required for compatibility with Azure AI Foundry SDK and other dependencies.
+1. Select **venvPython 3.X.X** from the list as this version is likely required for compatibility with Azure AI Foundry SDK and other dependencies.
 
    ![](./media/python-kernal00-01.jpg)
 
