@@ -401,7 +401,7 @@ In this task, you will install the required dependencies, configure a virtual en
 
 1. Select **Python 3.X.X** from the list as this version is likely required for compatibility with Azure AI Foundry SDK and other dependencies.
 
-   ![](./media/python-kernal00.jpg)
+   ![](./media/python-kernal00-01.jpg)
 
 1. Run the first cell to import the necessary Python libraries for working with Azure AI services.   
 
