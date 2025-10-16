@@ -114,9 +114,9 @@ In this task, you will deploy a large language model (LLM) and an embedding mode
 
    ![](./media/L1T2S5.png)
 
-1. On the **AI Foundry | Azure OpenAI** page, click **+ Create** to create a new Azure OpenAI resource.
+1. On the **AI Foundry | Azure OpenAI** page, select **Azure OpenAI (1)** under **Use with AI Foundry**. On the Azure OpenAI page, click on **+ Create (2)** and select **Azure OpenAI (3)** from the drop-down.
 
-   ![](./media/L1T2S6.png)
+   ![](./media/im2.png)
 
 1. On the **Create Azure OpenAI** page, enter the following settings and click **Next (6)**:
 
@@ -136,7 +136,7 @@ In this task, you will deploy a large language model (LLM) and an embedding mode
 
 1. Wait until the deployment succeeds and select **Go to resource**.
 
-   ![](./media/L1T2S10.png)
+   ![](./media/im3.png)
 
 1. In the **Overview** page of **my-openai-service-<inject key="DeploymentID" enableCopy="false" /></inject>** resource page, select **Go to Azure AI Foundry portal**.
 
