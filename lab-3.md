@@ -27,7 +27,7 @@ In this task, you will create an **Azure AI Search index** to store vectorized r
 
 1. In the left-hand menu, under the **Data storage** section, click **Containers (1)**, then select **+ Add container (2)**.
 
-   ![](./media/L3T1S3.png)
+   ![](./media/oct-azure-aiagent-lab1-6.png)
 
 1. In the new container dialog, enter **healthplan** **(1)** as the name and click **Create (2)**.
 
@@ -35,7 +35,7 @@ In this task, you will create an **Azure AI Search index** to store vectorized r
 
 1. Open the newly created **healthplan** container.
 
-   ![](./media/L3T1S5.png)
+   ![](./media/oct-azure-aiagent-lab1-7.png)
 
 1. Click **Upload (1)** and then **Browse for files (2)**.
 
@@ -63,7 +63,7 @@ In this task, you will create an **Azure AI Search index** to store vectorized r
 
 1. Choose the **RAG** model type.
 
-   ![](./media/L3T1S12.png)
+   ![](./media/oct-azure-aiagent-lab1-8.png)
 
 1. On **Connect to your data** tab, enter the following details and click on **Next (5):**
 
