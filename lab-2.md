@@ -1,6 +1,6 @@
 # Lab 2: Build a Simple AI Agent
 
-### Estimated Duration: 30 Minutes
+## Estimated Duration: 30 Minutes
 
 ## Lab scenario
 
@@ -19,9 +19,9 @@ In this task, you will build a simple AI Agent that processes data and generates
 
    ![](./media/ag62.png)
 
-1. In the notebook interface, click **Select kernel** in the top-right corner and choose **Python 3.X.X** from the available options.
+1. In the notebook interface, click **Select kernel (1)** in the top-right corner and choose **venv (Python 3.X.X) (2)** from the available options.
 
-   ![](./media/python-kernal00.jpg)
+   ![](./media/oct-azure-aiagent-lab1-10.png)
 
 1. Run the below cell to import necessary libraries and load environment variables for working with Azure AI Projects. This setup enables secure authentication and interaction with Azure AI services.
 
@@ -35,15 +35,15 @@ In this task, you will build a simple AI Agent that processes data and generates
 
    ![](./media/ag90.png)
 
-1. Observe the resulting output chart. This visualizes the comparison of health benefit plans based on the input data..   
+1. Observe the resulting output chart. This visualizes the comparison of health benefit plans based on the input data.
 
-   ![](./media/lab2-26.png)
+   ![](./media/oct-azure-aiagent-lab1-5.png)
 
 ## Summary
 
 In this lab, you have accomplished the following:
 - Created a Simple AI Agent
 
-### You have successfully completed the lab. Click **Next** to continue to the next lab.
+## You have successfully completed the lab. Click **Next** to continue to the next lab.
 
    ![Start Your Azure Journey](./media/3-next.jpg)

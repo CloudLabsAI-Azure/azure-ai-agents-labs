@@ -349,7 +349,7 @@ In this task, you will install the required dependencies, configure a virtual en
 
    ![](./media/ag44.png)
 
-1. Unselect the **Allow my organization to manage my device** checkbox, and click on **No, This app only**.
+1. Unselect the **Allow my organization to manage my device** checkbox, and click on **No, this app only**.
 
    ![](./media/image0001.png)
 
@@ -359,11 +359,11 @@ In this task, you will install the required dependencies, configure a virtual en
 
    ![](./media/image0002.png)
 
-1. Open the **Sample.env** file and provide the necessary environment variables. 
+1. Open the **sample.env** file and provide the necessary environment variables. 
 
    ![](./media/ag46.png)
 
-1. In the `Sample.env` file, provide the following environment variables using the values retrieved from your Azure AI Foundry project:
+1. In the `sample.env` file, provide the following environment variables using the values retrieved from your Azure AI Foundry project:
 
    - `AIPROJECT_CONNECTION_STRING`: Provide the **Project connection string** value you have copied in Task 1 of Step 10.
    - `CHAT_MODEL_ENDPOINT`: Provide the **Target URI** of the **gpt-4o** model you have copied in Task 2 of Step 5.
@@ -377,7 +377,7 @@ In this task, you will install the required dependencies, configure a virtual en
    > 2. In the **Overview** pane, click **Launch Azure AI Foundry** to open the Azure AI Foundry portal.
    > 3. In the **Project Overview** section, select **Go to project**, then copy the **Project connection string**.
    
-1. Save the changes made to the `Sample.env` file by clicking **CTRL + S**.
+1. Save the changes made to the `sample.env` file by clicking **CTRL + S**.
 
 1. Create a `.env` file by running the following PowerShell command:
 
@@ -399,7 +399,7 @@ In this task, you will install the required dependencies, configure a virtual en
 
    ![](./media/lab1-23.png)
 
-1. Select **venvPython 3.X.X** from the list as this version is likely required for compatibility with Azure AI Foundry SDK and other dependencies.
+1. Select **venv (Python 3.X.X)** from the list as this version is likely required for compatibility with Azure AI Foundry SDK and other dependencies.
 
    ![](./media/python-kernal00-01.jpg)
 
@@ -431,6 +431,6 @@ In this lab, you have accomplished the following:
 - Established connectivity from VS Code to the AI Project.
 - Performed a simple Chat Completion call.
 
-### You have successfully completed the lab. Click **Next** to continue to the next lab.
+## You have successfully completed the lab. Click **Next** to continue to the next lab.
 
    ![Start Your Azure Journey](./media/2-next.jpg)
