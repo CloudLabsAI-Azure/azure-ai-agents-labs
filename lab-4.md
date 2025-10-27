@@ -1,8 +1,9 @@
 # Lab 4: Develop a multi-agent system
 
-### Estimated Duration: 30 Minutes
+## Estimated Duration: 30 Minutes
 
 ## Lab scenario
+
 In this hands-on lab, you will build a **multi-agent system** that includes four AI agents working together to generate and validate reports on health plan documents:
 
 - **Search Agent:** This agent will search an Azure AI Search index for information about specific health plan policies.
@@ -30,9 +31,9 @@ In this task, you will create the Search, Report, and Validation Agents to retri
 
    ![](./media/ag83.png)
 
-1. In the top-right corner of the notebook, click **Select kernel** and choose **Python 3.x.x (1)**.
+1. In the notebook interface, click **Select kernel (1)** in the top-right corner and choose **venv (Python 3.X.X) (2)** from the available options.
 
-   ![](./media/python-kernal00.jpg)
+   ![](./media/oct-azure-aiagent-lab1-10.png)
 
 1. Run this cell to develop a **multi-agent system** that integrates Azure AI Search, GPT-4o, and Semantic Kernel for intelligent task execution. This setup enables multiple AI agents to collaborate on retrieving information, generating responses, and handling complex queries.
 
@@ -56,7 +57,7 @@ In this task, you will create the Search, Report, and Validation Agents to retri
     
       ![](./media/L4T1S7.1-1106.png)
 
-       >**Note:** If the File Explorer icon is not present, then from the search bar of the LabVM search for **File Explorer (1)** and select **File Explorer (2)**
+       >**Note:** If the File Explorer icon is not present, then from the search bar of the LabVM search for **File Explorer (1)** and select **File Explorer (2)**.
 
          ![](./media/file.png)
 

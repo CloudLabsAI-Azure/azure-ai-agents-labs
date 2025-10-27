@@ -1,6 +1,6 @@
 # Lab 3: Build a RAG Agent
 
-### Estimated Duration: 60 Minutes
+## Estimated Duration: 60 Minutes
 
 ## Lab scenario
 
@@ -95,13 +95,13 @@ In this task, you will create an **Azure AI Search index** to store vectorized r
 
    >**Note:** The uploading of data to indexes in the search service might take 5-10 minutes.
 
-   >**Note:** On the **Create Suceeded** Pop Up click on **Close**.
+   >**Note:** On the **Create Succeeded** Pop Up click on **Close**.
 
 1. In the Azure Portal, navigate to the **Overview** tab of **aihub-<inject key="Deployment ID" enableCopy="false"></inject>** resource and click on **Launch Azure AI Foundry**.
 
    ![](./media/ag60a.png)
 
-2. From the left-hand menu, click **Connected resources (1)**, then click **+ New connection (2)**.
+2. From the left-hand menu, click **Connected resources (1)**, then click on **+ New connection (2)**.
 
    ![](./media/L3T1S18.png)
 
@@ -132,9 +132,9 @@ In this task, you will build an AI Agent using **Retrieval-Augmented Generation 
 
    ![](./media/ag76.png)
 
-1. Click **Select Kernel** in the top-right corner and select **Python 3.x.x** **(1)**.
+1. In the notebook interface, click **Select kernel (1)** in the top-right corner and choose **venv (Python 3.X.X) (2)** from the available options.
 
-   ![](./media/python-kernal00.jpg)
+   ![](./media/oct-azure-aiagent-lab1-10.png)
    
 1. Run this cell to set up the foundation for a RAG (Retrieval-Augmented Generation) Agent using Azure AI Foundry. This script imports necessary libraries, loads environment variables, and initializes components like AIProjectClient for project management and AzureAISearchTool for retrieval capabilities.
 
@@ -169,6 +169,6 @@ In this lab, you have accomplished the following:
 - Created the Azure AI Search Index.
 - Created the Search Agent.
 
-### You have successfully completed the lab. Click **Next** to continue to the next lab.
+## You have successfully completed the lab. Click **Next** to continue to the next lab.
 
    ![Start Your Azure Journey](./media/next-4.jpg)
