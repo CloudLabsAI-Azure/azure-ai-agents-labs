@@ -51,11 +51,11 @@ In this task, you will create an **Azure AI Search index** to store vectorized r
 
 1. Navigate to Azure Portal and search **AI Search** and select **my-search-service-<inject key="Deployment ID" enableCopy="false"></inject>** in azure portal.
 
-   ![](./media/L3T1S9.png)
+   ![](./media/Lab3-1.png)
 
 1. On the **Overview (1)** page of the Search Service, click **Import data(new) (2)**.
 
-   ![](./media/my-search-service-01.jpg)
+    ![](./media/Lab3-3.png)
 
 1. Select **Azure Blob Storage** as the data source.
 
@@ -99,15 +99,15 @@ In this task, you will create an **Azure AI Search index** to store vectorized r
 
 1. In the Azure Portal, navigate to the **Overview** tab of **aihub-<inject key="Deployment ID" enableCopy="false"></inject>** resource and click on **Launch Azure AI Foundry**.
 
-   ![](./media/ag60a.png)
+   ![](./media/Lab3-4.png)
 
 2. From the left-hand menu, click **Connected resources (1)**, then click on **+ New connection (2)**.
 
-   ![](./media/L3T1S18.png)
+   ![](./media/Lab3-0.png)
 
 3. Choose **Azure AI Search** as the resource type.
 
-   ![](./media/ag60c.png)
+   ![](./media/Lab3-2.png)
 
 4. Once the connection is added successfully, click **Add connection** and then **Close** the dialog.
 
@@ -136,11 +136,11 @@ In this task, you will build an AI Agent using **Retrieval-Augmented Generation 
 
    ![](./media/oct-azure-aiagent-lab1-10.png)
    
-1. Run this cell to set up the foundation for a RAG (Retrieval-Augmented Generation) Agent using Azure AI Foundry. This script imports necessary libraries, loads environment variables, and initializes components like AIProjectClient for project management and AzureAISearchTool for retrieval capabilities.
+1. Run this cell to set up the foundation for a RAG (Retrieval-Augmented Generation) Agent using Azure Microsoft Foundry. This script imports necessary libraries, loads environment variables, and initializes components like AIProjectClient for project management and AzureAISearchTool for retrieval capabilities.
 
    ![](./media/ag78.png)
 
-1. Run this cell to connect to your Azure AI Foundry project and access the deployed GPT-4o model.
+1. Run this cell to connect to your Azure Microsoft Foundry project and access the deployed GPT-4o model.
 
    ![](./media/ag79.png)
 

@@ -59,7 +59,7 @@ Welcome to your Azure AI agents workshop! We've prepared a seamless environment 
  
 Once you're ready to dive in, your virtual machine and **Guide** will be right at your fingertips within your web browser.
  
-  ![Access Your VM and Lab Guide](./media/agg1a.png)
+  ![Access Your VM and Lab Guide](./media/GS-0.png)
 
 ## Virtual Machine & Lab Guide
  
@@ -79,9 +79,9 @@ For convenience, you can open the lab guide in a separate window by selecting th
  
 ## Managing Your Virtual Machine
  
-Feel free to **Start, Stop, or Restart (2)** your virtual machine as needed from the **Resources (1)** tab. Your experience is in your hands!
+Feel free to **Start, Restart, or Stop (2)** your virtual machine as needed from the **Resources (1)** tab. Your experience is in your hands!
 
-   ![Manage Your Virtual Machine](./media/GS3.png)
+   ![Manage Your Virtual Machine](./media/GS-1.png)
 
 ## Lab Guide Zoom In/Zoom Out
  
