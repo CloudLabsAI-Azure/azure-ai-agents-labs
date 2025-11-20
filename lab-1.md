@@ -57,7 +57,7 @@ In this task, you will create and configure an AI Project within Azure Microsoft
 
 1. On the **Overview** pane, click on **Launch Azure Microsoft Foundry** to navigate to the **Azure Microsoft Foundry** portal.
 
-   ![](./media/Lab1-4.png)
+   ![](./media/Lab3-4.png)
 
 1. Scroll down and click on **+ New project** from the **Hub Overview** section.
 
