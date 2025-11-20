@@ -55,7 +55,7 @@ In this task, you will create and configure an AI Project within Azure Microsoft
 
    ![](./media/Lab1-4.png)
 
-1. On the **Overview** pane, click on **Launch Azure Microsoft Foundry** to navigate to the **Azure Microsoft Foundry** portal.
+1. On the **Overview** pane, click on **Launch Azure AI Foundry** to navigate to the **Microsoft Foundry** portal.
 
    ![](./media/Lab3-4.png)
 
@@ -114,7 +114,7 @@ In this task, you will deploy a large language model (LLM) and an embedding mode
 
     ![](./media/Lab1-12.png)
 
-1. On the **Microsoft Foundry | Azure OpenAI** page, select **Azure OpenAI (1)** under **Use with Microsoft Foundry**. On the Azure OpenAI page, click on **+ Create (2)** and select **Azure OpenAI (3)** from the drop-down.
+1. On the **Microsoft Foundry | Azure OpenAI** page, select **Azure OpenAI (1)** under **Use with Foundry**. On the Azure OpenAI page, click on **+ Create (2)** and select **Azure OpenAI (3)** from the drop-down.
 
     ![](./media/Lab1-13.png)
 
