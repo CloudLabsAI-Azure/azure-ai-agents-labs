@@ -27,11 +27,11 @@ In this task, you will build a simple AI Agent that processes data and generates
 
    ![](./media/ag63.png)
 
-1. Run the below cell to connect to your Azure AI Foundry project and access the deployed **GPT-4o** model. This establishes a secure connection using the project connection string and Azure credentials.
+1. Run the below cell to connect to your Azure Microsoft Foundry project and access the deployed **GPT-4o** model. This establishes a secure connection using the project connection string and Azure credentials.
 
    ![](./media/ag64.png)
 
-1. Run this cell to create a **simple AI Agent** that processes data and generates a bar chart comparing different health benefit plans using Azure AI Foundry. This script initializes the AI agent, sends a prompt containing health plan data, and requests a bar chart. The agent processes the request, generates the chart, saves the image file, and then cleans up by deleting the agent.
+1. Run this cell to create a **simple AI Agent** that processes data and generates a bar chart comparing different health benefit plans using Azure Microsoft Foundry. This script initializes the AI agent, sends a prompt containing health plan data, and requests a bar chart. The agent processes the request, generates the chart, saves the image file, and then cleans up by deleting the agent.
 
    ![](./media/ag90.png)
 
