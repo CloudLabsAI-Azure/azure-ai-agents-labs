@@ -37,7 +37,7 @@ In this task, you will create the Search, Report, and Validation Agents to retri
 
 1. Run this cell to develop a **multi-agent system** that integrates Azure AI Search, GPT-4o, and Semantic Kernel for intelligent task execution. This setup enables multiple AI agents to collaborate on retrieving information, generating responses, and handling complex queries.
 
-   ![](./media/ag85.png)
+   ![](./media/s1lp.png)
 
 1. Run this cell to create the **Search Agent**, which retrieves health plan details from Azure AI Search using GPT-4o. This agent enables efficient retrieval of structured information from health plan documents.
 
@@ -73,7 +73,7 @@ In this task, you will create the Search, Report, and Validation Agents to retri
 
       ![](./media/Northwind_Standard_Benefits_Details-snapshot.png)        
    
-1. Run the next cell to **launch the multi-agent system**. A chat box will appear in VS Code asking you to enter the name of a health plan.
+1. Run the next cell to **Create a multi-agent system**. A chat box will appear in VS Code asking you to enter the name of a health plan.
   
    ![](./media/ag89.png)  
   
@@ -81,7 +81,7 @@ In this task, you will create the Search, Report, and Validation Agents to retri
 
     - Northwind Health Standard
 
-      ![](./media/download1.png)
+      ![](./media/updownload1.png)
 
       > **Note**: After successful execution, you’ll see output like:
 
@@ -98,6 +98,8 @@ In this task, you will create the Search, Report, and Validation Agents to retri
       ```
        
 1. Type `exit` in the box and press **Enter** to stop the process.
+
+   ![](./media/exitsthp.png)
 
 1. Again, run the below cell, and you will see a chat box pop up at the top of VS Code asking you to input the name of a health plan.
   
