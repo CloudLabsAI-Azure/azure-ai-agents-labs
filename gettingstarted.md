@@ -69,7 +69,7 @@ Your virtual machine is your workhorse throughout the workshop. The lab guide is
  
 To get a better understanding of your lab resources and credentials, navigate to the **Environment** tab.
  
-  ![Explore Lab Resources](./media/GS2.png)
+  ![Explore Lab Resources](./media/envtb.png)
  
 ## Utilizing the Split Window Feature
  
@@ -93,7 +93,7 @@ To adjust the zoom level for the environment page, click the **A↕: 100%** icon
  
 1. In the LabVM, click on the **Azure portal** shortcut of the Microsoft Edge browser, which is created on the desktop.
  
-   ![Enter Your Username](./media/azureportall.png)
+   ![Enter Your Username](./media/uplabvmaz.png)
 
 1. You'll see the **Sign into Microsoft Azure** tab. Here, enter your credentials:
  
@@ -111,9 +111,9 @@ To adjust the zoom level for the environment page, click the **A↕: 100%** icon
 
    ![no](./media/signedinno.png)
 
-1. If a **Welcome to Microsoft Azure** pop-up window appears, simply click **Cancel** to skip the tour.
+1. If a **Welcome to Microsoft Azure** pop-up window appears, simply click **Maybe later** to skip the tour.
 
-   ![no](./media/cancel.png)
+   ![no](./media/starttour.png)
 
 ## Steps to Proceed with MFA Setup if "Ask Later" Option is Not Visible
 
