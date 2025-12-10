@@ -123,13 +123,13 @@ In this task, you will deploy a large language model (LLM) and an embedding mode
    ![](./media/embslct.png)
 
 3. On the **Deploy text-embedding-3-large** page:
-   - **Deployment type:** Standard  
-   - **Tokens per Minute Rate Limit:** `120K`  
+   - Deployment type: **Standard (1)** 
+   - Tokens per Minute Rate Limit:**`120K` (2)**
    - Click **Deploy (3)**
 
    ![](./media/embdep.png)
 
-4. After deployment completes, under **My assets** select **Models + endpoints** and confirm the **text-embedding-3-large** model is listed alongside your GPT-4o deployment.
+4. After deployment completes, under **My assets** select **Models + endpoints (1)** and confirm the **text-embedding-3-large (2)** model is listed alongside your GPT-4o deployment.
 
    ![](./media/embscs.png)
 
@@ -271,14 +271,13 @@ In this task, you will install the required dependencies, configure a virtual en
 
    ```powershell
    python -m venv venv
+   ```
+
+   ```powershell
    venv/Scripts/activate
    ```
 
    ![](./media/ag41.png)
-
-1. Click on **Paste as one line**.
-
-   ![](./media/paste-as-oneline.jpg)
 
 1. Run the below PowerShell command. This installs all the required packages:
 
@@ -314,9 +313,8 @@ In this task, you will install the required dependencies, configure a virtual en
 1. Sign in using below credentials:-
 
    - Username: **<inject key="AzureAdUserEmail"></inject>**
-   - Password: **<inject key="AzureAdUserPassword"></inject>**
 
-   ![](./media/ag44.png)
+   - Password: **<inject key="AzureAdUserPassword"></inject>**
 
 1. On the **Sign in to all apps, websites, and services on this device ?** pop-up, select on **No, this app only**.
 
