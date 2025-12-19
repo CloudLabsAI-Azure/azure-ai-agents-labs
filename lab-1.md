@@ -128,7 +128,7 @@ In this task, you will deploy a large language model (LLM) and an embedding mode
    - Tokens per Minute Rate Limit:**`120K` (2)**
    - Click **Deploy (3)**
 
-   ![](./media/embdep.png)
+       ![](./media/embdep.png)
 
 4. After deployment completes, under **My assets** select **Models + endpoints (1)** and confirm the **text-embedding-3-large (2)** model is listed alongside your GPT-4o deployment.
 
