@@ -98,8 +98,7 @@ In this task, you will create an **Azure AI Search index** to store vectorized r
 
    >**Note:** On the **Create Succeeded** Pop Up click on **Close**.
 
-1. In the Azure Portal, navigate to Microsft Foundry. Under the **AI Hubs (1)** click to open the 
-**aihub-<inject key="Deployment ID" enableCopy="false"></inject> (2)** resource. From the Overview page, click on **Launch Azure AI Foundry (3)**.
+1. In the Azure Portal, navigate to Microsft Foundry. Under the **AI Hubs (1)** click to open the **aihub-<inject key="Deployment ID" enableCopy="false"></inject> (2)** resource. From the Overview page, click on **Launch Azure AI Foundry (3)**.
 
    ![](./media/L3T1S17-1912.png)
 
