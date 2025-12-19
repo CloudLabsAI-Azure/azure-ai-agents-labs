@@ -2,22 +2,24 @@
 
 ## Estimated Duration: 120 Minutes
 
-## Lab scenario
+## Overview
 
-In this hands-on lab, you will set up the necessary environment for building AI Agents. You will begin by configuring an AI Project in Azure Microsoft Foundry, followed by deploying a Large Language Model (LLM) and embedding models. Next, you will establish connectivity from Visual Studio Code to the AI Project. Finally, you will perform a simple chat completion call to validate the setup.
+In this lab, you will configure the required environment for building AI agents. You will start by creating and configuring an AI Project in Microsoft Foundry, then deploy a Large Language Model (LLM) along with embedding models.
 
-## Lab Objectives
+You will next establish connectivity between Visual Studio Code and the AI Project. To validate the setup, you will perform a basic chat completion request using the deployed model.
+
+## Objectives
 
 In this lab, you will perform:
 
-- Task 1: Setting up the AI Project in the Azure Microsoft Foundry
+- Task 1: Setting up the AI Project in the Microsoft Foundry
 - Task 2: Deploying an LLM and embedding models
 - Task 3: Assign permissions to the Azure AI Search resource
 - Task 4: Install dependencies, create a virtual environment, and create an environment variables file.
 
-## Task 1: Setting up the AI Project in the Azure Microsoft Foundry
+## Task 1: Setting up the AI Project in the Microsoft Foundry
 
-In this task, you will create and configure an AI Project within Azure Microsoft Foundry. This involves setting up the necessary resources, defining project parameters, and ensuring that the environment is ready for deploying AI models. By the end of this task, you will have a fully initialized AI Project, serving as the foundation for further development and experimentation.
+In this task, you will create and configure an AI Project within Microsoft Foundry. This involves setting up the necessary resources, defining project parameters, and ensuring that the environment is ready for deploying AI models. By the end of this task, you will have a fully initialized AI Project, serving as the foundation for further development and experimentation.
 
 1. On the Azure Portal page, in the Search resources, services, and docs (G+/) box at the top of the portal, enter **Microsoft Foundry (1)**, and then select **Microsoft Foundry (2)** under **Services**.
 
@@ -55,7 +57,7 @@ In this task, you will create and configure an AI Project within Azure Microsoft
 
    ![](./media/Lab1-4.png)
 
-1. On the **Overview** pane, click on **Launch Azure Microsoft Foundry** to navigate to the **Azure Microsoft Foundry** portal.
+1. On the **Overview** pane, click on **Launch Azure AI Foundry** to navigate to the **Microsoft Foundry** portal.
 
    ![](./media/laaf.png)
 
@@ -80,22 +82,22 @@ In this task, you will create and configure an AI Project within Azure Microsoft
 
 ## Task 2: Deploying an LLM and embedding models
 
-In this task, you will deploy a large language model (LLM) and an embedding model within your Azure Microsoft Foundry project. These models will be used for AI-driven applications and vector-based search capabilities in upcoming labs.
+In this task, you will deploy a large language model (LLM) and an embedding model within your Microsoft Foundry project. These models will be used for AI-driven applications and vector-based search capabilities in upcoming labs.
 
-1. In the Azure Microsoft Foundry project, go to the **My assets** section, then select **Models + endpoints (1)**. Click **+ Deploy model (2)** and choose **Deploy base model (3)** from the drop-down to continue.
+1. In the Microsoft Foundry project, go to the **My assets** section, then select **Models + endpoints (1)**. Click **+ Deploy model (2)** and choose **Deploy base model (3)** from the drop-down to continue.
 
     ![](./media/Lab1-8.png)
 
 2. In the **Select a model** page, search for **gpt-4o (1)**, select **gpt-4o (2)**, and then click **Confirm (3)**.
 
-    ![](./media/Lab1-9.png)
+    ![](./media/L1T2S2-1912.png)
 
 1. On the **Deploy gpt-4o** page, select **Customize**.
 
    ![](./media/4ocus.png)
    
    - Change the **Model version to 2024-08-06 (Default) (1)**
-   - Change the Tokens per Minute Rate Limit to **200K (2)**
+   - Change the Tokens per Minute Rate Limit to **200K (2)** (You can use keyboard arrow keys to adjust the limit).
    - Click on **Connect and deploy (3)**
 
       ![](./media/cnd.png)   
@@ -110,24 +112,23 @@ In this task, you will deploy a large language model (LLM) and an embedding mode
 
    ![](./media/4okey.png)
 
-1. In the Azure Microsoft Foundry project, go to the **My assets** section, then select **Models + endpoints (1)**. Click **+ Deploy model (2)** and choose **Deploy base model (3)**.
+1. In the Microsoft Foundry project, go to the **My assets** section, then select **Models + endpoints (1)**. Click **+ Deploy model (2)** and choose **Deploy base model (3)**.
 
    ![](./media/depemb.png)
 
 2. On the **Select a model** page:
    - Search for **text-embedding-3-large (1)**
-   - Set Inference tasks filter to **Embeddings (2)** 
-   - Select **text-embedding-3-large (3)**
-   - Click **Confirm (4)**
+   - Select **text-embedding-3-large (2)**
+   - Click **Confirm (3)**
 
-   ![](./media/embslct.png)
+      ![](./media/L1T2S7-1912.png)
 
 3. On the **Deploy text-embedding-3-large** page:
    - Deployment type: **Standard (1)** 
    - Tokens per Minute Rate Limit:**`120K` (2)**
    - Click **Deploy (3)**
 
-   ![](./media/embdep.png)
+       ![](./media/embdep.png)
 
 4. After deployment completes, under **My assets** select **Models + endpoints (1)** and confirm the **text-embedding-3-large (2)** model is listed alongside your GPT-4o deployment.
 
@@ -175,7 +176,7 @@ In this task, you will configure the necessary permissions for the Azure AI Sear
 
 1. In the resource settings, navigate to **Identity (1)** under the **Settings** section. Under **System assigned**, set the status to **On (2)** and click **Save (3)**.
 
-   ![](./media/l1.task1.23.png)
+   ![](./media/L1T3S6-1912.png)
 
 1. When prompted, confirm by selecting **Yes** to enable the system-assigned managed identity.
 
@@ -219,7 +220,7 @@ In this task, you will configure the necessary permissions for the Azure AI Sear
 
    ![](./media/L1T3S15.png)
 
-1. Now, navigate to the **Storage account** for the project.
+1. Now, navigate to the **Storage account** named **aihubxxxxxxxx** for the project.
 
    ![](./media/strgnav.png)
 
@@ -250,6 +251,8 @@ In this task, you will configure the necessary permissions for the Azure AI Sear
 In this task, you will install the required dependencies, configure a virtual environment, and set up environment variables. This setup ensures a consistent development environment and securely manages configuration settings for your AI project.
 
 1. On the **Desktop** of your **Lab VM**, launch **Visual Studio Code**.
+
+   ![](./media/L1T4S1-1912.png)
 
 2. Go to **File (1)** and click **Open Folder... (2)**.
 
@@ -286,6 +289,8 @@ In this task, you will install the required dependencies, configure a virtual en
    ```
    ![](./media/ag42.png)
 
+   >**Note:** This can take 3-5 minutes to complete. Wait for the command execution to complete then proceed ahead.
+
 1. Run the following PowerShell command to install or upgrade pip to the latest version.
 
    ```powershell
@@ -300,13 +305,17 @@ In this task, you will install the required dependencies, configure a virtual en
    pip install azure-ai-ml azure-identity
    ```
 
+   >**Note:** This can take 3-5 minutes to complete. Wait for the command execution to complete then proceed ahead.
+
 1. Run the below command to log into your Azure account.
 
    ```
    az login
    ```
 
-1. In the window that opens, select **Work or school account** and click on **Continue**.
+1. In the window that opens, select **Work or school account (1)** and click on **Continue (2)**.
+
+   ![](./media/L1T4S11-1912.png)
 
    > **Note**: If the window is not visible, try minimizing VS Code and the Edge browser, as it might be hidden behind them.
 
@@ -314,7 +323,7 @@ In this task, you will install the required dependencies, configure a virtual en
 
    - Username: **<inject key="AzureAdUserEmail"></inject>**
 
-   - Password: **<inject key="AzureAdUserPassword"></inject>**
+   - Temporary Access Pass: **<inject key="AzureAdUserPassword"></inject>**
 
 1. On the **Sign in to all apps, websites, and services on this device ?** pop-up, select on **No, this app only**.
 
@@ -326,11 +335,11 @@ In this task, you will install the required dependencies, configure a virtual en
 
    ![](./media/upimage0002.png)
 
-1. Open the **sample.env** file and provide the necessary environment variables. 
+1. Open the **sample.env** file.
 
    ![](./media/ag46.png)
 
-1. In the `sample.env` file, provide the following environment variables using the values retrieved from your Azure Microsoft Foundry project:
+1. In the `sample.env` file, provide the following environment variables using the values retrieved from your Microsoft Foundry project:
 
    - `AIPROJECT_CONNECTION_STRING`: Provide the **Project connection string** value you have copied in Task 1 of Step 10.
    - `CHAT_MODEL_ENDPOINT`: Provide the **Target URI** of the **gpt-4o** model you have copied in Task 2 of Step 5.
@@ -339,10 +348,10 @@ In this task, you will install the required dependencies, configure a virtual en
 
      ![](./media/upag49.png)
 
-   > **Note:** If the Project Connection string is not pasted, follow these steps to get the value:
-   > 1. On the **Azure Portal** page, in the *Search resources, services, and docs (G+/)* box at the top of the portal, search for **aihub-<inject key="Deployment ID" enableCopy="false"></inject>**.
-   > 2. In the **Overview** pane, click **Launch Azure Microsoft Foundry** to open the Azure Microsoft Foundry portal.
-   > 3. In the **Project Overview** section, select **Go to project**, then copy the **Project connection string**.
+      > **Note:** To get the Project Connection string, follow these steps to get the value:
+      > 1. On the **Azure Portal** page, in the *Search resources, services, and docs (G+/)* box at the top of the portal, search for **aihub-<inject key="Deployment ID" enableCopy="false"></inject>**.
+      > 2. In the **Overview** pane, click **Launch Microsoft Foundry** to open the Microsoft Foundry portal.
+      > 3. In the **Project Overview** section, select **Go to project**, then copy the **Project connection string**.
    
 1. Save the changes made to the `sample.env` file by clicking **CTRL + S**.
 
@@ -354,7 +363,7 @@ In this task, you will install the required dependencies, configure a virtual en
 
    ![](./media/ag50.png)   
 
-1. Next, open the **Lab 1 - Project Setup.ipynb** file. The **Lab 1 - Project Setup.ipynb** notebook guides you through setting up an AI Project in Azure Microsoft Foundry, deploying an LLM and embedding models, and configuring VS Code connectivity. It also includes a simple Chat Completion API call to verify the setup. Running this notebook ensures that your environment is correctly configured for developing AI-powered applications. 
+1. Next, open the **Lab 1 - Project Setup.ipynb** file. The **Lab 1 - Project Setup.ipynb** notebook guides you through setting up an AI Project in Microsoft Foundry, deploying an LLM and embedding models, and configuring VS Code connectivity. It also includes a simple Chat Completion API call to verify the setup. Running this notebook ensures that your environment is correctly configured for developing AI-powered applications. 
 
    ![](./media/ag61.png)
 
@@ -362,11 +371,11 @@ In this task, you will install the required dependencies, configure a virtual en
 
    ![](./media/lab1-22.png)
 
-1. Select **Python Environments** to ensure that Jupyter Notebook runs in the correct Python interpreter with the necessary dependencies installed. 
+1. Once the Python extension is installed, select **Python Environments** to ensure that Jupyter Notebook runs in the correct Python interpreter with the necessary dependencies installed. 
 
    ![](./media/lab1-23.png)
 
-1. Select **venv (Python 3.X.X)** from the list as this version is likely required for compatibility with Azure Microsoft Foundry SDK and other dependencies.
+1. Select **venv (Python 3.X.X)** from the list as this version is likely required for compatibility with Microsoft Foundry SDK and other dependencies.
 
    ![](./media/python-kernal00-01.jpg)
 
@@ -374,15 +383,15 @@ In this task, you will install the required dependencies, configure a virtual en
 
    ![](./media/ag72.png)
 
-1. Run the below cell to retrieve the project connection string and model name from environment variables. These values are needed to interact with the Large Language Model (LLM) securely, without hardcoding sensitive information.
+1. Run the next cell to retrieve the project connection string and model name from environment variables. These values are needed to interact with the Large Language Model (LLM) securely, without hardcoding sensitive information.
 
    ![](./media/ag73.png)
 
-1. Run the below cell to connect to your Azure Microsoft Foundry project using the connection string. This establishes a secure connection with AIProjectClient, enabling interactions with your project resources.
+1. Run the next cell to connect to your Microsoft Foundry project using the connection string. This establishes a secure connection with AIProjectClient, enabling interactions with your project resources.
 
    ![](./media/ag74.png)
 
-1. Run the below cell to interact with the GPT-4o model using your Azure Microsoft Foundry project. This code initializes a chat client, sends a request for a joke about a teddy bear, and prints the response. Finally, see the output provided from the chat model.
+1. Run the next cell to interact with the GPT-4o model using your Microsoft Foundry project. This code initializes a chat client, sends a request for a joke about a teddy bear, and prints the response. Finally, see the output provided from the chat model.
 
    ![](./media/ag75.png)
 
@@ -393,11 +402,11 @@ In this task, you will install the required dependencies, configure a virtual en
 ## Summary
 
 In this lab, you have accomplished the following:
-- Set up the AI Project in Azure Microsoft Foundry.
+- Set up the AI Project in Microsoft Foundry.
 - Deployed an LLM and embedding models.
 - Established connectivity from VS Code to the AI Project.
 - Performed a simple Chat Completion call.
 
-## You have successfully completed the lab. Click **Next** to continue to the next lab.
+### You have successfully completed the lab. Click **Next** to continue to the next lab.
 
    ![Start Your Azure Journey](./media/2-next.jpg)

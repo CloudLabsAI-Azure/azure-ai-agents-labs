@@ -2,11 +2,11 @@
 
 ## Estimated Duration: 60 Minutes
 
-## Lab scenario
+## Overview
 
-In this hands-on lab, you will build an AI Agent powered by **Retrieval-Augmented Generation (RAG)** to extract insights from health plan documents. Using **Azure AI Search** as a vector database, you will store and retrieve document embeddings to enable context-aware and accurate responses. This hands-on experience will help you understand how to implement RAG-based solutions and integrate Azure AI Search for improved document-driven interactions.
+In this lab, you will build an AI Agent powered by **Retrieval-Augmented Generation (RAG)** to extract insights from health plan documents. Using **Azure AI Search** as a vector database, you will store and retrieve document embeddings to enable context-aware and accurate responses. This hands-on experience will help you understand how to implement RAG-based solutions and integrate Azure AI Search for improved document-driven interactions.
 
-## Lab Objectives
+## Objectives
 
 In this lab, you will complete the following tasks:
 
@@ -98,9 +98,12 @@ In this task, you will create an **Azure AI Search index** to store vectorized r
 
    >**Note:** On the **Create Succeeded** Pop Up click on **Close**.
 
-1. In the Azure Portal, navigate to the **Overview** tab of **aihub-<inject key="Deployment ID" enableCopy="false"></inject>** resource and click on **Launch Azure AI Foundry**.
+1. In the Azure Portal, navigate to Microsft Foundry. Under the **AI Hubs (1)** click to open the 
+**aihub-<inject key="Deployment ID" enableCopy="false"></inject> (2)** resource. From the Overview page, click on **Launch Azure AI Foundry (3)**.
 
-   ![](./media/laaf.png)
+   ![](./media/L3T1S17-1912.png)
+
+   ![](./media/L3T1S17.2-1912.png)
 
 2. From the left-hand menu, click **Connected resources (1)**, then click on **+ New connection (2)**.
 
@@ -137,23 +140,23 @@ In this task, you will build an AI Agent using **Retrieval-Augmented Generation 
 
    ![](./media/oct-azure-aiagent-lab1-10.png)
    
-1. Run this cell to set up the foundation for a RAG (Retrieval-Augmented Generation) Agent using Azure Microsoft Foundry. This script imports necessary libraries, loads environment variables, and initializes components like AIProjectClient for project management and AzureAISearchTool for retrieval capabilities.
+1. Run the first cell to set up the foundation for a RAG (Retrieval-Augmented Generation) Agent using Microsoft Foundry. This script imports necessary libraries, loads environment variables, and initializes components like AIProjectClient for project management and AzureAISearchTool for retrieval capabilities.
 
    ![](./media/lpack.png)
 
-1. Run this cell to connect to your Azure Microsoft Foundry project and access the deployed GPT-4o model.
+1. Run the next cell to connect to your Microsoft Foundry project and access the deployed GPT-4o model.
 
    ![](./media/acsgpt.png)
 
-1. Run this cell to retrieve the connection ID for your Azure AI Search instance and connect to the "health-plan" index. This ensures your RAG Agent can fetch relevant data from Azure AI Search for retrieval-augmented generation.
+1. Run the next cell to retrieve the connection ID for your Azure AI Search instance and connect to the "health-plan" index. This ensures your RAG Agent can fetch relevant data from Azure AI Search for retrieval-augmented generation.
 
    ![](./media/cnaisi.png)
 
-1. Run this cell to define a search agent that utilizes Azure AI Search and the GPT-4o model to retrieve relevant health plan documents.
+1. Run the next cell to define a search agent that utilizes Azure AI Search and the GPT-4o model to retrieve relevant health plan documents.
 
    ![](./media/dsa.png)
 
-1. Run this cell to chat with the search agent and retrieve details about the Northwind Standard health plan using Azure AI Search and GPT-4o. This script initiates a conversation, queries the agent for health plan information, and displays the agent’s response.
+1. Run the next cell to chat with the search agent and retrieve details about the Northwind Standard health plan using Azure AI Search and GPT-4o. This script initiates a conversation, queries the agent for health plan information, and displays the agent’s response.
 
    ![](./media/ag81.png)
    
@@ -165,11 +168,8 @@ In this task, you will build an AI Agent using **Retrieval-Augmented Generation 
    
 ## Summary
 
-In this lab, you have accomplished the following:
+In this lab, you built a Retrieval-Augmented Generation (RAG) AI Agent using Microsoft Foundry. You created an Azure AI Search index to store vectorized health plan documents and integrated it with an AI agent to retrieve relevant content and generate accurate, context aware responses.
 
-- Created the Azure AI Search Index.
-- Created the Search Agent.
-
-## You have successfully completed the lab. Click **Next** to continue to the next lab.
+### You have successfully completed the lab. Click **Next** to continue to the next lab.
 
    ![Start Your Azure Journey](./media/4nxt.png)
