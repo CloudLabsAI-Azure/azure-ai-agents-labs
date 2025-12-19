@@ -12,7 +12,7 @@ This lab is aimed at giving learners hands-on experience with Azure OpenAI resou
 
 Participants will learn:
 
-1. **Set Up AI Project and Perform Chat Completion from VS Code:** In this hands-on lab will guide you through setting up the environment for building AI Agents. You will begin by configuring an AI Project in Azure AI Foundry, deploying a Large Language Model (LLM) and embedding models. Next, you will connect Visual Studio Code to the AI Project and perform a chat completion call to validate the setup, ensuring seamless integration and functionality.
+1. **Set Up AI Project and Perform Chat Completion from VS Code:** In this hands-on lab will guide you through setting up the environment for building AI Agents. You will begin by configuring an AI Project in Microsoft Foundry, deploying a Large Language Model (LLM) and embedding models. Next, you will connect Visual Studio Code to the AI Project and perform a chat completion call to validate the setup, ensuring seamless integration and functionality.
 
 2. **Build a Simple AI Agent:** In this hands-on lab, you will be introduced to AI Agents in Azure and learn how to build a simple AI Agent. You will create an agent that generates a bar chart comparing health benefit plans, leveraging AI capabilities to process data and visualize insights effectively.
 
@@ -27,7 +27,7 @@ Participants should have:
 
 1. **Development Skills:** Basic programming knowledge in Python or JavaScript, experience with APIs, SDKs, and working in Visual Studio Code.
 
-1. **Azure AI & Cloud Concepts:** Understanding of Azure AI Foundry, AI Agent development, deploying LLMs and embedding models, and working with Azure AI Search for vector-based retrieval.
+1. **Azure AI & Cloud Concepts:** Understanding of Microsoft Foundry, AI Agent development, deploying LLMs and embedding models, and working with Azure AI Search for vector-based retrieval.
 
 1. **AI & Data Processing:** Knowledge of prompt engineering, chat completion workflows, embedding models, retrieval-augmented generation (RAG), and content filtering techniques.
 
@@ -43,8 +43,8 @@ This architecture diagram shows the Standard Agent Setup in Azure, where differe
  
 ## Explanation of Components
 
-- **Azure AI Foundry:** A cloud-based platform for developing, deploying, and managing AI models. It allows users to configure AI projects, deploy Large Language Models (LLMs), and integrate embedding models to enhance AI applications.
-- **Azure AI Hub**: A core component of Azure AI Foundry, it is a top-level Azure resource that provides a central, secure, and collaborative environment for teams to build, manage, and deploy AI applications, offering access to various Azure AI services with a single setup. 
+- **Microsoft Foundry:** A cloud-based platform for developing, deploying, and managing AI models. It allows users to configure AI projects, deploy Large Language Models (LLMs), and integrate embedding models to enhance AI applications.
+- **Azure AI Hub**: A core component of Microsoft Foundry, it is a top-level Azure resource that provides a central, secure, and collaborative environment for teams to build, manage, and deploy AI applications, offering access to various Azure AI services with a single setup. 
 - **Azure AI Search:** A vector-based search service that enables Retrieval-Augmented Generation (RAG) by indexing and retrieving relevant documents to improve AI-generated responses.
 - **Azure AI Services**: A collection of cloud-based AI services that allow developers and data scientists to build intelligent applications, offering pre-built and customizable APIs and models for tasks like speech, vision, language, and knowledge.
 - **Azure Key Vault**: It is a cloud service that securely stores and manages secrets, certificates, and cryptographic keys, allowing authorized users and applications to access them while enhancing security and reducing data breach risks. 
@@ -103,7 +103,7 @@ To adjust the zoom level for the environment page, click the **A↕: 100%** icon
  
 1. Next, provide your password:
  
-   - **Password:** <inject key="AzureAdUserPassword"></inject>
+   - **Temporary Access Pass:** <inject key="AzureAdUserPassword"></inject>
  
       ![Enter Your Password](./media/im1.png)
 
@@ -115,6 +115,7 @@ To adjust the zoom level for the environment page, click the **A↕: 100%** icon
 
    ![no](./media/starttour.png)
 
+<!--
 ## Steps to Proceed with MFA Setup if "Ask Later" Option is Not Visible
 
 1. At the **"More information required"** prompt, select **Next**.
@@ -138,6 +139,7 @@ To adjust the zoom level for the environment page, click the **A↕: 100%** icon
 1. If prompted to stay signed in, you can click **Yes**.
  
 1. If a **Welcome to Microsoft Azure** pop-up window appears, simply click **Cancel** to skip the tour.
+-->
 
 ## Support Contact
  
