@@ -143,6 +143,4 @@ In this lab, you developed a multi-agent system using Microsoft Foundry, where m
 
 ## You have successfully completed the Hands-on lab.
 
-# Conclusion
-
 In this **Hands-On-Lab: Microsoft Azure AI Agents**, you explored the capabilities of Azure AI services by building various AI agents and multi-agent systems. You learned how to create simple AI agents, implement Retrieval-Augmented Generation (RAG) agents, and develop multi-agent systems that collaborate to achieve complex tasks. By leveraging Azure AI Agent Service, Microsoft Foundry, and Semantic Kernel, you gained practical experience in building intelligent applications that can analyze data, generate insights, and ensure compliance with specified requirements.
