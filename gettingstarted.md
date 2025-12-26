@@ -39,7 +39,7 @@ This architecture diagram shows the Standard Agent Setup in Azure, where differe
 
 ## Architecture Diagram
 
-![Architecture Diagram](./media/standard-agent-setup-resources.png)
+![Architecture Diagram](./media/arch-diag-2612.png)
  
 ## Explanation of Components
 
