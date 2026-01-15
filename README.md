@@ -5,7 +5,7 @@ This repo contains hands-on labs for building AI Agents using the Azure AI Agent
 ## Prerequisites
 **Microsoft will provide the lab environment with all the prerequisites**
 * Azure subscription
-* Azure AI Foundry resource (You will set this up in Lab 1)
+* Microsoft Foundry resource (You will set this up in Lab 1)
 * Visual Studio Code
 * Python 3.10>
 * Azure CLI
@@ -15,7 +15,7 @@ This repo contains hands-on labs for building AI Agents using the Azure AI Agent
 
 ### Lab 1 - Setup and test the lab environment
 Lab 1 walks you through how to setup the necessary lab environment for building AI Agents. This includes:
-* Setting up the AI Project in the Azure AI Foundry
+* Setting up the AI Project in the Microsoft Foundry
 * Deploying an LLM and embedding models
 * Establish connectivity from VS Code to the AI Project
 * Perform a simple Chat Completion call to the LLM to test that your lab environment is set up properly. 
