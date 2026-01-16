@@ -310,7 +310,7 @@ In this task, you will configure the necessary permissions for the Azure AI Sear
 
    ![](./media/new/f3.png)
 
-1. Follow the steps from **31** to **34** and assign **Cognitive Services OpenAI Contributor** role to the user.
+1. Follow steps form **31** to **34**, and assign the **Cognitive Services OpenAI Contributor** role to the **ODL_User <inject key="Deployment ID" enableCopy="false"></inject>**.
 
    ![](./media/new/f4.png)
 
@@ -447,6 +447,10 @@ In this task, you will install the required dependencies, configure a virtual en
 1. Click **Select Kernel (1)** in the top-right corner and choose **Install/Enable suggested extensions Python + Jupyter (2)** if prompted.
 
    ![](./media/lab1-22.png)
+
+1. Wait for the **Python** extension to be installed.
+
+   ![](./media/new/h10.png)
 
 1. Once the Python extension is installed, select **Python Environments** to ensure that Jupyter Notebook runs in the correct Python interpreter with the necessary dependencies installed. 
 

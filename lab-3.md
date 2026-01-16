@@ -51,7 +51,7 @@ In this task, you will create an **Azure AI Search index** to store vectorized r
 
 1. Navigate to Azure Portal and search **AI Search** and select **my-search-service-<inject key="Deployment ID" enableCopy="false"></inject>** in azure portal.
 
-   ![](./media/Lab3-1.png)
+   ![](./media/new/h11.png)
 
 1. On the **Overview (1)** page of the Search Service, click **Import data(new) (2)**.
 
