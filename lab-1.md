@@ -81,23 +81,33 @@ In this task, you will deploy a large language model (LLM) and an embedding mode
 
     ![](./media/new/11.png)
 
+    ![](./media/new/a1.png)
+
 1. In the **gpt-4o** page, click on **Deploy (1)** and select **Custom Settings (2)** from the dropdown.
 
     ![](./media/new/12.png)
+
+    ![](./media/new/a2.png)
 
 1. On the **Deploy gpt-4o** page, expand **Model version settings (1)**, set the **Model version** to **2024-08-06 (2)** from the drop-down. Change the **Tokens per Minute Rate Limit** to **200K (3)** and click on **Deploy (4)**.
 
       ![](./media/new/13.png)
    
+      ![](./media/new/a3.png)
+
    >**Note:** If the **Tokens per Minute rate limit** of **200K** is not available, use the next **highest available limit** (e.g., 150K or 100K).
 
 1. After deployment, select **Models (1)** from left navigation pane and select the **gpt-4o (2)** model.
 
    ![](./media/new/15.png)
 
+   ![](./media/new/a4.png)
+
 1. Under **gpt-4o**, select the **Details (1)** tab from top and copy the **Target URI (2)** and save it in **Notepad** for later use.
 
    ![](./media/new/14a.png)
+
+   ![](./media/new/a5.png)
 
 1. From the left navigation pane, click **Models (1)** and select **Deploy a base model (2)**.
 
@@ -114,6 +124,8 @@ In this task, you will deploy a large language model (LLM) and an embedding mode
 1. From the left navigation pane, click **Models (1)** and ensure both the **Models (2)** are deployed successfully.
 
    ![](./media/new/19.png)
+
+   ![](./media/new/a6.png)
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
 > - If you receive a success message, you can proceed to the next task.
@@ -134,15 +146,19 @@ In this task, you will configure the necessary permissions for the Azure AI Sear
 
     ![](./media/Lab1-21.png)
 
-1. On the **Create a search service** pane, enter the following details and click on **Review + create (4)**.
+1. On the **Create a search service** pane, enter the following details and click on **Review + create (5)**.
 
-    - Subscription: **Leave default subscription** 
-    - Resource group: Select **azure-ai-agents-<inject key="Deployment ID" enableCopy="false"></inject>** **(1)** 
+    - Subscription: **Leave default subscription**
+
+    - Resource group: Select **azure-ai-agents-<inject key="Deployment ID" enableCopy="false"></inject>** **(1)**
+
     - Service Name: **my-search-service-<inject key="Deployment ID" enableCopy="false"></inject> (2)**
 
     - Location: **<inject key="Region" enableCopy="false"></inject>** **(3)**
 
-      ![](./media/css.png)
+    - Pricing tier: **Standard (4)**
+
+      ![](./media/new/w1.png)
 
 1. On the **Review + create** tab, click **Create** to deploy the search service.
 
@@ -154,9 +170,9 @@ In this task, you will configure the necessary permissions for the Azure AI Sear
 
    >**Note**: The deployment may take around **10 - 12 minutes**, depending on Azure’s provisioning time for the AI Search service.
 
-1. In the resource settings, navigate to **Identity (1)** under the **Settings** section. Under **System assigned**, set the status to **On (2)** and click **Save (3)**.
+1. In the Search Service, expand **Settings (1)** and select **Identity (2)** under the  section. Under **System assigned**, set the status to **On (3)** and click **Save (4)**.
 
-   ![](./media/L1T3S6-1912.png)
+   ![](./media/new/w2.png)
 
 1. When prompted, confirm by selecting **Yes** to enable the system-assigned managed identity.
 
@@ -170,43 +186,41 @@ In this task, you will configure the necessary permissions for the Azure AI Sear
 
    ![](./media/ag25a.png)
 
-1. Now, navigate back to your previously created service in **Microsoft Foundry** **|** **Foundry** blade named **my-ai-service-<inject key="DeploymentID" enableCopy="false" /></inject>**.
-
-   ![](./media/navfon.png)
-
-1. In the Foundry service blade, select **Access control (IAM) (1)**, click **+ Add (2)** drop-down, and then choose **Add role assignment (3)**.
-
-   ![](./media/araf.png)
-
-1. Under **Job function roles**, search for **Cognitive Services OpenAI User (1)**, select **Cognitive Services OpenAI User (2)**, and then select **Next (3)**.
-
-   ![](./media/aranxt.png)
-
-1. On the **Add role assignment** page, 
-
-   - Under **Members** tab, select **Managed identity (1)**
-   - Click on **+ Select members (2)**
-   - Managed identity: **Search service(1)** **(3)**
-   - Then, select **my-search-service-<inject key="Deployment ID" enableCopy="false"></inject> (4)** search service.
-   - Click on **Select (5)**
-
-     ![](./media/slctmem.png)
-
-1. Click **Review + assign** twice to finalize the role assignment.
-
-   ![](./media/finra.png)
-
 1. On the Azure portal, search for **Storage Accounts (1)** and select **Storage accounts (2)** from the services.
 
    ![](./media/L1T3S15.png)
 
-1. Now, navigate to the **Storage account** named **aihubxxxxxxxx** for the project.
+1. From the top, click on **+ Create** to create a Storage Account.
 
-   ![](./media/strgnav.png)
+   ![](./media/new/w3.png)
 
-1. Inside the storage account blade, go to **Access control (IAM) (1)**, click **+ Add (2)**, and choose **Add role assignment (3)**.
+1. Provide the following details and then click on **Review + create (7)**.
 
-   ![](./media/L1T3S17.png)
+   - Leave the default **Subscription (1)**.
+
+   - Resource group: Select **azure-ai-agents-<inject key="Deployment ID" enableCopy="false"></inject> (2)**
+
+   - Storage account name: Enter **storage<inject key="Deployment ID" enableCopy="false"></inject> (3)**
+
+   - Region: **<inject key="Region" enableCopy="false"></inject>** **(4)**
+
+   - Performance: Select **Standard (5)**.
+
+   - Redundancy: Select **Locally redundant storage (LRS) (6)**.
+
+      ![](./media/new/w4.png)
+
+1. Click on **Create** to create a storage account.
+
+   ![](./media/new/w5.png)
+
+1. Wait for the deployment to be completed, and then click on **Go to resource.**
+
+   ![](./media/new/w6.png)
+
+1. In the storage account blade, from the left navigation pane, select **Access control (IAM) (1)**, click **+ Add (2)**, and choose **Add role assignment (3)**.
+
+   ![](./media/new/w7.png)
 
 1. Under **Job function roles**, search for **Storage Blob Data Reader (1)**, select **Storage Blob Data Reader (2)**, and then select **Next (3)**.
 
@@ -225,6 +239,88 @@ In this task, you will configure the necessary permissions for the Azure AI Sear
 1. Finally, click **Review + assign** twice to complete the assignment.
 
    ![](./media/blobrpa.png)   
+
+1. In the Azure portal, use the search bar at the top to search for **AI Search (1)**, and then select **AI Search** **(2)** from the Services section.
+
+   ![](./media/aisearch1.png)
+
+1. Select your **my-search-service-<inject key="Deployment ID" enableCopy="false"></inject>**
+
+   ![](./media/new/w8.png)
+
+1. From the left navigation pane, select **Access control (IAM) (1)**, click **+ Add (2)**, and choose **Add role assignment (3)**.
+
+   ![](./media/new/w9.png)
+
+1. Under **Job function roles**, search for **Search Index Data Reader (1)**, select **Search Index Data Reader (2)**, and then select **Next (3)**.
+
+   ![](./media/new/w10.png)
+
+1. On the **Add role assignment** page, 
+
+   - Under **Members** tab, select **Managed identity (1)**
+   - Click on **+ Select members (2)**
+   - Managed identity: **Foundry project (1)** **(3)**
+   - Then select **my-project-<inject key="Deployment ID" enableCopy="false"></inject> (4)**.
+   - Click on **Select (5)**
+
+     ![](./media/new/e1b.png)
+
+1. Finally, click **Review + assign** twice to complete the assignment.
+
+   ![](./media/new/e2.png)
+
+1. Again select **Access control (IAM) (1)**, click **+ Add (2)**, and choose **Add role assignment (3)**.
+
+   ![](./media/new/w9.png)
+
+1. Under **Job function roles**, search for **Search Service Contributor (1)**, select **Search Service Contributor (2)**, and then select **Next (3)**.
+
+   ![](./media/new/e3.png)
+
+1. On the **Add role assignment** page, 
+
+   - Under **Members** tab, select **Managed identity (1)**
+   - Click on **+ Select members (2)**
+   - Managed identity: **Foundry project (1)** **(3)**
+   - Then select **my-project-<inject key="Deployment ID" enableCopy="false"></inject> (4)**.
+   - Click on **Select (5)**
+
+     ![](./media/new/e4.png)
+
+1. Finally, click **Review + assign** twice to complete the assignment.
+
+   ![](./media/new/e5.png)
+
+1. On the Azure Portal page, search **Microsoft Foundry (1)**, and then select **Microsoft Foundry (2)** from the results.
+
+    ![](./media/Lab1-0.png) 
+
+1. Select **Foundry (1)** from the left pane and select **my-foundry-<inject key="Deployment ID" enableCopy="false"></inject> (2)**.
+
+   ![](./media/new/e6.png)
+
+1. In the Foundry service blade, select **Access control (IAM) (1)**, click **+ Add (2)** drop-down, and then choose **Add role assignment (3)**.
+
+   ![](./media/new/e7.png)
+
+1. Under **Job function roles**, search for **Cognitive Services OpenAI User (1)**, select **Cognitive Services OpenAI User (2)**, and then select **Next (3)**.
+
+   ![](./media/aranxt.png)
+
+1. On the **Add role assignment** page, 
+
+   - Under **Members** tab, select **Managed identity (1)**
+   - Click on **+ Select members (2)**
+   - Managed identity: **Search service(1)** **(3)**
+   - Then, select **my-search-service-<inject key="Deployment ID" enableCopy="false"></inject> (4)** search service.
+   - Click on **Select (5)**
+
+     ![](./media/new/e8.png)
+
+1. Click **Review + assign** twice to finalize the role assignment.
+
+   ![](./media/finra.png)
 
 ## Task 4: Install dependencies, create a virtual environment, and create an environment variables file
 
