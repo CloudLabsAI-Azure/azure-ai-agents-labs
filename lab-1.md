@@ -310,7 +310,7 @@ In this task, you will configure the necessary permissions for the Azure AI Sear
 
    ![](./media/new/f3.png)
 
-1. Follow steps form **31** to **34**, and assign the **Cognitive Services OpenAI Contributor** role to the **ODL_User <inject key="Deployment ID" enableCopy="false"></inject>**.
+1. Follow steps from **31** to **34**, and assign the **Cognitive Services OpenAI Contributor** role to the **ODL_User <inject key="Deployment ID" enableCopy="false"></inject>**.
 
    ![](./media/new/f4.png)
 
