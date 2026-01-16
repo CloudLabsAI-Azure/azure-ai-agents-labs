@@ -77,41 +77,31 @@ In this task, you will deploy a large language model (LLM) and an embedding mode
 
     ![](./media/new/10.png)
 
-1. In the **Model** page, search for **gpt-4o (1)** and select **gpt-4o (2)** from the results.
-
-    ![](./media/new/11.png)
+1. In the **Model** page, search for **gpt-4.1 (1)** and select **gpt-4.1 (2)** from the results.
 
     ![](./media/new/a1.png)
 
-1. In the **gpt-4o** page, click on **Deploy (1)** and select **Custom Settings (2)** from the dropdown.
-
-    ![](./media/new/12.png)
+1. In the **gpt-4.1** page, click on **Deploy (1)** and select **Custom Settings (2)** from the dropdown.
 
     ![](./media/new/a2.png)
 
-1. On the **Deploy gpt-4o** page, expand **Model version settings (1)**, set the **Model version** to **2024-08-06 (2)** from the drop-down. Change the **Tokens per Minute Rate Limit** to **200K (3)** and click on **Deploy (4)**.
+1. On the **Deploy gpt-4.1** page, change the **Tokens per Minute Rate Limit** to **200K (1)** and click on **Deploy (2)**.
 
-      ![](./media/new/13.png)
-   
       ![](./media/new/a3.png)
 
    >**Note:** If the **Tokens per Minute rate limit** of **200K** is not available, use the next **highest available limit** (e.g., 150K or 100K).
 
-1. After deployment, select **Models (1)** from left navigation pane and select the **gpt-4o (2)** model.
-
-   ![](./media/new/15.png)
+1. After deployment, select **Models (1)** from left navigation pane and select the **gpt-4.1 (2)** model.
 
    ![](./media/new/a4.png)
 
-1. Under **gpt-4o**, select the **Details (1)** tab from top and copy the **Target URI (2)** and save it in **Notepad** for later use.
-
-   ![](./media/new/14a.png)
+1. Under **gpt-4.1**, select the **Details (1)** tab from top and copy the **Target URI (2)** and save it in **Notepad** for later use.
 
    ![](./media/new/a5.png)
 
 1. From the left navigation pane, click **Models (1)** and select **Deploy a base model (2)**.
 
-   ![](./media/new/16.png)
+   ![](./media/new/n1.png)
 
 1. In the **Model** page, search for **text-embedding-3-large (1)** and select **text-embedding-3-large (2)** from the results.
 
@@ -122,8 +112,6 @@ In this task, you will deploy a large language model (LLM) and an embedding mode
     ![](./media/new/18.png)
 
 1. From the left navigation pane, click **Models (1)** and ensure both the **Models (2)** are deployed successfully.
-
-   ![](./media/new/19.png)
 
    ![](./media/new/a6.png)
 
@@ -494,6 +482,6 @@ In this lab, you have accomplished the following:
 - Established connectivity from VS Code to the AI Project.
 - Performed a simple Chat Completion call.
 
-### You have successfully completed the lab. Click **Next** to continue to the next lab.
+### You have successfully completed the lab. Click **Next >>** to continue to the next lab.
 
    ![Start Your Azure Journey](./media/2-next.jpg)

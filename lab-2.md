@@ -45,6 +45,6 @@ In this task, you will build a simple AI Agent that processes data and generates
 
 In this lab, you created and executed a simple AI Agent using Microsoft Foundry to analyze health plan data and generate a bar chart visualization, demonstrating basic agent setup and usage.
 
-### You have successfully completed the lab. Click **Next** to continue to the next lab.
+### You have successfully completed the lab. Click **Next >>** to continue to the next lab.
 
    ![Start Your Azure Journey](./media/3-next.jpg)
