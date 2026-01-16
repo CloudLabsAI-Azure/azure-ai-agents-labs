@@ -25,53 +25,42 @@ In this task, you will create and configure an AI Project within Microsoft Found
 
     ![](./media/Lab1-0.png) 
 
-1. In the left navigation pane for the Microsoft Foundry, select **AI Hubs (1)** under **Use with Foundry**. On the **AI Hubs** page, click on **+ Create (2)** and select **Hub (3)** from the drop-down.
+1. From the left navigation pane, expand **Use with Foundry (1)**, click on **Foundry (2)** and then select **+ Create (3)** from the menu bar.
 
-    ![](./media/Lab1-1.png) 
+    ![](./media/new/1.png) 
 
-1. On the **Create an AI hub resource** pane, enter the following details:
+1. On the **Create an Foundry resource** pane, enter the following details and click on **Review + create (5)**.
 
-    - Subscription: **Leave default subscription** 
+    - Subscription: **Leave default subscription**
+
     - Resource group: Select **azure-ai-agents-<inject key="Deployment ID" enableCopy="false"></inject> (1)** 
-    - Region: **<inject key="Region" enableCopy="false"></inject>** **(2)**
-    - Name: Enter **aihub-<inject key="Deployment ID" enableCopy="false"></inject> (3)** 
+    - Name: Enter **my-foundry-<inject key="Deployment ID" enableCopy="false"></inject> (2)** 
 
-         ![](./media/L1T1S3i.png) 
+    - Region: **<inject key="Region" enableCopy="false"></inject>** **(3)**
 
-1. Scroll down, fill in the necessary details: 
+    - Default project name: Enter **my-project-<inject key="Deployment ID" enableCopy="false"></inject> (4)** 
 
-    - Connect AI Services incl. OpenAI: Click on **Create new (1)**
-    - Create new Azure AI Services: Enter **my-ai-service-<inject key="Deployment ID" enableCopy="false"></inject> (2)**  
-    - Click on **Save (3)**
-    - Click on **Next : Storage (4)** to proceed
-    
-        ![](./media/Lab1-2.png)  
+         ![](./media/new/7.png) 
 
-1. Keep all settings as default, and Click on **Review + create** tab followed by **Create**.
+1. On **Review + create** tab, click on **Create**.
 
-   ![](./media/rpc.png)
-
-   ![](./media/airsrc.png) 
+   ![](./media/new/3a.png)
 
 1. Wait for the deployment to be completed, and then click on **Go to resource.**
 
-   ![](./media/Lab1-4.png)
+   ![](./media/new/4.png)
 
-1. On the **Overview** pane, click on **Launch Azure AI Foundry** to navigate to the **Microsoft Foundry** portal.
+1. On the **Overview** pane, click on **Go to Foundry portal** to navigate to the **Microsoft Foundry** portal.
 
-   ![](./media/laaf.png)
+   ![](./media/new/5a.png)
 
-1. Scroll down and click on **+ New project** from the **Hub Overview** section.
+1. Once you are in the **Microsoft Foundry** portal, locate the **New Foundry** option and switch the toggle to **Enabled**.
 
-   ![](./media/newpr.png)
+   ![](./media/new/8.png)
 
-1. Provide the Project name as **my-project-<inject key="Deployment ID" enableCopy="false"></inject>** **(1),** then click on **Create (2)**.
+1. Copy the **Project endpoint (1)** and **Project API key (2)** and save them in **Notepad** for later use.
 
-   ![](./media/Lab1-6.png)
-
-1. Once the project is created, scroll down and copy the **Project connection string**, then **paste it into Notepad or a secure location**, as it will be required for upcoming tasks.
-
-     ![](./media/concnstr.png)
+   ![](./media/new/9.png)
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
 > - If you receive a success message, you can proceed to the next task.
@@ -84,55 +73,47 @@ In this task, you will create and configure an AI Project within Microsoft Found
 
 In this task, you will deploy a large language model (LLM) and an embedding model within your Microsoft Foundry project. These models will be used for AI-driven applications and vector-based search capabilities in upcoming labs.
 
-1. In the Microsoft Foundry project, go to the **My assets** section, then select **Models + endpoints (1)**. Click **+ Deploy model (2)** and choose **Deploy base model (3)** from the drop-down to continue.
+1. In the **Microsoft Foundry** portal, select **Build (1)** from the top left corner, click **Models (2)** from left pane and select **Deploy a base model (3)**.
 
-    ![](./media/Lab1-8.png)
+    ![](./media/new/10.png)
 
-2. In the **Select a model** page, search for **gpt-4o (1)**, select **gpt-4o (2)**, and then click **Confirm (3)**.
+1. In the **Model** page, search for **gpt-4o (1)** and select **gpt-4o (2)** from the results.
 
-    ![](./media/L1T2S2-1912.png)
+    ![](./media/new/11.png)
 
-1. On the **Deploy gpt-4o** page, select **Customize**.
+1. In the **gpt-4o** page, click on **Deploy (1)** and select **Custom Settings (2)** from the dropdown.
 
-   ![](./media/4ocus.png)
+    ![](./media/new/12.png)
+
+1. On the **Deploy gpt-4o** page, expand **Model version settings (1)**, set the **Model version** to **2024-08-06 (2)** from the drop-down. Change the **Tokens per Minute Rate Limit** to **200K (3)** and click on **Deploy (4)**.
+
+      ![](./media/new/13.png)
    
-   - Change the **Model version to 2024-08-06 (Default) (1)**
-   - Change the Tokens per Minute Rate Limit to **200K (2)** (You can use keyboard arrow keys to adjust the limit).
-   - Click on **Connect and deploy (3)**
-
-      ![](./media/cnd.png)   
-
    >**Note:** If the **Tokens per Minute rate limit** of **200K** is not available, use the next **highest available limit** (e.g., 150K or 100K).
 
-4. After deployment, click **Model + Endpoints (1)** under **My assets** to view the deployed **gpt-4o (2)** model.
+1. After deployment, select **Models (1)** from left navigation pane and select the **gpt-4o (2)** model.
 
-   ![](./media/4odep.png)
+   ![](./media/new/15.png)
 
-1. Click on **gpt-4o** model and copy the **Target URI (1)** and **Key (2)**, and save them securely for later use.
+1. Under **gpt-4o**, select the **Details (1)** tab from top and copy the **Target URI (2)** and save it in **Notepad** for later use.
 
-   ![](./media/4okey.png)
+   ![](./media/new/14a.png)
 
-1. In the Microsoft Foundry project, go to the **My assets** section, then select **Models + endpoints (1)**. Click **+ Deploy model (2)** and choose **Deploy base model (3)**.
+1. From the left navigation pane, click **Models (1)** and select **Deploy a base model (2)**.
 
-   ![](./media/depemb.png)
+   ![](./media/new/16.png)
 
-2. On the **Select a model** page:
-   - Search for **text-embedding-3-large (1)**
-   - Select **text-embedding-3-large (2)**
-   - Click **Confirm (3)**
+1. In the **Model** page, search for **text-embedding-3-large (1)** and select **text-embedding-3-large (2)** from the results.
 
-      ![](./media/L1T2S7-1912.png)
+      ![](./media/new/17.png)
 
-3. On the **Deploy text-embedding-3-large** page:
-   - Deployment type: **Standard (1)** 
-   - Tokens per Minute Rate Limit:**`120K` (2)**
-   - Click **Deploy (3)**
+1. In the **text-embedding-3-large** page, click on **Deploy (1)** and select **Default Settings (2)** from the the dropdown.
 
-       ![](./media/embdep.png)
+    ![](./media/new/18.png)
 
-4. After deployment completes, under **My assets** select **Models + endpoints (1)** and confirm the **text-embedding-3-large (2)** model is listed alongside your GPT-4o deployment.
+1. From the left navigation pane, click **Models (1)** and ensure both the **Models (2)** are deployed successfully.
 
-   ![](./media/embscs.png)
+   ![](./media/new/19.png)
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
 > - If you receive a success message, you can proceed to the next task.
@@ -142,7 +123,6 @@ In this task, you will deploy a large language model (LLM) and an embedding mode
 <validation step="73125dc6-9bc8-4d62-ae9c-f9ef5a421385" />
 
 ## Task 3:  Assign permissions to the Azure AI Search resource
-
 
 In this task, you will configure the necessary permissions for the Azure AI Search resource to ensure it integrates securely and effectively with the AI Agent. This involves setting up the resource, enabling identity, and assigning required roles.
 
