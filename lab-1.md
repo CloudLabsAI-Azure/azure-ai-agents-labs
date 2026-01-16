@@ -304,7 +304,7 @@ In this task, you will configure the necessary permissions for the Azure AI Sear
    - Then, select **ODL_User <inject key="Deployment ID" enableCopy="false"></inject> (4)**.
    - Click on **Select (5)**
 
-   ![](./media/new/f2.png)
+     ![](./media/new/f2.png)
    
 1. Click **Review + assign** twice to finalize the role assignment.
 
