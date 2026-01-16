@@ -21,13 +21,13 @@ In this task, you will create an **Azure AI Search index** to store vectorized r
 
    ![](./media/L1T3S15.png)
 
-1. Select the Storage account that starts with **aihubxxxx**.
+1. Select the Storage account **storage<inject key="Deployment ID" enableCopy="false"></inject>**.
 
-   ![](./media/stoslct.png)
+   ![](./media/new/g1.png)
 
-1. In the left-hand menu, under the **Data storage** section, click **Containers (1)**, then select **+ Add container (2)**.
+1. In the left-hand menu, expand **Data storage (1)** section, click on **Containers (2)**, then select **+ Add container (3)**.
 
-   ![](./media/adcon.png)
+   ![](./media/new/g2.png)
 
 1. In the new container dialog, enter **healthplan** **(1)** as the name and click **Create (2)**.
 
@@ -35,11 +35,11 @@ In this task, you will create an **Azure AI Search index** to store vectorized r
 
 1. Open the newly created **healthplan** container.
 
-   ![](./media/openhl.png)
+   ![](./media/new/g3.png)
 
 1. Click **Upload (1)** and then **Browse for files (2)**.
 
-   ![](./media/upbr.png)
+   ![](./media/new/g4.png)
 
 1. Navigate to `C:\LabFiles\azure-ai-agents-labs\data` **(1)** and select both the PDFs to upload **(2)**, and click on **Open (3)**.
 
@@ -70,13 +70,15 @@ In this task, you will create an **Azure AI Search index** to store vectorized r
    |Setting|Value|
    |---|---|
    |Subscription|**Leave it default** **(1)**|
-   |Storage account|Select the Storage account with prefix **aihub** **(2)**|
+   |Storage account|Select the Storage account with prefix **storage<inject key="Deployment ID" enableCopy="false"></inject> (2)**|
    |Blob container|**healthplan** **(3)**|
-   |Managed identity type|**System-assigned** **(4)**|
+   |Authenticate using managed identity|**Enable** **(4)**|
+   |Managed identity type|**System-assigned** **(5)**|
 
-   ![](./media/cnyd.png)
+   ![](./media/new/g5.png)
 
 1. On **Vectorize your text** tab, enter the following details and click on **Next (7):**
+
    |Setting|Value|
    |---|---|
    |Kind|**Azure AI Foundry (Preview) (1)**|
@@ -86,7 +88,7 @@ In this task, you will create an **Azure AI Search index** to store vectorized r
    |Authentication type|**System assigned identity** **(5)**|
    |Acknowledgement rectangle|**Checked** **(6)**|
 
-      ![](./media/vect.png)
+      ![](./media/new/g6.png)
 
 1. Click on **Next** twice.
 
@@ -96,27 +98,37 @@ In this task, you will create an **Azure AI Search index** to store vectorized r
 
    >**Note:** The uploading of data to indexes in the search service might take 5-10 minutes.
 
-   >**Note:** On the **Create Succeeded** Pop Up click on **Close**.
+1. On the **Create succeeded** Pop Up, click on **Close**.
 
-1. In the Azure Portal, navigate to Microsft Foundry. Under the **AI Hubs (1)** click to open the **aihub-<inject key="Deployment ID" enableCopy="false"></inject> (2)** resource. From the Overview page, click on **Launch Azure AI Foundry (3)**.
+   ![](./media/new/g7.png)
 
-   ![](./media/L3T1S17-1912.png)
+1. On the Azure Portal page, search **Microsoft Foundry (1)**, and then select **Microsoft Foundry (2)** from the results.
 
-   ![](./media/L3T1S17.2-1912.png)
+    ![](./media/Lab1-0.png) 
 
-2. From the left-hand menu, click **Connected resources (1)**, then click on **+ New connection (2)**.
+1. Select **Foundry (1)** from the left pane and select **my-foundry-<inject key="Deployment ID" enableCopy="false"></inject> (2)**.
 
-   ![](./media/Lab3-0.png)
+   ![](./media/new/e6.png)
 
-3. Choose **Azure AI Search** as the resource type.
+1. On the **Overview** pane, click on **Go to Foundry portal** to navigate to the **Microsoft Foundry** portal.
 
-   ![](./media/cnextas.png)
+   ![](./media/new/5a.png)
 
-4. Click **Add connection (1)** and once the connection is added successfully, **Close (2)** the dialog.
+1. On the **Microsoft Foundry** portal, click on **Profile (1)** icon from the top right corner and select **Project details (2)**.
 
-   ![](./media/adsrvc.png)
+   ![](./media/new/g8.png)
 
-   ![](./media/closecon.png)
+1. To add a new connection, click on **Add connection** from the top right corner.
+
+   ![](./media/new/g9.png)
+
+1. In **Choose a connection** pop up window, select **Azure AI Search (1)** and click on **Continue (2)**.
+
+   ![](./media/new/g10.png)
+
+1. Select **my-search-service-<inject key="Deployment ID" enableCopy="false"></inject> (1)** from the dropdown and click on **Connect (2)**.
+
+   ![](./media/new/g11.png)
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
 > - If you receive a success message, you can proceed to the next task.
@@ -133,35 +145,37 @@ In this task, you will build an AI Agent using **Retrieval-Augmented Generation 
    
 1. Open the **Lab 3 - Create A RAG Agent.ipynb** file, This **Lab 3 - Create A RAG Agent.ipynb** notebook guides you through building an AI agent using the **Azure AI Agent Service**. This agent will retrieve information from health insurance policy documents stored in **Azure AI Search**, a vector database, enabling efficient and accurate information retrieval.
 
-   ![](./media/ag76.png)
+   ![](./media/new/g12.png)
 
 1. In the notebook interface, click **Select kernel (1)** in the top-right corner and choose **venv (Python 3.X.X) (2)** from the available options.
 
-   ![](./media/oct-azure-aiagent-lab1-10.png)
+   ![](./media/new/h1.png)
    
 1. Run the first cell to set up the foundation for a RAG (Retrieval-Augmented Generation) Agent using Microsoft Foundry. This script imports necessary libraries, loads environment variables, and initializes components like AIProjectClient for project management and AzureAISearchTool for retrieval capabilities.
 
-   ![](./media/lpack.png)
+   ![](./media/new/h2.png)
 
-1. Run the next cell to connect to your Microsoft Foundry project and access the deployed GPT-4o model.
+1. Run the next cell to connect to your Microsoft Foundry project and access the deployed GPT-4.1 model.
 
-   ![](./media/acsgpt.png)
+   ![](./media/new/h3.png)
 
-1. Run the next cell to retrieve the connection ID for your Azure AI Search instance and connect to the "health-plan" index. This ensures your RAG Agent can fetch relevant data from Azure AI Search for retrieval-augmented generation.
+1. Run the next two cells to retrieve the connection ID for your Azure AI Search instance and connect to the "health-plan" index. This ensures your RAG Agent can fetch relevant data from Azure AI Search for retrieval-augmented generation.
 
-   ![](./media/cnaisi.png)
+   ![](./media/new/h4.png)
 
-1. Run the next cell to define a search agent that utilizes Azure AI Search and the GPT-4o model to retrieve relevant health plan documents.
+   ![](./media/new/h5.png)
 
-   ![](./media/dsa.png)
+1. Run the next cell to define a search agent that utilizes Azure AI Search and the GPT-4.1 model to retrieve relevant health plan documents.
 
-1. Run the next cell to chat with the search agent and retrieve details about the Northwind Standard health plan using Azure AI Search and GPT-4o. This script initiates a conversation, queries the agent for health plan information, and displays the agent’s response.
+   ![](./media/new/h6.png)
 
-   ![](./media/ag81.png)
+1. Run the next cell to chat with the search agent and retrieve details about the Northwind Standard health plan using Azure AI Search and GPT-4.1. This script initiates a conversation, queries the agent for health plan information, and displays the agent’s response.
+
+   ![](./media/new/h7.png)
    
 1. Observe the output returned by the AI agent.
 
-   ![](./media/lab3-task2-step9output.png)
+   ![](./media/new/h8.png)
 
    > **Note:** Here's an example of what your output is likely to see; however, the precise recommendation could vary.
    
@@ -169,6 +183,6 @@ In this task, you will build an AI Agent using **Retrieval-Augmented Generation 
 
 In this lab, you built a Retrieval-Augmented Generation (RAG) AI Agent using Microsoft Foundry. You created an Azure AI Search index to store vectorized health plan documents and integrated it with an AI agent to retrieve relevant content and generate accurate, context aware responses.
 
-### You have successfully completed the lab. Click **Next** to continue to the next lab.
+### You have successfully completed the lab. Click **Next >>** to continue to the next lab.
 
    ![Start Your Azure Journey](./media/4nxt.png)
