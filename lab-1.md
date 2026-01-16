@@ -304,6 +304,32 @@ In this task, you will configure the necessary permissions for the Azure AI Sear
 
    ![](./media/new/e7.png)
 
+1. Under **Job function roles**, search for **Azure AI Project Manager (1)**, select **Azure AI Project Manager (2)**, and then select **Next (3)**.
+
+   ![](./media/new/f1.png)
+
+1. On the **Add role assignment** page, 
+
+   - Under **Members** tab, select **Users, group or service principal (1)**
+   - Click on **+ Select members (2)**
+   - Search for **<inject key="AzureAdUserEmail"></inject> (3)** in the search bar.
+   - Then, select **ODL_User <inject key="Deployment ID" enableCopy="false"></inject> (4)**.
+   - Click on **Select (5)**
+
+   ![](./media/new/f2.png)
+   
+1. Click **Review + assign** twice to finalize the role assignment.
+
+   ![](./media/new/f3.png)
+
+1. Follow the steps from **31** to **34** and assign **Cognitive Services OpenAI Contributor** role to the user.
+
+   ![](./media/new/f4.png)
+
+1. In the Foundry service blade, select **Access control (IAM) (1)**, click **+ Add (2)** drop-down, and then choose **Add role assignment (3)**.
+
+   ![](./media/new/e7.png)
+
 1. Under **Job function roles**, search for **Cognitive Services OpenAI User (1)**, select **Cognitive Services OpenAI User (2)**, and then select **Next (3)**.
 
    ![](./media/aranxt.png)
@@ -375,14 +401,6 @@ In this task, you will install the required dependencies, configure a virtual en
 
    ![](./media/ag43.png)
 
-1. Run the following PowerShell command to install the required package.
-
-   ```
-   pip install azure-ai-ml azure-identity
-   ```
-
-   >**Note:** This can take 3-5 minutes to complete. Wait for the command execution to complete then proceed ahead.
-
 1. Run the below command to log into your Azure account.
 
    ```
@@ -403,7 +421,7 @@ In this task, you will install the required dependencies, configure a virtual en
 
 1. On the **Sign in to all apps, websites, and services on this device ?** pop-up, select on **No, this app only**.
 
-   ![](./media/no.png)
+   ![](./media/new/r1.png)
 
 1. Once the Authorization is completed, navigate back to Visual Studio Code.
 
@@ -413,22 +431,17 @@ In this task, you will install the required dependencies, configure a virtual en
 
 1. Open the **sample.env** file.
 
-   ![](./media/ag46.png)
+   ![](./media/new/r2.png)
 
 1. In the `sample.env` file, provide the following environment variables using the values retrieved from your Microsoft Foundry project:
 
-   - `AIPROJECT_CONNECTION_STRING`: Provide the **Project connection string** value you have copied in Task 1 of Step 10.
-   - `CHAT_MODEL_ENDPOINT`: Provide the **Target URI** of the **gpt-4o** model you have copied in Task 2 of Step 5.
-   - `CHAT_MODEL_API_KEY`: Provide the **Key** value of the **gpt-4o** model you have copied in Task 2 of Step 5.
-   - `CHAT_MODEL`: **gpt-4o**
+   - `AIPROJECT_ENDPOINT`: Provide the **Project endpoint** value you have copied in Step 8 of Task 1.
+   - `API_KEY`: Provide the **Key** value of the **gpt-4.1** model you have copied in Step 8 of Task 1.
+   - `CHAT_MODEL_ENDPOINT`: Provide the **Target URI** of the **gpt-4.1** model you have copied in Step 6 of Task 2.
+   - `CHAT_MODEL`: **gpt-4.1**
 
-     ![](./media/upag49.png)
+     ![](./media/new/r3.png)
 
-      > **Note:** To get the Project Connection string, follow these steps to get the value:
-      > 1. On the **Azure Portal** page, in the *Search resources, services, and docs (G+/)* box at the top of the portal, search for **aihub-<inject key="Deployment ID" enableCopy="false"></inject>**.
-      > 2. In the **Overview** pane, click **Launch Microsoft Foundry** to open the Microsoft Foundry portal.
-      > 3. In the **Project Overview** section, select **Go to project**, then copy the **Project connection string**.
-   
 1. Save the changes made to the `sample.env` file by clicking **CTRL + S**.
 
 1. Create a `.env` file by running the following PowerShell command:
@@ -441,7 +454,7 @@ In this task, you will install the required dependencies, configure a virtual en
 
 1. Next, open the **Lab 1 - Project Setup.ipynb** file. The **Lab 1 - Project Setup.ipynb** notebook guides you through setting up an AI Project in Microsoft Foundry, deploying an LLM and embedding models, and configuring VS Code connectivity. It also includes a simple Chat Completion API call to verify the setup. Running this notebook ensures that your environment is correctly configured for developing AI-powered applications. 
 
-   ![](./media/ag61.png)
+   ![](./media/new/r4.png)
 
 1. Click **Select Kernel (1)** in the top-right corner and choose **Install/Enable suggested extensions Python + Jupyter (2)** if prompted.
 
@@ -453,23 +466,21 @@ In this task, you will install the required dependencies, configure a virtual en
 
 1. Select **venv (Python 3.X.X)** from the list as this version is likely required for compatibility with Microsoft Foundry SDK and other dependencies.
 
-   ![](./media/python-kernal00-01.jpg)
+   ![](./media/new/r5.png)
 
 1. Run the first cell to import the necessary Python libraries for working with Azure AI services.   
 
-   ![](./media/ag72.png)
+   ![](./media/new/r6.png)
 
 1. Run the next cell to retrieve the project connection string and model name from environment variables. These values are needed to interact with the Large Language Model (LLM) securely, without hardcoding sensitive information.
 
-   ![](./media/ag73.png)
-
 1. Run the next cell to connect to your Microsoft Foundry project using the connection string. This establishes a secure connection with AIProjectClient, enabling interactions with your project resources.
 
-   ![](./media/ag74.png)
+   ![](./media/new/r7.png)
 
-1. Run the next cell to interact with the GPT-4o model using your Microsoft Foundry project. This code initializes a chat client, sends a request for a joke about a teddy bear, and prints the response. Finally, see the output provided from the chat model.
+1. Run the next cell to interact with the GPT-4.1 model using your Microsoft Foundry project. This code initializes a chat client, sends a request for a joke about a teddy bear, and prints the response. Finally, see the output provided from the chat model.
 
-   ![](./media/ag75.png)
+   ![](./media/new/f5.png)
 
    > **Note:** If you encounter errors such as **"unknown connection"**, recheck your `.env` file. Ensure all values are correct, save the file, and restart the **Jupyter kernel** before re-running the notebook cells.
 
