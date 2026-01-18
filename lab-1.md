@@ -19,7 +19,7 @@ In this lab, you will perform:
 
 ## Task 1: Setting up the AI Project in the Microsoft Foundry
 
-In this task, you will create and configure an AI Project within Microsoft Foundry. This involves setting up the necessary resources, defining project parameters, and ensuring that the environment is ready for deploying AI models. By the end of this task, you will have a fully initialized AI Project, serving as the foundation for further development and experimentation.
+In this task, you will create a Microsoft Foundry resource, initialize an AI Project, enable the new Microsoft Foundry portal, and collect the Project endpoint and API key needed for later labs.
 
 1. On the Azure Portal page, in the Search resources, services, and docs (G+/) box at the top of the portal, enter **Microsoft Foundry (1)**, and then select **Microsoft Foundry (2)** under **Services**.
 
@@ -464,15 +464,13 @@ In this task, you will install the required dependencies, configure a virtual en
 
    ![](./media/new/r6.png)
 
-1. Run the next cell to retrieve the project connection string and model name from environment variables. These values are needed to interact with the Large Language Model (LLM) securely, without hardcoding sensitive information.
-
-1. Run the next cell to connect to your Microsoft Foundry project using the connection string. This establishes a secure connection with AIProjectClient, enabling interactions with your project resources.
+1. Run the next cell to create an AIProjectClient instance using your project endpoint from environment variables and Azure authentication credentials. This initializes a secure connection to your Microsoft Foundry project so that you can interact with its AI resources programmatically.
 
    ![](./media/new/r7.png)
 
 1. Run the next cell to interact with the GPT-4.1 model using your Microsoft Foundry project. This code initializes a chat client, sends a request for a joke about a teddy bear, and prints the response. Finally, see the output provided from the chat model.
 
-   ![](./media/new/f5.png)
+   ![](./media/new/27.png)
 
    > **Note:** If you encounter errors such as **"unknown connection"**, recheck your `.env` file. Ensure all values are correct, save the file, and restart the **Jupyter kernel** before re-running the notebook cells.
 

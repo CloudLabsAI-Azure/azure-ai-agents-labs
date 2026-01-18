@@ -27,7 +27,7 @@ In this task, you will build a simple AI Agent that processes data and generates
 
    ![](./media/new/f7.png)
 
-1. Run the next cell to connect to your Microsoft Foundry project and access the deployed **GPT-4.1** model. This establishes a secure connection using the project connection string and Azure credentials.
+1. Run the next cell to create an AIProjectClient instance that connects to your Microsoft Foundry project using the project endpoint from environment variables and Azure token-based authentication. This establishes a secure programmatic connection to your project resources without hardcoding credentials.
 
    ![](./media/new/f8.png)
 

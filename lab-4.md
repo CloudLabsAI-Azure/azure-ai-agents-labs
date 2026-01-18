@@ -19,7 +19,7 @@ We'll use the Azure AI Agent Service to create the Search, Report, and Validatio
 
 ## Objective
 
-In this lab, you will complete the following tasks:
+In this lab, you will complete the following task:
 
 - Task 1: Create the Search, Report, and Validation Agents.
 
@@ -39,15 +39,13 @@ In this task, you will create the Search, Report, and Validation Agents to retri
 
    ![](./media/new/j2.png)
 
-1. s2
+1. Run the next cell to connect to your Microsoft Foundry project and access the deployed GPT-4.1 model.
 
    ![](./media/new/j3.png)
 
-1. s3
+1. Run the next two cells to retrieve the connection ID for your Azure AI Search instance and connect to the "health-plan" index. This ensures your RAG Agent can fetch relevant data from Azure AI Search for retrieval-augmented generation.
 
    ![](./media/new/j4.png)
-
-1. s3a
 
    ![](./media/new/j5.png)
 
@@ -73,7 +71,7 @@ In this task, you will create the Search, Report, and Validation Agents to retri
 
          ![](./media/file.png)
 
-    - Now, navigate to the following directory: `C:\LabFiles\azure-ai-agents-labs\data` **(1)**. Then, select both health plan PDF files **(2)** and right click on and click on open, which should open them in the Edge browser.
+    - Now, navigate to the following directory: `C:\LabFiles\azure-ai-agents-labs\data` **(1)**. Then, select both health plan **PDF files (2)** and right click on and click on open, which should open them in the Edge browser.
 
       ![](./media/fileexplore06062025.png)
      
