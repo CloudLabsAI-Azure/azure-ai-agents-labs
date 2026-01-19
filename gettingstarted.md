@@ -39,15 +39,13 @@ This architecture diagram shows the Standard Agent Setup in Azure, where differe
 
 ## Architecture Diagram
 
-![Architecture Diagram](./media/arch-diag-2612.png)
+![Architecture Diagram](./media/new/arch.png)
  
 ## Explanation of Components
 
 - **Microsoft Foundry:** A cloud-based platform for developing, deploying, and managing AI models. It allows users to configure AI projects, deploy Large Language Models (LLMs), and integrate embedding models to enhance AI applications.
-- **Azure AI Hub**: A core component of Microsoft Foundry, it is a top-level Azure resource that provides a central, secure, and collaborative environment for teams to build, manage, and deploy AI applications, offering access to various Azure AI services with a single setup. 
 - **Azure AI Search:** A vector-based search service that enables Retrieval-Augmented Generation (RAG) by indexing and retrieving relevant documents to improve AI-generated responses.
 - **Azure AI Services**: A collection of cloud-based AI services that allow developers and data scientists to build intelligent applications, offering pre-built and customizable APIs and models for tasks like speech, vision, language, and knowledge.
-- **Azure Key Vault**: It is a cloud service that securely stores and manages secrets, certificates, and cryptographic keys, allowing authorized users and applications to access them while enhancing security and reducing data breach risks. 
 - **LLMs and Embeddings:** Understanding Large Language Models (LLMs), their capabilities, and how embeddings are used for text similarity, search, and knowledge retrieval in AI applications.
 - **Storage Account:** An Azure Storage Account is a cloud resource that provides scalable, secure, and durable storage for data objects like blobs, files, queues, and tables. It’s used to store structured and unstructured data. You create it in Azure, choose redundancy/replication options, and access data via APIs, SDKs, or portals.
 

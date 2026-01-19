@@ -12,16 +12,16 @@ You will next establish connectivity between Visual Studio Code and the AI Proje
 
 In this lab, you will perform:
 
-- Task 1: Setting up the AI Project in the Microsoft Foundry
+- Task 1: Create a Microsoft Foundry Resource
 - Task 2: Deploying an LLM and embedding models
 - Task 3: Assign permissions to the Azure AI Search resource
 - Task 4: Install dependencies, create a virtual environment, and create an environment variables file.
 
-## Task 1: Setting up the AI Project in the Microsoft Foundry
+## Task 1: Create a Microsoft Foundry Resource
 
 In this task, you will create a Microsoft Foundry resource, initialize an AI Project, enable the new Microsoft Foundry portal, and collect the Project endpoint and API key needed for later labs.
 
-1. On the Azure Portal page, in the Search resources, services, and docs (G+/) box at the top of the portal, enter **Microsoft Foundry (1)**, and then select **Microsoft Foundry (2)** under **Services**.
+1. On the Azure Portal, search for **Microsoft Foundry (1)**, and select **Microsoft Foundry (2)** from the results.
 
     ![](./media/Lab1-0.png) 
 
