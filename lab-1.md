@@ -479,7 +479,7 @@ In this task, you will install the required dependencies, configure a virtual en
 ## Summary
 
 In this lab, you have accomplished the following:
-- Set up the AI Project in Microsoft Foundry.
+- Created a Microsoft Foundry Resource.
 - Deployed an LLM and embedding models.
 - Established connectivity from VS Code to the AI Project.
 - Performed a simple Chat Completion call.
