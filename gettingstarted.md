@@ -35,7 +35,9 @@ Participants should have:
 
 ## Architecture 
 
-This architecture diagram shows the Standard Agent Setup in Azure, where different resources work together to build and run AI-powered solutions. At the top, the Azure AI Hub acts as the central control point for managing resources, governance, and policies. It connects directly with the Azure AI Project, which is the main workspace for developing, testing, and deploying AI agents. Supporting the project are essential Azure services. Key Vault secures sensitive information such as API keys, secrets, and certificates. AI Search enables intelligent search and indexing of large volumes of structured or unstructured data. AI Services provides pre-built AI capabilities like natural language processing, vision, and speech recognition. Storage Account supplies scalable, reliable, and secure storage for datasets, logs, and model artifacts, making it the backbone of data management in this setup. Together, these components create a secure, scalable, and modular architecture, enabling enterprises to efficiently build, deploy, and manage AI agents or copilots.
+This architecture diagram shows the Standard Agent Setup in Azure, where different resources work together to build and run AI-powered solutions. At the top, Microsoft Foundry acts as the central control point for managing resources, governance, and policies, and serves as the main workspace for developing, testing, and deploying AI agents.
+Supporting Foundry are essential Azure services. AI Search enables intelligent search and indexing of large volumes of structured or unstructured data. AI Services provides pre-built AI capabilities like natural language processing, vision, and speech recognition. A Storage Account supplies scalable, reliable, and secure storage for datasets, logs, and model artifacts, making it the backbone of data management in this setup.
+Together, these components create a secure, scalable, and modular architecture, enabling enterprises to efficiently build, deploy, and manage AI agents or copilots in Microsoft Foundry.
 
 ## Architecture Diagram
 
