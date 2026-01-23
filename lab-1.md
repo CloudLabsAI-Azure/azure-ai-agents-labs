@@ -50,6 +50,27 @@ In this task, you will create a Microsoft Foundry resource, initialize an AI Pro
 
    ![](./media/new/4.png)
 
+1. From the left navigation pane, select **Access control (IAM) (1)**, click **+ Add (2)**, and choose **Add role assignment (3)**.
+
+   ![](./media/new/L1T1S6.png)
+
+1. Under **Job function roles**, search for **Azure AI User (1)**, select **Azure AI User (2)**, and then select **Next (3)**.
+
+   ![](./media/new/L1T1S7.png)
+
+1. On the **Add role assignment** page, 
+
+   - Under **Members** tab, select **User groups or service principle (1)**
+   - Click on **+ Select members (2)**
+   - Then search and select **<inject key="AzureAdUserEmail"></inject> (3)**.
+   - Click on **Select (4)**
+
+     ![](./media/new/L1T1S8.png)
+
+1. Finally, click **Review + assign** twice to complete the assignment.
+
+   ![](./media/new/L1T1S9.png)
+
 1. On the **Overview** pane, click on **Go to Foundry portal** to navigate to the **Microsoft Foundry** portal.
 
    ![](./media/new/5a.png)
